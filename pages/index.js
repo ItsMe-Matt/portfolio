@@ -39,7 +39,6 @@ export default function Home() {
           img={UIProj[1].titleImg}
           detail={UIProj[1].description}
           />
-
       </Content>
 
       <Content id="frontend">
@@ -56,23 +55,23 @@ export default function Home() {
 }
 
 const Container = styled.div`
-  background-color: #ebebeb
+cursor: context-menu
 `
 const Hero = styled.div`
-  height: 100vh
-`
+  background-color: #ebebeb;
+  height: 91vh;
+  box-shadow: 0 0.25rem 3rem #000000 inset;
+  padding-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-const Content = styled.div`
-  min-height: 100vh;
-  background-color: #ffffff;
-  padding-top: 5.1rem
 `
-
 const HeroH = styled.div`
   font-family: Zilla Slab;
-  font-size: 64px;
-  text-align: center;
+  font-size: 3.5rem;
   font-weight: 400;
+  text-align: center;
   width: 80vw;
   margin-bottom: 2rem;
   color: #122C5C;
@@ -85,16 +84,17 @@ const HeroP = styled.div`
   display: flex;
   width: 50vw;
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 `
 const RowCenter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 8rem;
 `
 
-const ConHead = styled.h1`
-  margin: 0 2rem;
+const Content = styled.div`
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding-top: 9vh;
 `

@@ -11,10 +11,11 @@ export default function ProjHead({
 }
 
 const Container = styled.div`
-    border-bottom: 0.1rem solid black;
+    border-bottom: 0.08rem solid #606060;
     margin: 0 2rem;
     font-family: Zilla Slab;
     font-weight: 300;
-    font-size: 3rem;
+    font-size: 1.5rem;
     padding-bottom: 1rem;
+    margin-bottom: 1rem;
 `

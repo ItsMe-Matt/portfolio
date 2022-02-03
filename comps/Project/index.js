@@ -27,10 +27,6 @@ export default function Project({
                 <TxtP>
                     {detail}
                 </TxtP>
-
-                <ReadButton>
-                    Read More...
-                </ReadButton>
             </TxtCont>
         </Right>
 
@@ -39,22 +35,23 @@ export default function Project({
 
 const Container = styled.div`
     display: flex;
-    padding:1rem 2rem
+    padding:1rem 8rem
 `
 
 const Left = styled.div`
     width: 50%;
-    padding: 0.5rem;
+    padding: 0.15rem;
 `
 const Right = styled.div`
     width: 50%;
     float: right;
-    padding: 0.5rem;
+    padding: 0.15rem;
 `
 const ImgCont = styled.div`
 margin: 1rem;
 overflow: hidden;
 border-radius: 1rem;
+box-shadow: 0 0 0.5rem #ebebeb;
 `
 
 const TxtCont = styled.div`
@@ -62,23 +59,17 @@ margin: 1rem;
 `
 
 const TxtHeader = styled.h1`
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-family: Zilla Slab;
-    font-weight: 600;
+    font-weight: 500;
 `
 
 const TxtP = styled.p`
     font-family: Roboto;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 300;
-    line-height: 2
+    line-height: 2;
+    color: #606060;
 
-`
-const ReadButton = styled.div`
-background-color: #ebebeb;
-display: flex;
-justify-content: flex-end;
-align-item: flex-end;
-display: none
 `
 

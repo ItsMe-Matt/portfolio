@@ -30,13 +30,14 @@ const IconA = styled.a`
     border-radius: 12px;
     padding: 4px;
     background-color: #f5f5f5;
-    margin: 2px
+    margin: 2px;
+    box-shadow: 0 0.25rem 0.25rem #909090;
 
 `
 const IconC = styled.div`
     border-radius: 12px;
     padding: 4px;
     background-color: #f5f5f5;
-    margin: 2px
-
+    margin: 2px;
+    box-shadow: 0 0.25rem 0.25rem #909090;
 `
