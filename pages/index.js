@@ -6,9 +6,8 @@ import Project from "../comps/Project";
 import ProjHead from "../comps/ProjHead";
 import Social from '../comps/Social'
 
-
-
-import { UIProj, FEProj } from "./data";
+import FEProj from './data/FEProj.json'
+import UIProj from './data/UIProj.json'
 
 
 export default function Home() {
