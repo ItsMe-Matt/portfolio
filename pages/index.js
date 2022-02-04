@@ -60,7 +60,7 @@ cursor: context-menu
 const Hero = styled.div`
   background-color: #ebebeb;
   height: 91vh;
-  box-shadow: 0 0.25rem 3rem #000000 inset;
+  box-shadow: 0 0.25rem 1rem #909090 inset;
   padding-top: 5vh;
   display: flex;
   align-items: center;

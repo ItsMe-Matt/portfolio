@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { FiMenu } from 'react-icons/fi'
 import Link from 'next/link'
 
 export default function HeadNav() {
@@ -26,18 +25,6 @@ export default function HeadNav() {
     </Container>
 }
 
-
-/* Drafts
-<FiMenu size="2rem" color="#122C5C" onClick={()=>{
-            console.log("gay")
-        }}/>
-
-
-
-
-
-
-*/
 const Container = styled.div`
     display: flex;
     flex-direction: row;
@@ -53,6 +40,8 @@ const Container = styled.div`
     z-index: 1;
 
     background-color: #ffffff;
+
+
 `
 
 const HTxt = styled.h1`
@@ -61,6 +50,7 @@ const HTxt = styled.h1`
     color: #122C5C;
     font-size: 2rem;
     padding: 0;
+    cursor: pointer;
 `
 
 const NavCont = styled.div`
@@ -79,6 +69,7 @@ const NavBtn = styled.div`
     
     &:hover {
         transition: 1s;
-        box-shadow: inset 0 -0.5em 0 0 #122C5C
+        box-shadow: inset 0 -2rem 0 0 #2868de;
+        color: #ffffff;
     }
 `
