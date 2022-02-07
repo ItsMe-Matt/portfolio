@@ -1,14 +1,15 @@
 import styled from 'styled-components'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Project({
     title = "Project 1",
     detail = "This worked well",
-    img = "/projImg/cPTitle.png"
+    img = "/projImg/cPTitle.png",
+    route="/",
 }) {
-    return <Container onClick={()=>{
-        console.log("i have been touched")
-    }}>
+    return <Link href={route}>
+    <Container>
         <Left>
             <ImgCont>
                 <Image src={img}
@@ -31,6 +32,7 @@ export default function Project({
         </Right>
 
     </Container>
+    </Link>
 }
 
 const Container = styled.div`

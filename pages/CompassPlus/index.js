@@ -1,17 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from 'styled-components'
 
-import HeadNav from '../comps/HeadNav'
-import Project from "../comps/Project";
-import ProjHead from "../comps/ProjHead";
-import Social from '../comps/Social'
-
-import FEProj from './data/FEProj.json'
-import UIProj from './data/UIProj.json'
+import HeadNav from '../../comps/HeadNav'
+import Project from "../../comps/Project";
+import ProjHead from "../../comps/ProjHead";
+import Social from '../../comps/Social'
 
 
-export default function Home() {
-  const [showModal, setShowModal] = useState(false);
+export default function CompassPlus() {
 
   return (<div>
     <Container>
@@ -19,7 +15,7 @@ export default function Home() {
       <Hero>
         <RowCenter>
         <HeroH>
-        Hi, I’m Matt and I am an UI/UX designer and a frontend developer.
+        CompassPlus
         </HeroH>
         <HeroP>
         I am currently finishing my final semester at BCIT for Digital Design and Development. 
@@ -27,30 +23,6 @@ export default function Home() {
         <Social />
         </RowCenter>
       </Hero>
-      <Content id="ui"> 
-      <ProjHead title="UI/UX Design" />
-        <Project 
-          title={UIProj[0].header}
-          img={UIProj[0].titleImg}
-          detail={UIProj[0].description}
-          route="/CompassPlus"
-          />
-        <Project 
-          title={UIProj[1].header}
-          img={UIProj[1].titleImg}
-          detail={UIProj[1].description}
-          />
-      </Content>
-
-      <Content id="frontend">
-      <ProjHead title="Frontend Development" />
-        <Project 
-          title={FEProj[0].header}
-          img={FEProj[0].titleImg}
-          detail={FEProj[0].description}
-          />
-
-      </Content>
     </Container>
     </div>)
 }
@@ -92,10 +64,4 @@ const RowCenter = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`
-
-const Content = styled.div`
-  min-height: 100vh;
-  background-color: #ffffff;
-  padding-top: 9vh;
 `

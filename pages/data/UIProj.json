@@ -2,7 +2,8 @@
     {
         "header": "CompassPlus",
         "titleImg": "/projImg/cPTitle.png",
-        "description": "CompassPlus is an app designed to replace your physical Compass card with a digital NFC card you can use on your phone."
+        "description": "CompassPlus is an app designed to replace your physical Compass card with a digital NFC card you can use on your phone.",
+        "route": "/CompassPlus"
     },
     {
         "header": "Actualize",

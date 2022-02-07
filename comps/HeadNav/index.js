@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function HeadNav() {
     return <Container>
-        <Link href="">
+        <Link href="/">
         <HTxt>
             Matthew Zhao
         </HTxt>
@@ -11,12 +11,12 @@ export default function HeadNav() {
         
         
         <NavCont>
-        <Link href="#ui">
+        <Link href="/#ui">
             <NavBtn>
             UI/UX
             </NavBtn> 
         </Link>
-        <Link href="#frontend">
+        <Link href="/#frontend">
             <NavBtn>
             Frontend
             </NavBtn> 
