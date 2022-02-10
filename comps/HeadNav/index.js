@@ -11,14 +11,9 @@ export default function HeadNav() {
         
         
         <NavCont>
-        <Link href="/#ui">
+        <Link href="/#projects">
             <NavBtn>
-            UI/UX
-            </NavBtn> 
-        </Link>
-        <Link href="/#frontend">
-            <NavBtn>
-            Frontend
+            Project and Works
             </NavBtn> 
         </Link>
         </NavCont>

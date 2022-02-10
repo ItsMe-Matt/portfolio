@@ -6,8 +6,7 @@ import Project from "../comps/Project";
 import ProjHead from "../comps/ProjHead";
 import Social from '../comps/Social'
 
-import FEProj from './data/FEProj.json'
-import UIProj from './data/UIProj.json'
+import Proj from "./data/Proj.json"
 
 
 export default function Home() {
@@ -27,27 +26,23 @@ export default function Home() {
         <Social />
         </RowCenter>
       </Hero>
-      <Content id="ui"> 
-      <ProjHead title="UI/UX Design" />
+      <Content id="projects"> 
         <Project 
-          title={UIProj[0].header}
-          img={UIProj[0].titleImg}
-          detail={UIProj[0].description}
-          route={UIProj[0].route}
+          title={Proj[0].header}
+          type={Proj[0].type}
+          img={Proj[0].titleImg}
+          detail={Proj[0].description}
+          route={Proj[0].route}
           />
         <Project 
-          title={UIProj[1].header}
-          img={UIProj[1].titleImg}
-          detail={UIProj[1].description}
+          title={Proj[1].header}
+          img={Proj[1].titleImg}
+          detail={Proj[1].description}
           />
-      </Content>
-
-      <Content id="frontend">
-      <ProjHead title="Frontend Development" />
         <Project 
-          title={FEProj[0].header}
-          img={FEProj[0].titleImg}
-          detail={FEProj[0].description}
+          title={Proj[0].header}
+          img={Proj[0].titleImg}
+          detail={Proj[0].description}
           />
 
       </Content>

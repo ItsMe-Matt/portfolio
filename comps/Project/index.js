@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 export default function Project({
     title = "Project 1",
+    type = "graphic designer",
     detail = "This worked well",
     img = "/projImg/cPTitle.png",
     route="/",
@@ -21,6 +22,10 @@ export default function Project({
         </Left>
         <Right>
             <TxtCont>
+                <TxtType>
+                    {type}
+                </TxtType>
+
                 <TxtHeader>
                     {title}
                 </TxtHeader>
@@ -40,6 +45,7 @@ const Container = styled.div`
     width: 75%;
     border: solid 1px black;
     border-radius: 1rem;
+    margin: 0.5rem;
 `
 
 const Left = styled.div`
@@ -58,6 +64,13 @@ border-radius: 1rem 0 0 1rem;
 `
 
 const TxtCont = styled.div`
+    padding: 1vh 0;
+`
+const TxtType = styled.p`
+font-family: Zilla Slab;
+font-size: 2vh;
+font-weight: 300;
+color: #000000;
 `
 
 const TxtHeader = styled.h1`
@@ -75,6 +88,5 @@ const TxtP = styled.p`
     font-weight: 300;
     line-height: 1.75;
     color: #606060;
-
 `
 
