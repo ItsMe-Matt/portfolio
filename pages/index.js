@@ -33,7 +33,7 @@ export default function Home() {
           title={UIProj[0].header}
           img={UIProj[0].titleImg}
           detail={UIProj[0].description}
-          route="/CompassPlus"
+          route={UIProj[0].route}
           />
         <Project 
           title={UIProj[1].header}
@@ -70,7 +70,7 @@ const Hero = styled.div`
 `
 const HeroH = styled.div`
   font-family: Zilla Slab;
-  font-size: 3.5rem;
+  font-size: 6vh;
   font-weight: 400;
   text-align: center;
   width: 80vw;
@@ -81,7 +81,7 @@ const HeroH = styled.div`
 const HeroP = styled.div`
   font-family: Roboto;
   font-weight: 100;
-  font-size: 32px;
+  font-size: 4vh;
   display: flex;
   width: 50vw;
   text-align: center;
@@ -98,4 +98,7 @@ const Content = styled.div`
   min-height: 100vh;
   background-color: #ffffff;
   padding-top: 9vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `

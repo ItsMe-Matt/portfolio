@@ -59,10 +59,10 @@ const NavCont = styled.div`
 `
 
 const NavBtn = styled.div`
-    padding: 0.1rem 0.5rem;
+    padding: 0.2rem 0.9rem;
     cursor: pointer;
     font-family: Roboto;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 300;
     border-bottom: 0.09rem solid #000000;
     margin: 0 0.5rem;

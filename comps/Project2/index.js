@@ -37,14 +37,15 @@ export default function Project({
 
 const Container = styled.div`
     display: flex;
+    padding:1rem 0rem;
     width: 75%;
-    border: solid 1px black;
-    border-radius: 1rem;
+    background-color: seagreen;
 `
 
 const Left = styled.div`
     width: 50%;
     margin-right: 0.5vw;
+    background-color: red;
 `
 const Right = styled.div`
     width: 50%;
@@ -54,7 +55,7 @@ const Right = styled.div`
 `
 const ImgCont = styled.div`
 overflow: hidden;
-border-radius: 1rem 0 0 1rem;
+border-radius: 1rem;
 `
 
 const TxtCont = styled.div`
@@ -65,13 +66,12 @@ const TxtHeader = styled.h1`
     font-family: Zilla Slab;
     font-weight: 500;
     padding: 0;
-    margin: 0;
-
+    margin: 0
 `
 
 const TxtP = styled.p`
     font-family: Roboto;
-    font-size: 1.25rem;
+    font-size: 100%;
     font-weight: 300;
     line-height: 1.75;
     color: #606060;
