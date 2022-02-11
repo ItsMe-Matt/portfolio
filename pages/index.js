@@ -21,7 +21,7 @@ export default function Home() {
         Hi, I’m Matt and I am an UI/UX designer and a frontend developer.
         </HeroH>
         <HeroP>
-        I am design and develep cross platform applications and solutions.
+        I design and develep cross platform applications and solutions.
         </HeroP>
         <Social />
         </RowCenter>
@@ -75,7 +75,7 @@ const HeroH = styled.div`
   font-size: 6vh;
   font-weight: 400;
   text-align: center;
-  width: 80vw;
+  max-width: 75vw;
   margin-bottom: 4vh;
   color: #122C5C;
 `
@@ -85,7 +85,7 @@ const HeroP = styled.div`
   font-weight: 100;
   font-size: 3.5vh;
   display: flex;
-  width: 50vw;
+  max-width: 50vw;
   text-align: center;
   margin-bottom: 4vh;
 `

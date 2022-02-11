@@ -45,7 +45,6 @@ export default function Project({
 }
 
 const Container = styled.div`
-
 display: flex;
 width: 75%;
 margin: 0.5rem;
@@ -67,7 +66,6 @@ background-color: ${(props)=>props.bgcolor}
 `
 
 const TxtCont = styled.div`
-
 `
 const TxtType = styled.p`
 font-family: Zilla Slab;
@@ -85,12 +83,10 @@ margin: 0;
 `
 
 const TxtP = styled.p`
-
 font-family: Roboto;
 font-size: 1.2vw;
 font-weight: 300;
 line-height: 1.75;
 color: #606060;
-
 `
 
