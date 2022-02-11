@@ -10,26 +10,29 @@ export default function Project2({
     img = "/projImg/testTitle2.png",
     route="/",
     bgcolor="#8a4825",
+    hOn=()=>{},
+    hOff=()=>{},
+    uColor="$8a4825",
 }) {
-    const [onHover, setOnHover] = useState(false)
-    console.log("test")
+   
 
     return <Link href={route}>
     <Container 
-
+        onMouseOver={hOn}
+        onMouseLeave={hOff}
     >
         <Left>
             <TxtCont>
                 <TxtType>
                     {type}
                 </TxtType>
-                <TxtHeader>
+                <TxtHeader uColor={uColor}>
                     {title}
                 </TxtHeader>
                 <TxtP>
                     {detail}
                 </TxtP>
-                <TxtBtn>
+                <TxtBtn uColor={uColor}>
                     View
                 </TxtBtn>
             </TxtCont>            
@@ -56,7 +59,7 @@ margin: 0.5rem;
 cursor: pointer;
 `
 const Left = styled.div`
-width: 45%;
+width: 55%;
 float: right;
 margin-right: 1vw;
 
@@ -64,13 +67,13 @@ display: flex;
 align-items: center;
 `
 const Right = styled.div`
-width: 55%;
+width: 45%;
 margin-left: 1vw; 
 `
 const ImgCont = styled.div`
 overflow: hidden;
 border-radius: 0.5rem;
-background-color: ${(props)=>props.bgcolor}
+background-color: ${(props)=>props.bgcolor};
 `
 const TxtCont = styled.div`
 `
@@ -83,7 +86,10 @@ margin: 0;
 margin-top: 2vh;
 color: #606060;
 `
-const TxtHeader = styled.p`
+const TxtHeader = styled.div`
+width: fit-content;
+
+
 font-size: 1.8vw;
 font-family: Poppins;
 font-weight: 700;
@@ -91,6 +97,12 @@ padding: 0;
 margin: 0;
 margin-top: 1vh;
 margin-bottom: 2vh;
+
+transition: 0.5s;  
+box-shadow: inset 0 -1vh 0.1vh 0 ${(props)=>props.uColor};
+
+border-bottom: -1vh solid black
+
 `
 const TxtP = styled.p`
 margin: 0;
@@ -100,14 +112,20 @@ font-weight: 300;
 line-height: 1.75;
 color: #606060;
 `
-const TxtBtn = styled.p`
+const TxtBtn = styled.div`
 margin: 0;
 margin-top: 2vh;
 
+width: fit-content;
+
 font-family: Poppins;
-font-size: 1.4vw;
+font-size: 1.2vw;
 font-weight: 700;
 line-height: 1.75;
 color: #000;
+
+transition: 0.5s;
+box-shadow: inset 0 -1vh 0.1vh 0 ${(props)=>props.uColor};
+
 `
 

@@ -4,16 +4,19 @@ import Link from 'next/link'
 export default function HeadNav() {
     return <HBar>
     <Container>
-        <HCont>
+        
         <Link href="/">
+        <HCont>
         <HTxt>
             Matthew Zhao, 
         </HTxt>
-        </Link>
         <HP>
             UI/UX Designer + Developer
         </HP>
         </HCont>
+        </Link>
+
+        
         
         <NavCont>
         <Link href="/#projects">
@@ -21,7 +24,17 @@ export default function HeadNav() {
             Project and Works
             </NavBtn> 
         </Link>
+
+        <Link href="/#projects">
+            <ConBtn>
+            Contact Me!
+            </ConBtn> 
+        </Link>
         </NavCont>
+
+        
+
+
     </Container>
     </HBar>
 }
@@ -51,8 +64,13 @@ const HTxt = styled.p`
     color: #122C5C;
     font-size: 3vh;
     padding: 0;
-    cursor: pointer;
+
     margin-right: 0.5vw;
+
+    &:hover {
+        color: royalblue;
+    }
+    
 `
 const HP = styled.p`
     font-family: Poppins;
@@ -66,15 +84,48 @@ const HCont = styled.div`
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    cursor: pointer;
 `
 
 
 const NavCont = styled.div`
     display: flex;
     flex-direction: row;
+    justify-content: baseline;
 `
 
 const NavBtn = styled.div`
+
+
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 2.2vh;
+    font-weight: 300;
+    padding: 1vh 1vw;
+    color: #000;
+
+    margin: 0 0.5rem;
+    
+    &:hover {
+
+        animation-name: box;
+        animation-duration: 4s;
+    }
+
+    @keyframes box {
+        0% {box-shadow: none}
+        25% {box-shadow: inset 0 0.1vh 0.1vh 0 #000}
+        50% {box-shadow: inset 0 0.1vh 0.1vh 0 #000, box-shadow: inset 0.1vh 0.1vh 0.1vh 0 #000}
+        75% {box-shadow: inset -0.1vh -0.1vh 0 0 #000, inset 0.1vh 0.1vh 0 0 #000}
+        100% {box-shadow: inset -0.1vh -0.1vh 0 0 #fff, inset 0.1vh 0.1vh 0 0 #fff}
+    }
+`
+/*
+transition: 0.5s;
+box-shadow: inset -0.1vh -0.1vh 0 0 #000, inset 0.1vh 0.1vh 0 0 #000;
+*/
+
+const ConBtn = styled.div`
 
     cursor: pointer;
     font-family: Roboto;
@@ -88,8 +139,8 @@ const NavBtn = styled.div`
     margin: 0 0.5rem;
     
     &:hover {
-        transition: 1s;
-        box-shadow: inset 0 -5vh 0 0 #2868de;
+        transition: 1.5s;
+        box-shadow: inset 8vw 0 0 0 #2868de;
         color: #ffffff;
     }
 `
