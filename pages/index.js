@@ -26,7 +26,8 @@ export default function Home() {
         <Social />
         </RowCenter>
       </Hero>
-      <Content id="projects"> 
+      <Content id="projects">
+        <ProjHead title="Project and Works"/>
         <Project 
           title={Proj[0].header}
           type={Proj[0].type}
@@ -48,6 +49,8 @@ export default function Home() {
           detail={Proj[2].description}
           route={Proj[2].route}
           />
+
+        <Project />
 
       </Content>
     </Container>
@@ -73,7 +76,7 @@ const HeroH = styled.div`
   font-weight: 400;
   text-align: center;
   width: 80vw;
-  margin-bottom: 2rem;
+  margin-bottom: 4vh;
   color: #122C5C;
 `
 
@@ -84,7 +87,7 @@ const HeroP = styled.div`
   display: flex;
   width: 50vw;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4vh;
 `
 const RowCenter = styled.div`
   display: flex;

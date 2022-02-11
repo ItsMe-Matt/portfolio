@@ -5,17 +5,17 @@ export default function ProjHead({
 }){
     return <div>
         <Container>
-            {title} Projects
+            {title}
         </Container>
     </div>
 }
 
 const Container = styled.div`
     border-bottom: 0.08rem solid #606060;
-    margin: 0 2rem;
     font-family: Zilla Slab;
     font-weight: 300;
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+    font-size: 2vw;
+    padding-bottom: 1vh;
+    margin-bottom: 1vh;
+    width: 75vw;
 `

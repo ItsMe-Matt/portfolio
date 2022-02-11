@@ -6,15 +6,15 @@ import styled from "styled-components"
 export default function Social(){
     return <Container>
         <IconA href="https://www.linkedin.com/in/mlzhao/" target="_blank">
-            <FaLinkedin size="56px" color='#2867B2'/>
+            <FaLinkedin size="7vh" color='#2867B2'/>
         </IconA>
         
         <IconA href="https://github.com/ItsMe-Matt" target="_blank">
-            <FaGithubSquare size="56px"/>
+            <FaGithubSquare size="7vh"/>
         </IconA>
 
         <IconC>
-            <MdOutlineEmail size="56px" />
+            <MdOutlineEmail size="7vh" />
         </IconC>
 
     </Container>

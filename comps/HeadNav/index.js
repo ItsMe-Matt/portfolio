@@ -2,7 +2,8 @@ import styled from 'styled-components'
 import Link from 'next/link'
 
 export default function HeadNav() {
-    return <Container>
+    return <HBar>
+    <Container>
         <Link href="/">
         <HTxt>
             Matthew Zhao
@@ -17,40 +18,40 @@ export default function HeadNav() {
         </Link>
         </NavCont>
     </Container>
+    </HBar>
 }
+
+const HBar = styled.div`
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 9vh;
+    background-color: #ffffff;
+    box-shadow: 0 1vh 2vh #fff;
+`
 
 const Container = styled.div`
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-
-    position: sticky;
-    top: 0;
-    padding: 0 2rem;
-    margin: 0;
-    width: 100%;
-    height: 9vh;
-    z-index: 1;
-
-    background-color: #ffffff;
-    box-shadow: 0 1vh 2vh #fff;
-
-
+    width: 75%;
 `
 
 const HTxt = styled.h1`
     font-family: Zilla Slab;
-    font-weight: bold;
+    font-weight: 700;
     color: #122C5C;
-    font-size: 2rem;
+    font-size: 4.2vh;
     padding: 0;
     cursor: pointer;
 
     &:hover {
-        transition: 0s;
-        color: #2b76ff;
-    }
+
+        color: #3073f0;
+
 `
 //transition: 2s;
 
@@ -63,7 +64,7 @@ const NavBtn = styled.div`
     padding: 0.2rem 0.9rem;
     cursor: pointer;
     font-family: Roboto;
-    font-size: 1.3rem;
+    font-size: 2.5vh;
     font-weight: 300;
     border-bottom: 0.09rem solid #000000;
     margin: 0 0.5rem;
