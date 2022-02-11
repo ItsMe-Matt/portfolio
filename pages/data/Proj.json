@@ -10,7 +10,7 @@
     {
         "header": "Actualize",
         "type" : "UI/UX Design",
-        "titleImg": "/projImg/actualizeTitle.png",
+        "titleImg": "/projImg/ActualizeTitle.png",
         "description": "Actualize is a product designed to work in conjunction with WorkBC. It is an application that will connect those who are in need with financial advisors and career advisors to help those who are trying to get on their feet again.",
         "route": "/CompassPlus",
         "color": "#a1f7cb"
