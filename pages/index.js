@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
 import styled from 'styled-components'
 
 import HeadNav from '../comps/HeadNav'
 import Project from "../comps/Project";
+import Project2 from "../comps/Project2";
 import ProjHead from "../comps/ProjHead";
 import Social from '../comps/Social'
 
@@ -10,7 +10,6 @@ import Proj from "./data/Proj.json"
 
 
 export default function Home() {
-  const [showModal, setShowModal] = useState(false);
 
   return (<div>
     <Container>
@@ -21,7 +20,7 @@ export default function Home() {
         Hi, I’m Matt and I am an UI/UX designer and a frontend developer.
         </HeroH>
         <HeroP>
-        I design and develep cross platform applications and solutions.
+        I design and develop cross platform applications and solutions.
         </HeroP>
         <Social />
         </RowCenter>
@@ -35,7 +34,7 @@ export default function Home() {
           detail={Proj[0].description}
           route={Proj[0].route}
           />
-        <Project 
+        <Project2
           title={Proj[1].header}
           type={Proj[1].type}
           img={Proj[1].titleImg}
@@ -50,9 +49,10 @@ export default function Home() {
           route={Proj[2].route}
           />
 
-        <Project />
+        <Project2 />
 
       </Content>
+      <Content />
     </Container>
     </div>)
 }
@@ -63,7 +63,6 @@ cursor: context-menu
 const Hero = styled.div`
   background-color: #fff;
   height: 91vh;
-  padding-top: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +70,7 @@ const Hero = styled.div`
 //box-shadow: 0 0.25rem 1rem #909090 inset;
 
 const HeroH = styled.div`
-  font-family: Zilla Slab;
+  font-family: Poppins;
   font-size: 6vh;
   font-weight: 400;
   text-align: center;
@@ -82,7 +81,7 @@ const HeroH = styled.div`
 
 const HeroP = styled.div`
   font-family: Roboto;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 3.5vh;
   display: flex;
   max-width: 50vw;
@@ -98,7 +97,7 @@ const RowCenter = styled.div`
 
 const Content = styled.div`
   min-height: 100vh;
-  background-color: #FFFAF5;
+  background-color: #e8f7ff;
   padding-top: 9vh;
   display: flex;
   flex-direction: column;

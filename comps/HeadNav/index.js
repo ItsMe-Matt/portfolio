@@ -4,11 +4,16 @@ import Link from 'next/link'
 export default function HeadNav() {
     return <HBar>
     <Container>
+        <HCont>
         <Link href="/">
         <HTxt>
-            Matthew Zhao
+            Matthew Zhao, 
         </HTxt>
         </Link>
+        <HP>
+            UI/UX Designer + Developer
+        </HP>
+        </HCont>
         
         <NavCont>
         <Link href="/#projects">
@@ -33,7 +38,6 @@ const HBar = styled.div`
 `
 
 const Container = styled.div`
-    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -42,18 +46,28 @@ const Container = styled.div`
 `
 
 const HTxt = styled.p`
-    font-family: Zilla Slab;
+    font-family: Poppins;
     font-weight: 500;
     color: #122C5C;
-    font-size: 3.5vh;
+    font-size: 3vh;
     padding: 0;
     cursor: pointer;
-
-    &:hover {
-        color: #3073f0;
+    margin-right: 0.5vw;
+`
+const HP = styled.p`
+    font-family: Poppins;
+    font-weight: 300;
+    color: #122C5C;
+    font-size: 2vh;
+    padding: 0;
 
 `
-//transition: 2s;
+const HCont = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+`
+
 
 const NavCont = styled.div`
     display: flex;
@@ -61,17 +75,21 @@ const NavCont = styled.div`
 `
 
 const NavBtn = styled.div`
-    padding: 0.2rem 0.9rem;
+
     cursor: pointer;
     font-family: Roboto;
-    font-size: 2vh;
+    font-size: 2.2vh;
     font-weight: 300;
-    border-bottom: 0.09rem solid #000000;
+    padding: 1vh 1vw;
+    border-radius: 3rem;
+    background-color: blue;
+    color: #fff;
+
     margin: 0 0.5rem;
     
     &:hover {
         transition: 1s;
-        box-shadow: inset 0 -2rem 0 0 #2868de;
+        box-shadow: inset 0 -5vh 0 0 #2868de;
         color: #ffffff;
     }
 `

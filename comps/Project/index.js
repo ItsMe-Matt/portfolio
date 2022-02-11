@@ -11,10 +11,7 @@ export default function Project({
     route="/",
     bgcolor="#a1f7cb",
 }) {
-    const [onObj, setOnObj] = useState(false)
-    
-    if (onObj === false) {
-        return <Link href={route}>
+    return <Link href={route}>
     <Container>
         <Left>
             <ImgCont bgcolor={bgcolor}>
@@ -41,23 +38,23 @@ export default function Project({
 
     </Container>
     </Link> 
-    } 
+
 }
 
 const Container = styled.div`
 display: flex;
-width: 75%;
+width: 70%;
 margin: 0.5rem;
+justify-content: space-between;
 `
 
 const Left = styled.div`
-width: 60%;
-margin-right: 0.9vw;
+width: 50%;
+margin-right: 1vw;
 `
 const Right = styled.div`
-width: 40%;
-float: right;
-margin-left: 0.9vw;    
+width: 50%;
+margin-left: 1vw; 
 `
 const ImgCont = styled.div`
 overflow: hidden;
@@ -68,21 +65,27 @@ background-color: ${(props)=>props.bgcolor}
 const TxtCont = styled.div`
 `
 const TxtType = styled.p`
-font-family: Zilla Slab;
-font-size: 1.5vw;
+font-family: Poppins;
+font-size: 1.2vw;
 font-weight: 300;
 color: #000000;
+margin: 0;
+margin-top: 2vh;
+color: #606060;
 `
 
 const TxtHeader = styled.p`
-font-size: 2vw;
-font-family: Zilla Slab;
+font-size: 1.7vw;
+font-family: Poppins;
 font-weight: 700;
 padding: 0;
 margin: 0;
+margin-top: 1vh;
+margin-bottom: 2vh;
 `
 
 const TxtP = styled.p`
+margin: 0;
 font-family: Roboto;
 font-size: 1.2vw;
 font-weight: 300;

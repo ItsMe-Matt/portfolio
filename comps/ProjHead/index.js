@@ -11,8 +11,8 @@ export default function ProjHead({
 }
 
 const Container = styled.div`
-    border-bottom: 0.08rem solid #606060;
-    font-family: Zilla Slab;
+    border-bottom: 0.08rem solid #999999;
+    font-family: Poppins;
     font-weight: 300;
     font-size: 1.5vw;
     padding-bottom: 1vh;
