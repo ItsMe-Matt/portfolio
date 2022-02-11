@@ -42,39 +42,49 @@ export default function Project({
 
 const Container = styled.div`
     display: flex;
-    width: 75%;
+    width: 60%;
     border: solid 1px black;
     border-radius: 1rem;
     margin: 0.5rem;
+    background-color: #ffffff;
+
+    &:hover {
+        transition: 0.5s;
+        width: 75%;
+        
+        
+    }
+
 `
 
 const Left = styled.div`
-    width: 50%;
+    width: 60%;
     margin-right: 0.5vw;
 `
 const Right = styled.div`
-    width: 50%;
+    width: 30%;
     float: right;
     margin-left: 0.5vw;
     
 `
 const ImgCont = styled.div`
-overflow: hidden;
-border-radius: 1rem 0 0 1rem;
+    overflow: hidden;
+    border-radius: 1rem 0 0 1rem;
 `
 
 const TxtCont = styled.div`
     padding: 1vh 0;
+    width: 26vw;
 `
 const TxtType = styled.p`
-font-family: Zilla Slab;
-font-size: 2vh;
-font-weight: 300;
-color: #000000;
+    font-family: Zilla Slab;
+    font-size: 2vh;
+    font-weight: 300;
+    color: #000000;
 `
 
 const TxtHeader = styled.h1`
-    font-size: 3vh;
+    font-size: 2rem;
     font-family: Zilla Slab;
     font-weight: 500;
     padding: 0;
@@ -84,7 +94,7 @@ const TxtHeader = styled.h1`
 
 const TxtP = styled.p`
     font-family: Roboto;
-    font-size: 1.25rem;
+    font-size: 100;
     font-weight: 300;
     line-height: 1.75;
     color: #606060;
