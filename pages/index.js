@@ -123,13 +123,17 @@ const RowCenter = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+
 `
 
 const Content = styled.div`
   min-height: 100vh;
-  background-color: #e8f7ff;
-  padding-top: 9vh;
+  background-color: #f7faff;
+  padding: 3vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  box-shadow: 0 2vh 5vh #fff inset
 `

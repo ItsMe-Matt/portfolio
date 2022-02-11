@@ -61,19 +61,20 @@ cursor: pointer;
 const Left = styled.div`
 width: 55%;
 float: right;
-margin-right: 1vw;
+margin-right: 3vw;
 
 display: flex;
 align-items: center;
 `
 const Right = styled.div`
 width: 45%;
-margin-left: 1vw; 
+margin-left: 3vw; 
 `
 const ImgCont = styled.div`
 overflow: hidden;
 border-radius: 0.5rem;
 background-color: ${(props)=>props.bgcolor};
+box-shadow: 0 0.5vh 0.2vh #adadad;
 `
 const TxtCont = styled.div`
 `
@@ -99,15 +100,14 @@ margin-top: 1vh;
 margin-bottom: 2vh;
 
 transition: 0.5s;  
-box-shadow: inset 0 -1vh 0.1vh 0 ${(props)=>props.uColor};
+box-shadow: inset 0 -0.7vh ${(props)=>props.uColor};
 
-border-bottom: -1vh solid black
 
 `
 const TxtP = styled.p`
 margin: 0;
 font-family: Roboto;
-font-size: 1vw;
+font-size: 1.1vw;
 font-weight: 300;
 line-height: 1.75;
 color: #606060;
@@ -115,6 +115,7 @@ color: #606060;
 const TxtBtn = styled.div`
 margin: 0;
 margin-top: 2vh;
+padding-bottom: 0;
 
 width: fit-content;
 
@@ -125,7 +126,6 @@ line-height: 1.75;
 color: #000;
 
 transition: 0.5s;
-box-shadow: inset 0 -1vh 0.1vh 0 ${(props)=>props.uColor};
-
+box-shadow: inset 0 -0.7vh ${(props)=>props.uColor};
 `
 

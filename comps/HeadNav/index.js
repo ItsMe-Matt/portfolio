@@ -109,16 +109,16 @@ const NavBtn = styled.div`
     &:hover {
 
         animation-name: box;
-        animation-duration: 2s;
+        animation-duration: 4s;
         animation-iteration-count: infinite;
     }
 
     @keyframes box {
-        0% {box-shadow: none}
-        25% {box-shadow: inset 0 0.1vh 0.1vh 0 #000}
-        50% {box-shadow: inset 0 0.1vh 0.1vh 0 #000, box-shadow: inset 0.1vh 0.1vh 0.1vh 0 #000}
-        75% {box-shadow: inset -0.1vh -0.1vh 0 0 #000, inset 0.1vh 0.1vh 0 0 #000}
-        100% {box-shadow: inset -0.1vh -0.1vh 0 0 #fff, inset 0.1vh 0.1vh 0 0 #fff}
+        20% {box-shadow: inset 0 0.1vh #000}
+        40% {box-shadow: inset -0.1vh 0.1vh #000}
+        60% {box-shadow: inset -0.1vh 0.1vh #000, inset 0 -0.1vh #000}
+        80% {box-shadow: inset -0.1vh 0.1vh #000, inset 0.1vh -0.1vh #000}
+        100% {box-shadow: inset -0.1vh 0.1vh #fff, inset 0.1vh -0.1vh #fff}
     }
 `
 /*
@@ -134,14 +134,14 @@ const ConBtn = styled.div`
     font-weight: 300;
     padding: 1vh 1vw;
     border-radius: 3rem;
-    background-color: blue;
+    background-color: #2868de;
     color: #fff;
 
     margin: 0 0.5rem;
     
     &:hover {
         transition: 1.5s;
-        box-shadow: inset 8vw 0 0 0 #2868de;
-        color: #ffffff;
+        box-shadow: inset 8vw 0 0 0 #00d45c;
+        color: #fff;
     }
 `
