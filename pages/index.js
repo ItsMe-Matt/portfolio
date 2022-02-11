@@ -45,6 +45,8 @@ export default function Home() {
           detail={Proj[0].description}
           />
 
+        <Project />
+
       </Content>
     </Container>
     </div>)
@@ -69,7 +71,7 @@ const HeroH = styled.div`
   font-weight: 400;
   text-align: center;
   width: 80vw;
-  margin-bottom: 2rem;
+  margin-bottom: 4vh;
   color: #122C5C;
 `
 
@@ -80,7 +82,7 @@ const HeroP = styled.div`
   display: flex;
   width: 50vw;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4vh;
 `
 const RowCenter = styled.div`
   display: flex;

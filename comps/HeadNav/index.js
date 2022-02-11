@@ -43,7 +43,7 @@ const HTxt = styled.h1`
     font-family: Zilla Slab;
     font-weight: bold;
     color: #122C5C;
-    font-size: 2rem;
+    font-size: 4.2vh;
     padding: 0;
     cursor: pointer;
 
@@ -61,7 +61,7 @@ const NavBtn = styled.div`
     padding: 0.2rem 0.9rem;
     cursor: pointer;
     font-family: Roboto;
-    font-size: 1.3rem;
+    font-size: 2.5vh;
     font-weight: 300;
     border-bottom: 0.09rem solid #000000;
     margin: 0 0.5rem;
