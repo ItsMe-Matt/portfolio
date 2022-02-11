@@ -26,7 +26,8 @@ export default function Home() {
         <Social />
         </RowCenter>
       </Hero>
-      <Content id="projects"> 
+      <Content id="projects">
+        <ProjHead title="Project and Works"/>
         <Project 
           title={Proj[0].header}
           type={Proj[0].type}

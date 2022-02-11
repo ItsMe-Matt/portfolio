@@ -12,8 +12,6 @@ export default function Project({
     bgcolor="#a1f7cb",
 }) {
     const [onObj, setOnObj] = useState(false)
-
-    console.log(onObj)
     
     if (onObj === false) {
         return <Link href={route}>
