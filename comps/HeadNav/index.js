@@ -3,8 +3,7 @@ import Link from 'next/link'
 
 export default function HeadNav() {
     return <HBar>
-    <Container>
-        
+    <Container>  
         <Link href="/">
         <HCont>
         <HTxt>
@@ -16,8 +15,6 @@ export default function HeadNav() {
         </HCont>
         </Link>
 
-        
-        
         <NavCont>
         <Link href="/#projects">
             <NavBtn>
@@ -31,10 +28,6 @@ export default function HeadNav() {
             </ConBtn> 
         </Link>
         </NavCont>
-
-        
-
-
     </Container>
     </HBar>
 }
@@ -95,8 +88,6 @@ const NavCont = styled.div`
 `
 
 const NavBtn = styled.div`
-
-
     cursor: pointer;
     font-family: Roboto;
     font-size: 2.2vh;
@@ -109,7 +100,7 @@ const NavBtn = styled.div`
     &:hover {
 
         animation-name: box;
-        animation-duration: 4s;
+        animation-duration: 3s;
         animation-iteration-count: infinite;
     }
 
@@ -121,10 +112,6 @@ const NavBtn = styled.div`
         100% {box-shadow: inset -0.1vh 0.1vh #fff, inset 0.1vh -0.1vh #fff}
     }
 `
-/*
-transition: 0.5s;
-box-shadow: inset -0.1vh -0.1vh 0 0 #000, inset 0.1vh 0.1vh 0 0 #000;
-*/
 
 const ConBtn = styled.div`
 
@@ -141,7 +128,7 @@ const ConBtn = styled.div`
     
     &:hover {
         transition: 1.5s;
-        box-shadow: inset 8vw 0 0 0 #00d45c;
+        box-shadow: inset 10vw 0 0 0 #00d45c;
         color: #fff;
     }
 `
