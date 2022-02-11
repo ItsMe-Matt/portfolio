@@ -33,8 +33,6 @@ export default function Home() {
           img={Proj[0].titleImg}
           detail={Proj[0].description}
           route={Proj[0].route}
-
-
           />
         <Project2
           title={Proj[1].header}
@@ -51,8 +49,6 @@ export default function Home() {
           detail={Proj[2].description}
           route={Proj[2].route}
           />
-
-        <Project2 />
 
       </Content>
       <Content />
