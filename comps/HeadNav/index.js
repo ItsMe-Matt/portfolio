@@ -109,7 +109,8 @@ const NavBtn = styled.div`
     &:hover {
 
         animation-name: box;
-        animation-duration: 4s;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
     }
 
     @keyframes box {
