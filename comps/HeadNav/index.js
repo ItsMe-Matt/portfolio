@@ -46,6 +46,10 @@ const HTxt = styled.h1`
     font-size: 2rem;
     padding: 0;
     cursor: pointer;
+
+    &:hover {
+        color: #3073f0;
+    }
 `
 
 const NavCont = styled.div`
