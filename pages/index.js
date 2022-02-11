@@ -33,6 +33,8 @@ export default function Home() {
           img={Proj[0].titleImg}
           detail={Proj[0].description}
           route={Proj[0].route}
+
+
           />
         <Project2
           title={Proj[1].header}
@@ -40,6 +42,7 @@ export default function Home() {
           img={Proj[1].titleImg}
           detail={Proj[1].description}
           route={Proj[1].route}
+          bgcolor={Proj[1].color}
           />
         <Project 
           title={Proj[2].header}

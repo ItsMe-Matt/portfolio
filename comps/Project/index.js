@@ -43,7 +43,7 @@ export default function Project({
 
 const Container = styled.div`
 display: flex;
-width: 70%;
+width: 60%;
 margin: 0.5rem;
 justify-content: space-between;
 `
