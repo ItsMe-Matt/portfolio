@@ -45,6 +45,7 @@ export default function Project({
 }
 
 const Container = styled.div`
+
 display: flex;
 width: 75%;
 margin: 0.5rem;
@@ -81,14 +82,15 @@ font-family: Zilla Slab;
 font-weight: 700;
 padding: 0;
 margin: 0;
-
 `
 
 const TxtP = styled.p`
+
 font-family: Roboto;
 font-size: 1.2vw;
 font-weight: 300;
 line-height: 1.75;
 color: #606060;
+
 `
 

@@ -10,7 +10,6 @@ export default function HeadNav() {
         </HTxt>
         </Link>
         
-        
         <NavCont>
         <Link href="/#projects">
             <NavBtn>
@@ -30,6 +29,7 @@ const HBar = styled.div`
     z-index: 1;
     height: 9vh;
     background-color: #ffffff;
+    box-shadow: 0 1vh 2vh #fff;
 `
 
 const Container = styled.div`
@@ -37,7 +37,6 @@ const Container = styled.div`
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-
     width: 75%;
 `
 
@@ -50,9 +49,11 @@ const HTxt = styled.h1`
     cursor: pointer;
 
     &:hover {
+
         color: #3073f0;
-    }
+
 `
+//transition: 2s;
 
 const NavCont = styled.div`
     display: flex;
