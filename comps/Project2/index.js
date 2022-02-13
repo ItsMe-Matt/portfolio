@@ -74,7 +74,7 @@ const ImgCont = styled.div`
 overflow: hidden;
 border-radius: 0.5rem;
 background-color: ${(props)=>props.bgcolor};
-box-shadow: 0 0.5vh 0.2vh #adadad;
+box-shadow: 0 0.5vh 0.3vh #adadad;
 `
 const TxtCont = styled.div`
 `
