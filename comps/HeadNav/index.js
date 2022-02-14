@@ -100,7 +100,7 @@ const NavBtn = styled.div`
     &:hover {
 
         animation-name: box;
-        animation-duration: 3s;
+        animation-duration: 2.5s;
         animation-iteration-count: infinite;
     }
 

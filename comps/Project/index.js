@@ -14,7 +14,7 @@ export default function Project({
     hOff=()=>{},
     uColor="$8a4825",
 }) {
-    console.log(img)
+   
 
     return <Link href={route}>
     <Container 
@@ -28,10 +28,10 @@ export default function Project({
                 height={1440}
                 layout='responsive'
                 />
-            </ImgCont> 
+            </ImgCont>  
         </Left>
         <Right>
-        <TxtCont>
+            <TxtCont>
                 <TxtType>
                     {type}
                 </TxtType>
@@ -44,13 +44,15 @@ export default function Project({
                 <TxtBtn uColor={uColor}>
                     View
                 </TxtBtn>
-            </TxtCont>   
+            </TxtCont>         
         </Right>
+
+            
 
     </Container>
     </Link> 
+} 
 
-}
 
 const Container = styled.div`
 display: flex;
@@ -59,16 +61,16 @@ margin: 0.5rem;
 cursor: pointer;
 `
 const Left = styled.div`
+width: 45%;
+margin-right: 3vw; 
+`
+const Right = styled.div`
 width: 55%;
 float: right;
-margin-right: 3vw;
+margin-left: 3vw;
 
 display: flex;
 align-items: center;
-`
-const Right = styled.div`
-width: 45%;
-margin-left: 3vw; 
 `
 const ImgCont = styled.div`
 overflow: hidden;
@@ -86,6 +88,7 @@ color: #000000;
 margin: 0;
 margin-top: 2vh;
 color: #606060;
+text-align: right;
 `
 const TxtHeader = styled.div`
 width: fit-content;
@@ -99,7 +102,7 @@ margin: 0;
 margin-top: 1vh;
 margin-bottom: 2vh;
 
-transition: 0.5s;  
+transition: 1s;  
 box-shadow: inset 0 -0.7vh ${(props)=>props.uColor};
 
 

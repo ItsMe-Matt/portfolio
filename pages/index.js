@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import styled from 'styled-components'
+import Image from 'next/image';
 
+import ContactUI from '../comps/ContactUI';
 import HeadNav from '../comps/HeadNav'
 import Project from "../comps/Project";
 import Project2 from "../comps/Project2";
@@ -81,6 +83,7 @@ export default function Home() {
 
       </Content>
       <Content>
+        <ContactUI />
       </Content>
     </Container>
     </div>)
@@ -123,8 +126,6 @@ const RowCenter = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-
 `
 
 const Content = styled.div`

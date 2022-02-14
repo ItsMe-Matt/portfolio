@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
 
+
 export default function Project2({
     title = "Project 1",
     type = "graphic design",
@@ -125,7 +126,7 @@ font-weight: 700;
 line-height: 1.75;
 color: #000;
 
-transition: 0.5s;
+transition: 1s;
 box-shadow: inset 0 -0.7vh ${(props)=>props.uColor};
 `
 
