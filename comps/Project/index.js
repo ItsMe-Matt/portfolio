@@ -88,7 +88,7 @@ color: #000000;
 margin: 0;
 margin-top: 2vh;
 color: #606060;
-text-align: right;
+
 `
 const TxtHeader = styled.div`
 width: fit-content;
