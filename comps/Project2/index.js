@@ -108,7 +108,7 @@ box-shadow: inset 0 -0.7vh ${(props)=>props.uColor};
 const TxtP = styled.p`
 margin: 0;
 font-family: Roboto;
-font-size: 1.1vw;
+font-size: 1.3vw;
 font-weight: 300;
 line-height: 1.75;
 color: #606060;

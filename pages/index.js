@@ -83,6 +83,7 @@ export default function Home() {
 
       </Content>
       <Content>
+        <ProjHead title='Contact Me' />
         <ContactUI />
       </Content>
     </Container>
