@@ -42,26 +42,45 @@ const Container = styled.div`
     display: flex;
     width: fit-content;
     flex-direction: row;
-    background-color: pink;
 `
 
 const IconA = styled.a`
     padding: 0.35vh;
     box-shadow: 0 -0.3vh #122c5c inset;
     margin-right: 2vh;
+
+&:hover {
+    transition: 0.25s;
+    border-radius: 1vh;
+    border: 0.3vh solid #2868de;
+}
 `
 const IconC = styled.div`
     padding: 0.35vh;
     box-shadow: 0 -0.3vh #122c5c inset;
+
+    &:hover {
+        transition: 0.25s;
+        border-radius: 1vh;
+        border: 0.3vh solid #2868de;
+    }
 `
 const IconAW = styled.a`
 padding: 0.35vh;
 box-shadow: 0 -0.3vh #122c5c inset;
 margin-right: 0.75vw;
+
+&:hover {
+    transition: 0.25s;
+    border-radius: 1vh;
+    border: 0.3vh solid #2868de;
+}
 `
 
 const ContainerW = styled.div`
     display: flex;
     width: fit-content;
     flex-direction: row;
+
+    
 `
