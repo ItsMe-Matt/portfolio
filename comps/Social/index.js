@@ -3,42 +3,65 @@ import { MdOutlineEmail } from "react-icons/md"
 import styled from "styled-components"
 
 
-export default function Social(){
-    return <Container>
-        <IconA href="https://www.linkedin.com/in/mlzhao/" target="_blank">
-            <FaLinkedin size="6vh" color='#2867B2'/>
-        </IconA>
-        
-        <IconA href="https://github.com/ItsMe-Matt" target="_blank">
-            <FaGithubSquare size="6vh"/>
-        </IconA>
+export default function Social({
+    type="1"
+}){
+    if (type === "1") {
+        return <Container>
+            <IconA href="https://www.linkedin.com/in/mlzhao/" target="_blank">
+                <FaLinkedin size="6vh" color='#2867B2'/>
+            </IconA>
 
-        <IconC>
-            <MdOutlineEmail size="6vh" />
-        </IconC>
+            <IconA href="https://github.com/ItsMe-Matt" target="_blank">
+                <FaGithubSquare size="6vh"/>
+            </IconA>
 
-    </Container>
+            <IconC>
+                <MdOutlineEmail size="6vh" />
+            </IconC>
+        </Container>
+    } else if (type === "2") {
+        return <ContainerW>
+            <IconAW href="https://www.linkedin.com/in/mlzhao/" target="_blank">
+                <FaLinkedin size="2vw" color='#2867B2'/>
+            </IconAW>
+
+            <IconAW href="https://github.com/ItsMe-Matt" target="_blank">
+                <FaGithubSquare size="2vw"/>
+            </IconAW>
+
+            <IconC>
+                <MdOutlineEmail size="2vw" />
+            </IconC>
+        </ContainerW>
+    }
+    
 }
 
 const Container = styled.div`
     display: flex;
     width: fit-content;
     flex-direction: row;
+    background-color: pink;
 `
 
 const IconA = styled.a`
-    border-radius: 1vh;
     padding: 0.35vh;
-    margin: 0.35vh;
-    box-shadow: 0 0.25vh 0.25vh #909090;
-    background-color: #f5f5f5;
-
+    box-shadow: 0 -0.3vh #122c5c inset;
+    margin-right: 2vh;
 `
 const IconC = styled.div`
-    border-radius: 1vh;
     padding: 0.35vh;
-    background-color: #f5f5f5;
-    margin: 0.35vh;
-    box-shadow: 0 0.25vh 0.25vh #909090;
+    box-shadow: 0 -0.3vh #122c5c inset;
 `
-//    
+const IconAW = styled.a`
+padding: 0.35vh;
+box-shadow: 0 -0.3vh #122c5c inset;
+margin-right: 0.75vw;
+`
+
+const ContainerW = styled.div`
+    display: flex;
+    width: fit-content;
+    flex-direction: row;
+`

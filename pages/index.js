@@ -82,10 +82,9 @@ export default function Home() {
           />
 
       </Content>
-      <Content>
-        <ProjHead title='Contact Me' />
+      <FooterArea>
         <ContactUI />
-      </Content>
+      </FooterArea>
     </Container>
     </div>)
 }
@@ -138,4 +137,11 @@ const Content = styled.div`
   align-items: center;
 
   box-shadow: 0 2vh 5vh #fff inset
+`
+
+const FooterArea = styled.div`
+  padding: 5vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `

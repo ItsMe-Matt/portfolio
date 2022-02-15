@@ -1,5 +1,6 @@
 
 import styled from "styled-components"
+import Social from "../Social";
 
 
 export default function ContactUI({
@@ -9,91 +10,178 @@ export default function ContactUI({
     onSubmitPress=()=>{}
 }) {
     return <Container>
+
+        <Row1>
         <Left>
             <LHead>
-                Work with me!
+                I'd love to hear from you
             </LHead>
+
+
 
         </Left>
 
         <Right>
-            <form onSubmit={()=>{console.log("hey there bud");event.preventDefault()}}>
-               <Row>
-               <Cont>
-                   <Label>Name:</Label>
-                   <PInput type="text" id="name"></PInput>
-               </Cont>
-
-               <Cont>
-                   <Label>Email:</Label>
-                   <PInput type="text" id="email"></PInput>
-               </Cont>
-               </Row>
-               
-
-              <Cont>
-                   <Label>Message:</Label>
-                   <MInput type="text" id="message"></MInput>
-              </Cont>
-
-               <input type="submit"></input>
-            </form>
-
+            <RHead>
+                Say hello!
+            </RHead>
         </Right>
+
+        </Row1>
+       
+
+       <Row2>
+
+        <Left>
+            <Line />
+            <Social type="2"/>
+        </Left>
+
+        <Right>
+            <form onSubmit={()=>{console.log("hey there bud");event.preventDefault()}}>
+                <RRow>
+                    <Cont1>
+                        <Label>Name:</Label>
+                        <PInput type="text" id="name" placeholder="Enter Your Name"></PInput>
+                    </Cont1> 
+                    <Cont2>
+                        <Label>Subject:</Label>
+                        <PInput type="text" id="email" placeholder="Enter Your Subject"></PInput>
+                    </Cont2>
+                </RRow>
+
+                <RRow>
+                    <Cont1>
+                        <Label>Company:</Label>
+                        <PInput type="text" id="Company" placeholder="Enter Company"></PInput>
+                    </Cont1> 
+                    <Cont2>
+                        <Label>Email:</Label>
+                        <PInput type="email" id="email" placeholder="Enter Your Email Address"></PInput>
+                    </Cont2>
+                </RRow>
+               
+                <Label>Message:</Label>
+                <MInput type="text" id="message" placeholder="Enter Your Message Here"></MInput>
+
+                <SRow>
+                    <SubmitBtn type="submit" />
+                </SRow>
+            </form>
+        </Right>
+
+       </Row2>
+            
     </Container>
 }
 
 
 const Container = styled.div`
 display: flex;
-
 width: 75vw;
+flex-direction: column;
+`
+const Row1 = styled.div`
+display: flex;
+align-items: baseline;
+`
+
+const Row2 = styled.div`
+display: flex;
 
 `
+
 const Left = styled.div`
-width: 50%
+width: 50%;
+display: flex; 
+flex-direction: column;
+justify-content: space-between;
 `
 
 const Right = styled.div`
 width: 50%;
-background-color: red;
 `
-const LHead = styled.h1`
+
+const Line = styled.div`
+height: 0.25vh;
+background-color: #122c5c;
+width: 50%;
+`
+const LHead = styled.p`
 font-family: Poppins;
 font-weight: 300;
-font-size: 3vw;
+font-size: 2.5vw;
+margin: 0;
+color: #122c5c;
+`
+
+const RHead = styled.div`
+font-family: Roboto;
+font-size: 2.5vh;
+font-weight: 300;
+
+margin-bottom: 3vh;
 `
 
 const Label = styled.p`
-font-family: Poppins
+font-family: Poppins;
+font-weight: 500;
 `
 
-const Row = styled.div`
+const RRow = styled.div`
 display: flex;
 `
 
-const Cont = styled.div`
-margin: 1vh;
+
+
+const Cont1 = styled.div`
+margin-right: 2vh;
+width: 50%;
+`
+
+const Cont2 = styled.div`
+width: 50%;
 `
 
 const PInput = styled.input`
-width: 24%;
-padding: 1vh 1vw;
+width: 100%;
 outline: none;
 
 background-color: transparent;
-
 border: none;
-border-bottom: 0.2vh #737373 solid;
+
+font-family: Roboto;
+font-size: 1.6vh;
+
+&:focus {
+    border-bottom: 0.2vh #737373 solid;
+}
 `
 
-const MInput = styled.input`
+const MInput = styled.textarea`
 width: 100%;
-padding: 1vh 1vw;
 outline: none;
 
 background-color: transparent;
-
 border: none;
+
+font-family: Roboto;
+font-size: 1.6vh;
+resize: none;
+height: 10vh;
+
 border-bottom: 0.2vh #737373 solid;
+`
+const SRow = styled.div`
+display: flex;
+justify-content: flex-end;
+`
+const SubmitBtn = styled.input`
+border: none;
+border-radius: 100vh;
+padding: 1.5vh 3vh;
+
+font-family: Poppins;
+margin-top: 1vh;
+
 `
