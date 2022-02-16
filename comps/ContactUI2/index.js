@@ -35,7 +35,7 @@ export default function ContactUI2({
                     onMouseLeave={onS1Off}
                     >
                     <IconCont>
-                        <FaLinkedin size="2.25vw" color='#2867B2'/>
+                        <FaLinkedin size="2vw" color='#2867B2'/>
                     </IconCont>
                     
                     <Hid S1D={S1D}>
@@ -49,7 +49,7 @@ export default function ContactUI2({
                     onMouseOver={onS2Over}
                     onMouseLeave={onS2Off}>
                     <IconCont>
-                        <FaGithubSquare size="2.25vw"/>
+                        <FaGithubSquare size="2vw"/>
                     </IconCont>
                     <Hid2 S2D={S2D}>
                         /ItsMe-Matt    
@@ -63,7 +63,7 @@ export default function ContactUI2({
                     onMouseLeave={onS3Off}
                     >
                     <IconCont>
-                        <MdOutlineEmail size="2.25vw" />
+                        <MdOutlineEmail size="2vw" />
                     </IconCont>
                     <Hid3 S3D={S3D}>
                         matthewlukez@yahoo.com   
@@ -163,6 +163,7 @@ align-items: center;
 
 font-family: Roboto;
 font-weight: 300;
+font-size: 1vw;
 
 transition: 3s;
 display: ${(props)=>props.S1D};
@@ -179,6 +180,7 @@ align-items: center;
 
 font-family: Roboto;
 font-weight: 300;
+font-size: 1vw;
 
 transition: 3s;
 display: ${(props)=>props.S2D};
@@ -195,6 +197,7 @@ align-items: center;
 
 font-family: Roboto;
 font-weight: 300;
+font-size: 1vw;
 
 transition: 3s;
 display: ${(props)=>props.S3D};

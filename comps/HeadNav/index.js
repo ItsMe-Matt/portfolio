@@ -101,8 +101,19 @@ font-weight: 300;
 padding: 1vh 1vw;
 color: #000;
 
-margin: 0 0.5vw;
 
+margin: 0 0.5vw;
+box-shadow: inset 0 -0.1vh #000;
+&:hover {
+    transition: 1s;
+    box-shadow: inset 0 -0.3vh #000;
+    font-size: 2.3vh;
+}
+
+
+`
+
+/*
 &:hover {
 
     animation-name: box;
@@ -117,7 +128,7 @@ margin: 0 0.5vw;
     80% {box-shadow: inset -0.1vh 0.1vh #000, inset 0.1vh -0.1vh #000}
     100% {box-shadow: inset -0.1vh 0.1vh #fff, inset 0.1vh -0.1vh #fff}
 }
-`
+*/
 const NavBtn = styled.div`
     cursor: pointer;
     font-family: Roboto;
@@ -127,20 +138,11 @@ const NavBtn = styled.div`
     color: #000;
 
     margin: 0 0.5vw;
-    
+    box-shadow: inset 0 -0.1vh #000;
     &:hover {
-
-        animation-name: box;
-        animation-duration: 2.5s;
-        animation-iteration-count: infinite;
-    }
-
-    @keyframes box {
-        20% {box-shadow: inset 0 0.1vh #000}
-        40% {box-shadow: inset -0.1vh 0.1vh #000}
-        60% {box-shadow: inset -0.1vh 0.1vh #000, inset 0 -0.1vh #000}
-        80% {box-shadow: inset -0.1vh 0.1vh #000, inset 0.1vh -0.1vh #000}
-        100% {box-shadow: inset -0.1vh 0.1vh #fff, inset 0.1vh -0.1vh #fff}
+        transition: 1s;
+        box-shadow: inset 0 -0.3vh #000;
+        font-size: 2.3vh;
     }
 `
 
