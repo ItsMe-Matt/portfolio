@@ -153,7 +153,7 @@ background-color: #fff;
 border-radius: 5rem;
 border: 0.12vw solid black;
 
-padding: 0.75vw 2vw;
+padding: 0.75vh 2vw;
 `
 
 const Hid = styled.div`
