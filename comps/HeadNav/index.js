@@ -16,6 +16,13 @@ export default function HeadNav() {
         </Link>
 
         <NavCont>
+
+        <Link href="/">
+            <AbtMe>
+            About Me
+            </AbtMe> 
+        </Link>
+        
         <Link href="/#projects">
             <NavBtn>
             Project and Works
@@ -86,7 +93,31 @@ const NavCont = styled.div`
     flex-direction: row;
     justify-content: baseline;
 `
+const AbtMe = styled.div`
+cursor: pointer;
+font-family: Roboto;
+font-size: 2.2vh;
+font-weight: 300;
+padding: 1vh 1vw;
+color: #000;
 
+margin: 0 0.5vw;
+
+&:hover {
+
+    animation-name: box;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box {
+    20% {box-shadow: inset 0 0.1vh #000}
+    40% {box-shadow: inset -0.1vh 0.1vh #000}
+    60% {box-shadow: inset -0.1vh 0.1vh #000, inset 0 -0.1vh #000}
+    80% {box-shadow: inset -0.1vh 0.1vh #000, inset 0.1vh -0.1vh #000}
+    100% {box-shadow: inset -0.1vh 0.1vh #fff, inset 0.1vh -0.1vh #fff}
+}
+`
 const NavBtn = styled.div`
     cursor: pointer;
     font-family: Roboto;
@@ -95,7 +126,7 @@ const NavBtn = styled.div`
     padding: 1vh 1vw;
     color: #000;
 
-    margin: 0 0.5rem;
+    margin: 0 0.5vw;
     
     &:hover {
 

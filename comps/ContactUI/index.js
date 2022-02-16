@@ -38,7 +38,7 @@ export default function ContactUI({
         </Left>
 
         <Right>
-            <form onSubmit={()=>{console.log("hey there bud");event.preventDefault()}}>
+            <form action="mailto:matthewlukez@yahoo.com" method="post" encType="text/plain">
                 <RRow>
                     <Cont1>
                         <Label>Name:</Label>
@@ -105,7 +105,7 @@ width: 50%;
 const Line = styled.div`
 height: 0.25vh;
 background-color: #122c5c;
-width: 50%;
+width: 40%;
 `
 const LHead = styled.p`
 font-family: Poppins;

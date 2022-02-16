@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components'
-import Image from 'next/image';
 
-import ContactUI from '../comps/ContactUI';
+import ContactUI2 from '../comps/ContactUI2';
 import HeadNav from '../comps/HeadNav'
 import Project from "../comps/Project";
 import Project2 from "../comps/Project2";
@@ -15,31 +14,40 @@ import Proj from "./data/Proj.json"
 export default function Home() {
   var [ULColor, setULColor] = useState("transparent")
   var [ULColor2, setULColor2] = useState("transparent")
+  var [S1Display, setS1Display] = useState("none")
+  var [S2Display, setS2Display] = useState("none")
+  var [S3Display, setS3Display] = useState("none")
 
-
-
-
+  function S1On(){
+    setS1Display("flex")
+  }
+  function S1Off(){
+    setS1Display("none")
+  }
+  function S2On(){
+    setS2Display("flex")
+  }
+  function S2Off(){
+    setS2Display("none")
+  }
+  function S3On(){
+    setS3Display("flex")
+  }
+  function S3Off(){
+    setS3Display("none")
+  }
   function hlOn(e) {
     setULColor(e)
-    console.log(ULColor)
   }
-  
   function hlOff() {
-    console.log(ULColor)
     setULColor("transparent")
   }
-
   function hlOn2(e) {
     setULColor2(e)
-    console.log(ULColor2)
   }
-  
   function hlOff2() {
-    console.log(ULColor2)
     setULColor2("transparent")
   }
-
-
 
   return (<div>
     <Container>
@@ -83,7 +91,19 @@ export default function Home() {
 
       </Content>
       <FooterArea>
-        <ContactUI />
+        <ContactUI2 
+          onS1Off={()=>S1Off()}
+          onS1Over={()=>S1On()}
+          S1D={S1Display}
+
+          onS2Off={()=>S2Off()}
+          onS2Over={()=>S2On()}
+          S2D={S2Display}
+
+          onS3Off={()=>S3Off()}
+          onS3Over={()=>S3On()}
+          S3D={S3Display}
+        />
       </FooterArea>
     </Container>
     </div>)
@@ -119,7 +139,7 @@ const HeroP = styled.div`
   display: flex;
   max-width: 50vw;
   text-align: center;
-  margin-bottom: 4vh;
+  margin-bottom: 8vh;
 `
 const RowCenter = styled.div`
   display: flex;
