@@ -46,7 +46,7 @@ export default function CompassPlusUI() {
           year="2021"
           name={P0.header}
           summary={P0.description}
-          img="/CompassPlus/test1.png"
+          img="/static/CompassPlus/test1.png"
           type="1"
 
           />

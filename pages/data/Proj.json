@@ -2,7 +2,7 @@
     {
         "header": "CompassPlus",
         "type" : "UI/UX Design",
-        "titleImg": "/projImg/cPTitle.png",
+        "titleImg": "/static/projImg/cPTitle.png",
         "description": "CompassPlus is an app designed to replace your physical Compass card with a digital NFC card you can use on your phone.",
         "route": "/CompassPlus",
         "color": "#b8c7e4"
@@ -10,7 +10,7 @@
     {
         "header": "Actualize",
         "type" : "UI/UX Design",
-        "titleImg": "/projImg/ActualizeTitle.png",
+        "titleImg": "/static/projImg/ActualizeTitle.png",
         "description": "Actualize is a product designed to work in conjunction with WorkBC. It is an application that will connect those who are in need with financial advisors and career advisors to help those who are trying to get on their feet again.",
         "route": "/Actualize",
         "color": "#a1f7cb"
@@ -18,7 +18,7 @@
     {
         "header": "The Giving Hand",
         "type" : "Frontend Development",
-        "titleImg": "/projImg/GHTitle.png",
+        "titleImg": "/static/projImg/GHTitle.png",
         "description": "The Giving Hand was a project designed to help people wanting to donate to the homeless. The goal of the app was to help people wanting to donate items or money, find an appropriate organization to donate to.",
         "route": "/CompassPlus",
         "color": "#ffc3a3"
