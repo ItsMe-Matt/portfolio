@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export default function ProjHead({
+export default function ContentHead({
     title="Project Project"
 }){
     return <div>

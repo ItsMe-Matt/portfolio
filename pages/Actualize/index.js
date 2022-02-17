@@ -1,56 +1,75 @@
 import { useState } from 'react';
 import styled from 'styled-components'
-import Image from 'next/image';
 
-import HeadNav from '../../comps/HeadNav'
+import ContactUI2 from '../../comps/ContactUI2';
+import HeadNav from '../../comps/HeadNav';
 
+import ProjTable from '../../comps/ProjTable';
 
-
-export default function Home() {
-  var [ULColor, setULColor] = useState("transparent")
-  var [ULColor2, setULColor2] = useState("transparent")
+import Proj from '../data/Proj.json'
 
 
+export default function CompassPlusUI() {
+  var [S1Display, setS1Display] = useState("none")
+  var [S2Display, setS2Display] = useState("none")
+  var [S3Display, setS3Display] = useState("none")
 
+  var P0 = Proj[1]
 
-  function hlOn(e) {
-    setULColor(e)
-    console.log(ULColor)
+//For Contact Area
+  function S1On(){
+    setS1Display("flex")
   }
-  
-  function hlOff() {
-    console.log(ULColor)
-    setULColor("transparent")
+  function S1Off(){
+    setS1Display("none")
   }
-
-  function hlOn2(e) {
-    setULColor2(e)
-    console.log(ULColor2)
+  function S2On(){
+    setS2Display("flex")
   }
-  
-  function hlOff2() {
-    console.log(ULColor2)
-    setULColor2("transparent")
+  function S2Off(){
+    setS2Display("none")
   }
-
-
+  function S3On(){
+    setS3Display("flex")
+  }
+  function S3Off(){
+    setS3Display("none")
+  }
 
   return (<div>
     <Container>
     <HeadNav />
       <Hero>
         <RowCenter>
-        <HeroH>
-        Hi, I’m Matt and I am an UI/UX designer and a frontend developer.
-        </HeroH>
-        <HeroP>
-        I design and develop cross platform applications and solutions.
-        </HeroP>
+          <ProjTable
+          role={P0.type}
+          year="2021"
+          name={P0.header}
+          summary={P0.description}
+          img="/CompassPlus/test1.png"
+          type="1"
+
+          />
         </RowCenter>
       </Hero>
-      <Content>
-    
+      <Content id="projects">
+        
       </Content>
+      <FooterArea id='contact'>
+        <ContactUI2 
+          onS1Off={()=>S1Off()}
+          onS1Over={()=>S1On()}
+          S1D={S1Display}
+
+          onS2Off={()=>S2Off()}
+          onS2Over={()=>S2On()}
+          S2D={S2Display}
+
+          onS3Off={()=>S3Off()}
+          onS3Over={()=>S3On()}
+          S3D={S3Display}
+        />
+      </FooterArea>
     </Container>
     </div>)
 }
@@ -58,7 +77,7 @@ export default function Home() {
 
 
 const Container = styled.div`
-  cursor: context-menu
+cursor: context-menu
 `
 const Hero = styled.div`
   background-color: #fff;
@@ -85,7 +104,7 @@ const HeroP = styled.div`
   display: flex;
   max-width: 50vw;
   text-align: center;
-  margin-bottom: 4vh;
+  margin-bottom: 8vh;
 `
 const RowCenter = styled.div`
   display: flex;
@@ -103,4 +122,11 @@ const Content = styled.div`
   align-items: center;
 
   box-shadow: 0 2vh 5vh #fff inset
+`
+
+const FooterArea = styled.div`
+  padding: 5vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `

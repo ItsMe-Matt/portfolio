@@ -2,10 +2,11 @@ import { useState } from 'react';
 import styled from 'styled-components'
 
 import ContactUI2 from '../comps/ContactUI2';
+import ContentHead from "../comps/ContentHead";
 import HeadNav from '../comps/HeadNav'
 import Project from "../comps/Project";
 import Project2 from "../comps/Project2";
-import ProjHead from "../comps/ProjHead";
+
 import Social from '../comps/Social'
 
 import Proj from "./data/Proj.json"
@@ -64,7 +65,7 @@ export default function Home() {
         </RowCenter>
       </Hero>
       <Content id="projects">
-        <ProjHead title="Project and Works"/>
+        <ContentHead title="Project and Works"/>
         <Project2
           title={Proj[1].header}
           type={Proj[1].type}
@@ -90,7 +91,7 @@ export default function Home() {
           />
 
       </Content>
-      <FooterArea>
+      <FooterArea id='contact'>
         <ContactUI2 
           onS1Off={()=>S1Off()}
           onS1Over={()=>S1On()}

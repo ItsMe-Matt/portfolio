@@ -29,7 +29,7 @@ export default function HeadNav() {
             </NavBtn> 
         </Link>
 
-        <Link href="/#projects">
+        <Link href="#contact">
             <ConBtn>
             Contact Me!
             </ConBtn> 
