@@ -27,6 +27,7 @@ export default function Project({
                 width={1080}
                 height={1440}
                 layout='responsive'
+                quality={100}
                 />
             </ImgCont>  
         </Left>
