@@ -28,8 +28,9 @@ export default function HeadNav() {
             Project and Works
             </NavBtn> 
         </Link>
+  
+        <Link href="#contact">
 
-        <Link href="/#contact">
             <ConBtn>
             Contact Me!
             </ConBtn> 
