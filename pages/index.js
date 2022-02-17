@@ -56,7 +56,7 @@ export default function Home() {
       <Hero>
         <RowCenter>
         <HeroH>
-        Hi, I’m Matt and I am an UI/UX designer and a frontend developer.
+        Hi, I’m Matt and I am a UI/UX designer and a frontend developer.
         </HeroH>
         <HeroP>
         I design and develop cross platform applications and solutions.
@@ -91,6 +91,7 @@ export default function Home() {
           />
 
       </Content>
+
       <FooterArea id='contact'>
         <ContactUI2 
           onS1Off={()=>S1Off()}
