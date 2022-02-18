@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import styled from 'styled-components'
 
-import ContactUI2 from '../../comps/ContactUI2';
+import ContactUI from '../../comps/ContactUI';
 import HeadNav from '../../comps/HeadNav';
+import ContentHead from '../../comps/ContentHead';
 
 import ProjTable from '../../comps/ProjTable';
 
@@ -43,20 +44,22 @@ export default function CompassPlusUI() {
         <RowCenter>
           <ProjTable
           role={P0.type}
-          year="2021"
+          year="2020"
           name={P0.header}
           summary={P0.description}
-          img="/static/CompassPlus/test1.png"
+          img="/static/Actualize/header.png"
           type="1"
+          HL={P0.headline}
 
           />
         </RowCenter>
       </Hero>
-      <Content id="projects">
+      <Content>
+        <ContentHead title="User Research"/>
         
       </Content>
       <FooterArea id='contact'>
-        <ContactUI2 
+        <ContactUI 
           onS1Off={()=>S1Off()}
           onS1Over={()=>S1On()}
           S1D={S1Display}

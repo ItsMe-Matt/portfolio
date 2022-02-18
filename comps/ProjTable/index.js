@@ -8,7 +8,8 @@ export default function ProjTable({
     name="The Giving Hand",
     summary="CompassPlus is an app designed to replace your physical Compass card with a digital NFC card you can use on your phone.",
     img="/projImg/cPTitle.png",
-    imgType="1"
+    imgType="1",
+    HL = "This is a one sentenced head liner for the application"
 }) {
     return <Container>
         <Left>
@@ -35,6 +36,10 @@ export default function ProjTable({
                         {year}
                     </ProjYear>
                 </ProjNandY>
+
+                <ProjHL>
+                    {HL}
+                </ProjHL>
                
             </ProjCont>
 
@@ -71,9 +76,15 @@ justify-content: center;
 `
 
 const ProjCont = styled.div`
-margin-bottom: 2vh;
+margin-bottom: 3.5vh;
 `
+const ProjHL = styled.div`
+font-family: Poppins;
+font-size: 2.5vh;
+font-weight: 400;
 
+margin-top: 2vh;
+`
 const ProjName = styled.div`
 font-family: Poppins;
 font-size: 5vh;
@@ -105,6 +116,7 @@ font-family: Roboto;
 font-size: 2.25vh;
 font-weight: 300;
 line-height: 1.5;
+color: #909090;
 `
 
 const ImgCont = styled.div`

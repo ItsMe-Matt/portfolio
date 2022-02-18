@@ -106,7 +106,7 @@ color: #000;
 margin: 0 0.5vw;
 &:hover {
     transition: 1s;
-    box-shadow: inset 0 -0.3vh #000;
+    box-shadow: inset 0 -0.2vh #000;
     font-size: 2.3vh;
 }
 
@@ -141,7 +141,7 @@ const NavBtn = styled.div`
 
     &:hover {
         transition: 1s;
-        box-shadow: inset 0 -0.3vh #000;
+        box-shadow: inset 0 -0.2vh #000;
         font-size: 2.3vh;
     }
 `

@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa'
 import { MdOutlineEmail } from "react-icons/md"
 
-export default function ContactUI2({
+export default function ContactUI({
     onS1Over=()=>{},
     onS1Off=()=>{},
     S1D = "none",
