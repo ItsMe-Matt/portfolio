@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import ContactUI from '../../comps/ContactUI';
 import HeadNav from '../../comps/HeadNav';
 import ContentHead from '../../comps/ContentHead';
+import CaseNav from '../../comps/CaseNav';
 
 import ProjTable from '../../comps/ProjTable';
 
@@ -53,6 +54,9 @@ export default function CompassPlusUI() {
 
           />
         </RowCenter>
+
+
+        <CaseNav />
       </Hero>
       <Content>
         <ContentHead title="User Research"/>
@@ -86,29 +90,11 @@ const Hero = styled.div`
   background-color: #fff;
   height: 91vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `
 
-const HeroH = styled.div`
-  font-family: Poppins;
-  font-size: 6vh;
-  font-weight: 400;
-  text-align: center;
-  max-width: 75vw;
-  margin-bottom: 4vh;
-  color: #122C5C;
-`
-
-const HeroP = styled.div`
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: 3.5vh;
-  display: flex;
-  max-width: 50vw;
-  text-align: center;
-  margin-bottom: 8vh;
-`
 const RowCenter = styled.div`
   display: flex;
   flex-direction: column;
