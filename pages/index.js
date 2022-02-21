@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components'
 
-import ContactUI2 from '../comps/ContactUI2';
+import ContactUI from '../comps/ContactUI';
 import ContentHead from "../comps/ContentHead";
 import HeadNav from '../comps/HeadNav'
 import Project from "../comps/Project";
@@ -93,7 +93,7 @@ export default function Home() {
       </Content>
 
       <FooterArea id='contact'>
-        <ContactUI2 
+        <ContactUI 
           onS1Off={()=>S1Off()}
           onS1Over={()=>S1On()}
           S1D={S1Display}

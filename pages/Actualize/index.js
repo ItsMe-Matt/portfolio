@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import styled from 'styled-components'
 
-import ContactUI2 from '../../comps/ContactUI2';
+import ContactUI from '../../comps/ContactUI';
 import HeadNav from '../../comps/HeadNav';
+import ContentHead from '../../comps/ContentHead';
+import CaseNav from '../../comps/CaseNav';
 
 import ProjTable from '../../comps/ProjTable';
 
@@ -43,20 +45,25 @@ export default function CompassPlusUI() {
         <RowCenter>
           <ProjTable
           role={P0.type}
-          year="2021"
+          year="2020"
           name={P0.header}
           summary={P0.description}
-          img="/static/CompassPlus/test1.png"
+          img="/static/Actualize/header.png"
           type="1"
+          HL={P0.headline}
 
           />
         </RowCenter>
+
+
+        <CaseNav />
       </Hero>
-      <Content id="projects">
+      <Content>
+        <ContentHead title="User Research"/>
         
       </Content>
       <FooterArea id='contact'>
-        <ContactUI2 
+        <ContactUI 
           onS1Off={()=>S1Off()}
           onS1Over={()=>S1On()}
           S1D={S1Display}
@@ -83,29 +90,11 @@ const Hero = styled.div`
   background-color: #fff;
   height: 91vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 `
 
-const HeroH = styled.div`
-  font-family: Poppins;
-  font-size: 6vh;
-  font-weight: 400;
-  text-align: center;
-  max-width: 75vw;
-  margin-bottom: 4vh;
-  color: #122C5C;
-`
-
-const HeroP = styled.div`
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: 3.5vh;
-  display: flex;
-  max-width: 50vw;
-  text-align: center;
-  margin-bottom: 8vh;
-`
 const RowCenter = styled.div`
   display: flex;
   flex-direction: column;
