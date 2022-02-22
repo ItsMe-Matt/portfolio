@@ -10,7 +10,7 @@ export default function HeadNav() {
             Matthew Zhao, 
         </HTxt>
         <HP>
-            UI/UX Designer + Developer
+            UI/UX Designer + Frontend Developer
         </HP>
         </HCont>
         </Link>
@@ -30,11 +30,11 @@ export default function HeadNav() {
         </Link>
   
         <Link href="#contact">
-
             <ConBtn>
             Contact Me!
             </ConBtn> 
         </Link>
+        
         </NavCont>
     </Container>
     </HBar>

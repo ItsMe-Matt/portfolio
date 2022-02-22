@@ -151,7 +151,7 @@ align-items: center;
 background-color: #fff;
 
 border-radius: 5rem;
-border: 0.12vw solid black;
+border: 0.1vw solid black;
 
 padding: 0.75vh 2vw;
 `
