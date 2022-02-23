@@ -5,6 +5,7 @@ export default function ImageSrc({
     type="1",
     
 }){
+    console.log(type)
     if (type === "1") {
         return <Image
             src={src}

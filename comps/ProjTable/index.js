@@ -56,6 +56,7 @@ const Container = styled.div`
 display: flex;
 width: 75vw;
 flex-direction: row;
+height: content-fit;
 `
 
 const Left = styled.div`
@@ -120,5 +121,5 @@ color: #909090;
 `
 
 const ImgCont = styled.div`
-width: 90%;
+width: 100%;
 `
