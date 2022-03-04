@@ -124,17 +124,62 @@ export default function CompassPlusUI() {
           '
           />
         </IDCont>
-          
 
-          
+        <TextBox
+        header='Design Stage'
+        description='Taking our goal into consideration, we began the design of our low fidelity and medium-fidelity prototype. I was personally in charge of the card page. For the low fidelity, it felt really strange and clunky. I initially drew inspiration from other mobile payment apps like Apple Pay or Google Pay. However, as designs and user testing progressed, I found that users much preferred a more Starbucks-styled card page, so I based the next design on that.'
+        
+        />
+
+        <TextBox
+        header='Development Stage'
+        description='At the beginning of the development stage, we realized that certain functions and elements could not be coded out due to the abilities of our coders and the lack of access provided by Translink. A good example would be the tappable NFC card. During the initial research, I found that Translink had no intention of releasing a Compass API or making the card digital. Because of that, we had to redesign some of our pages and components to fit, not only what we had, but what we could also handle skill-wise. During the Development stage, I designed a website on wordpress to track our progress and share details regarding the app and the team. Unfortunately, due to limited funds, the website was taken down earlier in 2022. I also designed the business cards at this stage. I also prepared for usability testing but that was also cut out due to time restraints.'
+        
+        />
 
 
 
-          <TextBox3 
-            header='Conclusion'
-            description='This was the first app that I actually designed. With the help of my mentors at Game of Apps, I learned how to create a mobile application that felt familiar and comfortable without having to change the behavior and expectations of the user. To me, this is what design is about, doing what you need to get done while feeling comfortable, free, and familiar while doing it.
-            '
+        <IDCont id='end'>
+          <TextBox 
+            header='End Product'
+            description='Although our final product lacked certain features due to lack of access, I am proud of the application the team was able to put together. I was also proud of the work I produced with this application. I had designed several components and one way or another, my designs had reached the final product of the app either completely intact or evolved into what is seen at the end. Moving forward, I would have liked to perform more user testing and have more of my designs reach the final product.'
           />
+        </IDCont>
+
+        <EndImg>
+          <ImgCont1>
+            <Image 
+            src="/static/CompassPlus/tapToScan.gif"
+            width={222}
+            height={480}
+            layout="responsive"
+            />
+          
+          </ImgCont1>
+
+          <ImgCont1>
+            <Image 
+            src="/static/CompassPlus/tripPlanner.gif"
+            width={222}
+            height={480}
+            layout="responsive"
+            />
+          
+          </ImgCont1>
+
+          <ImgCont1>
+            <Image 
+            src="/static/CompassPlus/manageCards.gif"
+            width={222}
+            height={480}
+            layout="responsive"
+            />
+          
+          </ImgCont1>
+
+        </EndImg>
+
+
 
 
         <OtherProj />
@@ -173,14 +218,12 @@ const Hero = styled.div`
   justify-content: center;
   overflow: hidden;
 `
-
 const RowCenter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 `
-
 const Content = styled.div`
   min-height: 100vh;
   background-color: #f7faff;
@@ -199,9 +242,9 @@ display: flex;
 flex-direction: column;
 align-items: center;
 `
-
 const ImgCont1 = styled.div`
-width: 98vw;
+width: 20%;
+box-shadow: 0 0 1vw #75a6ff;
 `
 const Div2 = styled.div`
 display: flex;
@@ -212,8 +255,14 @@ width: 98vw;
 const ImgCont2 = styled.div`
 width: 50%;
 `
-
-
+const EndImg = styled.div`
+width: 100%;
+padding: 1.5vw 17vw;
+display: flex;
+justify-content: space-between;
+margin-top: 1vw;
+background-color: #122c5c;
+`
 const FooterArea = styled.div`
   padding: 5vh 0;
   display: flex;
