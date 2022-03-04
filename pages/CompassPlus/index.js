@@ -171,6 +171,7 @@ const Hero = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 `
 
 const RowCenter = styled.div`

@@ -122,5 +122,5 @@ color: #909090;
 
 const ImgCont = styled.div`
 width: 100%;
-padding: 7vh;
+margin: 7vh;
 `
