@@ -6,7 +6,6 @@ import ContentHead from "../comps/ContentHead";
 import HeadNav from '../comps/HeadNav'
 import Project from "../comps/Project";
 import Project2 from "../comps/Project2";
-
 import Social from '../comps/Social'
 
 import Proj from "./data/Proj.json"

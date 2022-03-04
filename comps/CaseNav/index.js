@@ -6,27 +6,37 @@ export default function ContactUI({
 
 }) {
     return <Container>
-        <Link href="#problemId">
+        <Link href="#role">
             <IconCont>
-                Problem Identification
+                My Role
             </IconCont>
         </Link>
 
             <GrNext size="1vw"/>
-        <IconCont2>
-            Objectives
-        </IconCont2>
+
+        <Link href="#research">
+            <IconCont2>
+                User Research
+            </IconCont2>
+        </Link>
+
+
+
             <GrNext size="1vw"/>
-        <IconCont3>
-            Personas
-        </IconCont3>
+
+        <Link href="#prob">
+            <IconCont3>
+                Problem and Solution
+            </IconCont3>
+        </Link>
+        
             <GrNext size="1vw"/>
         <IconCont4>
-            User Journey
+            Design Phase
         </IconCont4>
             <GrNext size="1vw"/>
         <IconCont5>
-            Prototyping
+            Development Phase
         </IconCont5>
             <GrNext size="1vw"/>
         <IconCont6>
@@ -52,13 +62,11 @@ color: #fff;
 border-radius: 3vw;
 font-size: 0.85vw;
 &:hover {
-    transition: 0.5s;
-    background-color: #0638cf;
+    transition: 0.2s;
+    background-color: #0b2985;
+}
 `
-/*
-    padding: 1vw 2vw;
-    font-size: 0.9vw;
-*/
+
 const IconCont2 = styled.div`
 height: fit-content;
 background-color: #4169e1;
@@ -67,8 +75,9 @@ color: #fff;
 border-radius: 3vw;
 font-size: 0.85vw;
 &:hover {
-    transition: 0.5s;
-    background-color: #0638cf;
+    transition: 0.2s;
+    background-color: #0b2985;
+}
 `
 const IconCont3 = styled.div`
 height: fit-content;
@@ -78,8 +87,9 @@ color: #fff;
 border-radius: 3vw;
 font-size: 0.85vw;
 &:hover {
-    transition: 0.5s;
-    background-color: #0638cf;
+    transition: 0.2s;
+    background-color: #0b2985;
+}
 `
 const IconCont4 = styled.div`
 height: fit-content;
@@ -89,8 +99,9 @@ color: #fff;
 border-radius: 3vw;
 font-size: 0.85vw;
 &:hover {
-    transition: 0.5s;
-    background-color: #0638cf;
+    transition: 0.2s;
+    background-color: #0b2985;
+}
 `
 const IconCont5 = styled.div`
 height: fit-content;
@@ -100,8 +111,9 @@ color: #fff;
 border-radius: 3vw;
 font-size: 0.85vw;
 &:hover {
-    transition: 0.5s;
-    background-color: #0638cf;
+    transition: 0.2s;
+    background-color: #0b2985;
+}
 `
 const IconCont6 = styled.div`
 height: fit-content;
@@ -111,6 +123,7 @@ color: #fff;
 border-radius: 3vw;
 font-size: 0.85vw;
 &:hover {
-    transition: 0.5s;
-    background-color: #0638cf;
+    transition: 0.2s;
+    background-color: #0b2985;
+}
 `

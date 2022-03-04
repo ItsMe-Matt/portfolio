@@ -22,7 +22,7 @@ width: 75vw;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 6vw 0;
+padding: 6vw 0 1vw 0;
 `
 const H1 = styled.div`
 font-size: 2vw;

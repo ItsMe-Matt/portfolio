@@ -32,20 +32,11 @@ export default function TextBox2({
     </Container>
 }
 
-/*
-<H1>
-{header}
-</H1>
-
-<Paragraph>
-{description}
-</Paragraph>
-*/
-
 const Container = styled.div`
 width: 75vw;
 
 display: flex;
+padding: 6vw 0 1vw 0;
 `
 const Left = styled.div`
 width: 50%;

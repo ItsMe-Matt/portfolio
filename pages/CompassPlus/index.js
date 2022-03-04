@@ -16,6 +16,7 @@ import Video from '../../comps/Video';
 import ProjTable from '../../comps/ProjTable';
 
 import Proj from '../data/Proj.json'
+import CaseTable from '../../comps/CaseTable';
 
 
 export default function CompassPlusUI() {
@@ -52,7 +53,7 @@ export default function CompassPlusUI() {
         <RowCenter>
           <ProjTable
           role={P0.type}
-          year="2020"
+          year="2021"
           name={P0.header}
           summary={P0.description}
           img="/static/CompassPlus/header.png"
@@ -65,43 +66,71 @@ export default function CompassPlusUI() {
       <Content>
         <CaseNav />
         <Cat>
-          <IDCont id='problemId'>
-            <TextBox
-              header='Problem Identification'
-              description='In these changing times, the job market is in a state of fluctuation. Many individuals are experiencing major changes in their careers and will need support to re-establish themselves.'
+          <IDCont id='role'>
+            <TextBox3
+              header='My Role'
+              description='My role in this project was as a UI/UX designer. I worked alongside 2 other designers, 1 developer, and 2 hybrids (designer and developers). I mostly designed components and some screen layouts. I also designed the business cards and the website we would come to use for our app.'
             />
           </IDCont>
-          <ImgCont1>
-            <Image 
-              src='/static/Actualize/whiteboard01.png'
-              width={1137}
-              height={530}
-              layout="responsive"
+
+          <IDCont id='research'>
+            <TextBox
+              header='User Research'
+              description='Through our user survey, we learned about some of our target audience’s pain points and needs, as well as how we should prioritize the development of certain features and functions. We also learned if there was a need and use for this app and the results of the user testing reflected that yes, there is a need and use for the app.
+              '
             />
-          </ImgCont1>
-          
-          <TextBox
-            header='Objectives'
-            description='Our app aims to help these individuals by connecting them with a professional career and financial advisors that can empathize and understand them, and use their expertise to help construct personalized plans for the future.'
+          </IDCont>
+
+          <CaseTable 
+          LHead='Pain Points'
+          LP1='Forgetting their Compass Card at home and having to buy a new one to be able to use transit'
+          LP2='Realizing that you have a low balance on your card and needing to get in a physical queue to reload despite being low on time.'
+          LP3='Having to use different apps for navigation and interruption alerts.'
+
+          RHead='Needs'
+          RP1='To have your compass card always with you through your phone'
+          RP2='To be able to reload your compass card whenever and wherever you are'
+          RP3='To manage everything transit-related in one convenient app'
+          />
+          <Div2>
+            <ImgCont2>
+              <Image
+              src="/static/CompassPlus/UserSurveyResults1.jpg"
+              width={1920}
+              height={1080}
+              layout="responsive"
+              />
+            </ImgCont2>
+
+            <ImgCont2>
+              <Image
+              src="/static/CompassPlus/UserSurveyResults2.jpg"
+              width={1920}
+              height={1080}
+              layout="responsive"
+              />
+            </ImgCont2>
+          </Div2>
+
+        <IDCont id='prob'>
+          <TextBox3 
+          header='Problem Identification'
+          description='When riders first start using Translink, they have to know how to use Translink and its routes, get a compass card or ticket and make sure they have enough funds to get them to their destination. Even experienced riders may forget their compass card every now and then. The problem is that to learn how to use Translink, get a ticket or compass card, and fill up the funds of the card could sometimes be in different places. You would have to use different apps and go to different locations. Our app aims to solve that problem. '
           />
 
-          <TextBox3
-          Head='User Persona'
-          Description='Phillip Chan 
-          54 years old
-          Layed off from his full-time server job during the pandemic
-          Is left jobless after the pandemic, and searching for a better job
-          Open the app to look for a career advisor. He is met with the first-time setup, and puts in all his info. After doing so, he lands on the explore page, and decides to look for one best fit for him by looking through advisor profiles and comparing. He flips through some advisors, and lands on Thomas Edwards, who notes in his description that he specializes in helping people reintegrate into new job markets.
+          <TextBox3 
+          header='Solution'
+          description='Our solution is to develop a cross-platform application that allows you to find your route through Translink, buy tickets, and reload them for your trip, with the added feature of checking for live Translink updates. This would allow experienced riders to continue using Translink without losing time in case they are missing their compass card or if they are going to a place they are not familiar with. This would also allow new travelers to easily learn how to navigate through Translink with one convenient application.
           '
           />
+        </IDCont>
+          
 
-          <TextBox 
-            header='User Journey'
-            description=''
-          />
-          <Video embedId='ar5WlWITb7s'/>
+          
 
-          <TextBox 
+
+
+          <TextBox3 
             header='Conclusion'
             description='This was the first app that I actually designed. With the help of my mentors at Game of Apps, I learned how to create a mobile application that felt familiar and comfortable without having to change the behavior and expectations of the user. To me, this is what design is about, doing what you need to get done while feeling comfortable, free, and familiar while doing it.
             '
@@ -164,14 +193,23 @@ const Content = styled.div`
 const IDCont = styled.div`
 `
 const Cat = styled.div`
-padding: 3vh 0;
+margin: 3vh 0;
 display: flex;
 flex-direction: column;
 align-items: center;
 `
 
 const ImgCont1 = styled.div`
-width: 100vw;
+width: 98vw;
+`
+const Div2 = styled.div`
+display: flex;
+flex-direction: row;
+background-color: red;
+width: 98vw;
+`
+const ImgCont2 = styled.div`
+width: 50%;
 `
 
 
@@ -181,3 +219,7 @@ const FooterArea = styled.div`
   flex-direction: column;
   align-items: center;
 `
+
+/*
+<Video embedId='ar5WlWITb7s'/>
+*/
