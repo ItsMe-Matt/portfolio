@@ -65,17 +65,7 @@ export default function Home() {
       </Hero>
       <Content id="projects">
         <ContentHead title="Project and Works"/>
-        <Project2
-          title={Proj[1].header}
-          type={Proj[1].type}
-          img={Proj[1].titleImg}
-          detail={Proj[1].description}
-          route={Proj[1].route}
-          bgcolor={Proj[1].color}
-          hOn = {()=>hlOn2(Proj[1].color)}
-          hOff = {hlOff2}
-          uColor={ULColor2}
-          />
+        
 
         <Project
           title={Proj[0].header}
@@ -166,3 +156,17 @@ const FooterArea = styled.div`
   flex-direction: column;
   align-items: center;
 `
+
+/*
+<Project2
+          title={Proj[1].header}
+          type={Proj[1].type}
+          img={Proj[1].titleImg}
+          detail={Proj[1].description}
+          route={Proj[1].route}
+          bgcolor={Proj[1].color}
+          hOn = {()=>hlOn2(Proj[1].color)}
+          hOff = {hlOff2}
+          uColor={ULColor2}
+          />
+*/
