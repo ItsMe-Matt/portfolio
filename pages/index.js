@@ -18,6 +18,7 @@ export default function Home() {
   var [S2Display, setS2Display] = useState("none")
   var [S3Display, setS3Display] = useState("none")
 
+  //for contact comp
   function S1On(){
     setS1Display("flex")
   }
@@ -36,6 +37,8 @@ export default function Home() {
   function S3Off(){
     setS3Display("none")
   }
+
+  //for Project comp
   function hlOn(e) {
     setULColor(e)
   }
@@ -77,6 +80,18 @@ export default function Home() {
           hOn = {()=>hlOn(Proj[0].color)}
           hOff = {hlOff}
           uColor={ULColor}
+          />
+
+        <Project2
+          title={Proj[2].header}
+          type={Proj[2].type}
+          img={Proj[2].titleImg}
+          detail={Proj[2].description}
+          route={Proj[2].route}
+          bgcolor={Proj[2].color}
+          hOn = {()=>hlOn2(Proj[2].color)}
+          hOff = {hlOff2}
+          uColor={ULColor2}
           />
 
       </Content>

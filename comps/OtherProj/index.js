@@ -5,11 +5,14 @@ import { GrFormPrevious, GrFormNext } from "react-icons/gr"
 
 export default function OtherProj({
     next="Next Project",
-    back="Previous Project"
+    back="Previous Project",
+
+    nextLink="/",
+    backLink="/"
 }){
 
     return <Container>
-        <Link href="/">
+        <Link href={backLink}>
             <NavBtn>
                 <GrFormPrevious size="1vw"/>
                 {back}
@@ -17,7 +20,7 @@ export default function OtherProj({
         </Link>
 
 
-        <Link href="/">
+        <Link href={nextLink}>
             <NavBtn>
                 {next}
                 <GrFormNext size="1vw"/>

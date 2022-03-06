@@ -120,16 +120,16 @@ export default function CompassPlusUI() {
 
           <TextBox3 
           header='Solution'
-          description='Our solution is to develop a cross-platform application that allows you to find your route through Translink, buy tickets, and reload them for your trip, with the added feature of checking for live Translink updates. This would allow experienced riders to continue using Translink without losing time in case they are missing their compass card or if they are going to a place they are not familiar with. This would also allow new travelers to easily learn how to navigate through Translink with one convenient application.
-          '
+          description='Our solution is to develop a cross-platform application that allows you to find your route through Translink, buy tickets, and reload them for your trip, with the added feature of checking for live Translink updates. This would allow experienced riders to continue using Translink without losing time in case they are missing their compass card or if they are going to a place they are not familiar with. This would also allow new travelers to easily learn how to navigate through Translink with one convenient application.'
           />
         </IDCont>
 
         <TextBox
         header='Design Stage'
         description='Taking our goal into consideration, we began the design of our low fidelity and medium-fidelity prototype. I was personally in charge of the card page. For the low fidelity, it felt really strange and clunky. I initially drew inspiration from other mobile payment apps like Apple Pay or Google Pay. However, as designs and user testing progressed, I found that users much preferred a more Starbucks-styled card page, so I based the next design on that.'
-        
         />
+
+        
 
         <TextBox
         header='Development Stage'
@@ -182,7 +182,12 @@ export default function CompassPlusUI() {
 
 
 
-        <OtherProj />
+        <OtherProj 
+        next='The Giving Hand Project'
+        nextLink='/GivingHand'
+        
+        back='Home'
+        />
         </Cat>
       </Content>
       <FooterArea id='contact'>
