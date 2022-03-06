@@ -120,8 +120,7 @@ export default function CompassPlusUI() {
 
           <TextBox3 
           header='Solution'
-          description='Our solution is to develop a cross-platform application that allows you to find your route through Translink, buy tickets, and reload them for your trip, with the added feature of checking for live Translink updates. This would allow experienced riders to continue using Translink without losing time in case they are missing their compass card or if they are going to a place they are not familiar with. This would also allow new travelers to easily learn how to navigate through Translink with one convenient application.
-          '
+          description='Our solution is to develop a cross-platform application that allows you to find your route through Translink, buy tickets, and reload them for your trip, with the added feature of checking for live Translink updates. This would allow experienced riders to continue using Translink without losing time in case they are missing their compass card or if they are going to a place they are not familiar with. This would also allow new travelers to easily learn how to navigate through Translink with one convenient application.'
           />
         </IDCont>
 
@@ -198,7 +197,12 @@ export default function CompassPlusUI() {
 
 
 
-        <OtherProj />
+        <OtherProj 
+        next='The Giving Hand Project'
+        nextLink='/GivingHand'
+        
+        back='Home'
+        />
         </Cat>
       </Content>
       <FooterArea id='contact'>

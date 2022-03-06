@@ -53,7 +53,7 @@ margin-bottom: 1vw;
 text-align: left;
 `
 const Paragraph = styled.div`
-width: 80%;
+width: 100%;
 
 font-size: 1vw;
 font-family: Roboto;

@@ -62,14 +62,18 @@ export default function CompassPlusUI() {
             </HeadLeft>
 
             <HeadRight>
-                I am Matt
+                <TxtHeader>
+                Hey all, <br />
+                </TxtHeader>
+                <TxtCont>
+                I am Matthew Zhao, a D3 graduate from BCIT. I grew up in the Greater Vancouver Area and grew my passion for UI/UX design in high school through the Game of Apps program. After graduation, I went to BCIT to continue to sharpen and build up my skills. 
+                <br /> <br />
+                Outside of school and work, I enjoy building plastic models and eating out with friends. I enjoy the occasional hike and day of exploring the city.
+
+                </TxtCont>
             </HeadRight>
         </RowCenter>
       </Hero>
-
-      <Content>
-    
-      </Content>
       <FooterArea id='contact'>
         <ContactUI 
           onS1Off={()=>S1Off()}
@@ -107,7 +111,7 @@ const RowCenter = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 75vw;
 `
 
@@ -127,15 +131,34 @@ width: 35%;
 
 `
 const HeadRight = styled.div`
-width: 65%;
+width: 60%;
 `
 
 const ImgCont = styled.div`
 width: 100%;
 border-radius: 100vw;
 overflow: hidden;
+box-shadow: 0 0 1vw;
 `
+const TxtHeader = styled.div`
+margin: 0;
+font-family: Poppins;
+font-size: 3.5vw;
+font-weight: 700;
+line-height: 1.75;
+margin: 0 2vw;
 
+`
+const TxtCont = styled.div`
+margin: 0;
+font-family: Roboto;
+font-size: 1.5vw;
+font-weight: 300;
+line-height: 1.75;
+color: #606060;
+margin: 0 2vw;
+
+`
 const FooterArea = styled.div`
   padding: 5vh 0;
   display: flex;

@@ -6,7 +6,7 @@
         "description": "CompassPlus is an app designed to replace your physical Compass card with a digital NFC card you can use on your phone.",
         "route": "/CompassPlus",
         "color": "#b8c7e4",
-        "headline": "CompassPlus is an app designed to replace your physical Compass card with a digital NFC card you can use on your phone."
+        "headline": "Designed to become Translink's Offical Mobile Application"
     },
     {
         "header": "Actualize",
@@ -19,10 +19,10 @@
     },
     {
         "header": "The Giving Hand",
-        "type" : "Frontend Development",
+        "type" : "UI/UX Design + Frontend Development",
         "titleImg": "/static/projImg/GHTitle.png",
         "description": "The Giving Hand was a project designed to help people wanting to donate to the homeless. The goal of the app was to help people wanting to donate items or money, find an appropriate organization to donate to.",
-        "route": "/CompassPlus",
+        "route": "/GivingHand",
         "color": "#ffc3a3",
         "headline": "Helping, providing for, and nurturing the homeless."
     }
