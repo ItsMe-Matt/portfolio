@@ -129,6 +129,22 @@ export default function CompassPlusUI() {
         description='Taking our goal into consideration, we began the design of our low fidelity and medium-fidelity prototype. I was personally in charge of the card page. For the low fidelity, it felt really strange and clunky. I initially drew inspiration from other mobile payment apps like Apple Pay or Google Pay. However, as designs and user testing progressed, I found that users much preferred a more Starbucks-styled card page, so I based the next design on that.'
         />
 
+          <ImgCont3>
+            <Image 
+            src="/static/CompassPlus/cardPage.png"
+            width={4835}
+            height={1764}
+            layout="responsive"
+            />
+          </ImgCont3>
+          <Caption>
+              The top row is my low fidelity, working its way up to my high fidelity. The bottom is the work of the rest of the team just before the final version.
+          </Caption>
+
+        <TextBox
+        header=''
+        description='As the designing progressed, another team member created their own version of my cards page, and after a vote and minor user testing, we decided to progress with their design instead. After that, I decided to move on to designing components. With designing components, there was once again a hand off and evolution of ideas and designs especially when we handed the designs over to the developers.'
+        />
         
 
         <TextBox
@@ -174,7 +190,6 @@ export default function CompassPlusUI() {
             height={480}
             layout="responsive"
             />
-          
           </ImgCont1>
 
         </EndImg>
@@ -251,15 +266,32 @@ const ImgCont1 = styled.div`
 width: 20%;
 box-shadow: 0 0 1vw #75a6ff;
 `
+const ImgCont2 = styled.div`
+width: 50%;
+`
+const ImgCont3 = styled.div`
+width: 99vw;
+margin: 3vw 0 0 0;
+
+`
+const Caption = styled.div`
+width: 70vw;
+
+font-size: 1.1vw;
+font-family: Roboto;
+font-weight: 300;
+line-height: 1.5;
+text-align: center;
+margin: 2vw 0 0 0;
+color: #909090; 
+`
 const Div2 = styled.div`
 display: flex;
 flex-direction: row;
 background-color: red;
 width: 98vw;
 `
-const ImgCont2 = styled.div`
-width: 50%;
-`
+
 const EndImg = styled.div`
 width: 100%;
 padding: 1.5vw 17vw;
