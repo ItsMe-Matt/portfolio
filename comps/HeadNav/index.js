@@ -63,7 +63,7 @@ const HTxt = styled.p`
     font-family: Poppins;
     font-weight: 500;
     color: #122C5C;
-    font-size: 3vh;
+    font-size: 1.5em;
     padding: 0;
 
     margin-right: 0.5vw;
@@ -77,7 +77,7 @@ const HP = styled.p`
     font-family: Poppins;
     font-weight: 300;
     color: #122C5C;
-    font-size: 2vh;
+    font-size: 1em;
     padding: 0;
 
 `
@@ -97,7 +97,7 @@ const NavCont = styled.div`
 const AbtMe = styled.div`
 cursor: pointer;
 font-family: Roboto;
-font-size: 2.2vh;
+font-size: 1.2em;
 font-weight: 300;
 padding: 1vh 1vw;
 color: #000;
@@ -107,7 +107,7 @@ margin: 0 0.5vw;
 &:hover {
     transition: 1s;
     box-shadow: inset 0 -0.2vh #000;
-    font-size: 2.3vh;
+    font-size: 1.25em;
 }
 
 
@@ -132,7 +132,7 @@ margin: 0 0.5vw;
 const NavBtn = styled.div`
     cursor: pointer;
     font-family: Roboto;
-    font-size: 2.2vh;
+    font-size: 1.2em;
     font-weight: 300;
     padding: 1vh 1vw;
     color: #000;
@@ -142,7 +142,7 @@ const NavBtn = styled.div`
     &:hover {
         transition: 1s;
         box-shadow: inset 0 -0.2vh #000;
-        font-size: 2.3vh;
+        font-size: 1.25em;
     }
 `
 
@@ -150,7 +150,7 @@ const ConBtn = styled.div`
 
     cursor: pointer;
     font-family: Roboto;
-    font-size: 2.2vh;
+    font-size: 1.2em;
     font-weight: 300;
     padding: 1vh 1vw;
     border-radius: 3rem;
@@ -163,5 +163,6 @@ const ConBtn = styled.div`
         transition: 1.5s;
         box-shadow: inset 10vw 0 0 0 #00d45c;
         color: #fff;
+        font-size: 1.25em
     }
 `

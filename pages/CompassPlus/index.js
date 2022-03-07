@@ -288,7 +288,6 @@ color: #909090;
 const Div2 = styled.div`
 display: flex;
 flex-direction: row;
-background-color: red;
 width: 98vw;
 `
 

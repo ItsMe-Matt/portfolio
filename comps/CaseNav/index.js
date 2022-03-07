@@ -60,7 +60,7 @@ background-color: #4169e1;
 padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
-font-size: 0.85vw;
+font-size: 1em;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -73,7 +73,7 @@ background-color: #4169e1;
 padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
-font-size: 0.85vw;
+font-size: 1em;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -85,7 +85,7 @@ background-color: #4169e1;
 padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
-font-size: 0.85vw;
+font-size: 1em;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -97,7 +97,7 @@ background-color: #4169e1;
 padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
-font-size: 0.85vw;
+font-size: 1em;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -109,7 +109,7 @@ background-color: #4169e1;
 padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
-font-size: 0.85vw;
+font-size: 1em;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -121,7 +121,7 @@ background-color: #4169e1;
 padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
-font-size: 0.85vw;
+font-size: 1em;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
