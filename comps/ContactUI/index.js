@@ -35,7 +35,7 @@ export default function ContactUI({
                     onMouseLeave={onS1Off}
                     >
                     <IconCont>
-                        <FaLinkedin size="2vw" color='#2867B2'/>
+                        <FaLinkedin size="2em" color='#2867B2'/>
                     </IconCont>
                     
                     <Hid S1D={S1D}>
@@ -49,7 +49,7 @@ export default function ContactUI({
                     onMouseOver={onS2Over}
                     onMouseLeave={onS2Off}>
                     <IconCont>
-                        <FaGithubSquare size="2vw"/>
+                        <FaGithubSquare size="2em"/>
                     </IconCont>
                     <Hid2 S2D={S2D}>
                         /ItsMe-Matt    
@@ -63,7 +63,7 @@ export default function ContactUI({
                     onMouseLeave={onS3Off}
                     >
                     <IconCont>
-                        <MdOutlineEmail size="2vw" />
+                        <MdOutlineEmail size="2em" />
                     </IconCont>
                     <Hid3 S3D={S3D}>
                         matthewlukez@yahoo.com   
@@ -98,14 +98,14 @@ align-items: baseline;
 const LHead = styled.p`
 font-family: Poppins;
 font-weight: 500;
-font-size: 2vw;
+font-size: 1.8em;
 margin: 0;
 color: #122c5c;
 `
 const RP = styled.p`
 font-family: Poppins;
 font-weight: 300;
-font-size: 1.5vw;
+font-size: 1.4em;
 margin: 0;
 color: #122c5c;
 margin-right: 1vw;
@@ -157,13 +157,13 @@ padding: 0.75vh 2vw;
 `
 
 const Hid = styled.div`
-height: 3vw; 
+height: 1em; 
 align-items: center;
 
 
 font-family: Roboto;
 font-weight: 300;
-font-size: 1vw;
+font-size: 1em;
 
 transition: 3s;
 display: ${(props)=>props.S1D};
@@ -174,13 +174,13 @@ color: #fff;
 `
 
 const Hid2 = styled.div`
-height: 3vw; 
+height: 1em; 
 align-items: center;
 
 
 font-family: Roboto;
 font-weight: 300;
-font-size: 1vw;
+font-size: 1em;
 
 transition: 3s;
 display: ${(props)=>props.S2D};
@@ -191,13 +191,13 @@ color: #fff;
 `
 
 const Hid3 = styled.div`
-height: 3vw; 
+height: 1em; 
 align-items: center;
 
 
 font-family: Roboto;
 font-weight: 300;
-font-size: 1vw;
+font-size: 1em;
 
 transition: 3s;
 display: ${(props)=>props.S3D};

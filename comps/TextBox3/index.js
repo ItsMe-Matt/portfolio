@@ -29,7 +29,7 @@ display: flex;
 padding: 6vw 0 1vw 0;
 `
 const Left = styled.div`
-width: 20%;
+width: 25%;
 
 display: flex;
 flex-direction: column;
@@ -37,7 +37,7 @@ align-items: flex-start;
 
 `
 const Right = styled.div`
-width: 80%;
+width: 75%;
 
 display: flex;
 flex-direction: column;
@@ -45,7 +45,7 @@ align-items: center;
 `
 
 const H1 = styled.div`
-font-size: 2vw;
+font-size: 2em;
 font-weight: 600;
 font-family: Lato;
 
@@ -55,7 +55,7 @@ text-align: left;
 const Paragraph = styled.div`
 width: 100%;
 
-font-size: 1vw;
+font-size: 1.2em;
 font-family: Roboto;
 font-weight: 300;
 line-height: 1.5;

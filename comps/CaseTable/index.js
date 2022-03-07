@@ -78,7 +78,7 @@ flex-direction: column;
 align-items: center;
 `
 const H1 = styled.div`
-font-size: 1.75vw;
+font-size: 1.8em;
 font-weight: 400;
 font-family: Lato;
 text-align: center;
@@ -88,7 +88,6 @@ margin-bottom: 1vw;
 const List = styled.ul`
 width: 80%;
 
-font-size: 1vw;
 font-family: Roboto;
 font-weight: 300;
 line-height: 1.5;
@@ -98,7 +97,7 @@ line-height: 1.5;
 const LItem = styled.li`
 width: 80%;
 
-font-size: 1vw;
+font-size: 1.2 em;
 font-family: Roboto;
 font-weight: 300;
 LItemne-height: 1.5;

@@ -26,7 +26,7 @@ const Container = styled.div`
 `
 
 const IconA = styled.a`
-    padding: 0.5vh 4vh;
+    padding: 0.2vh 2.5vw;
     border: 0.2vh solid #000;
     margin-right: 2vh;
     border-radius: 5rem;
@@ -39,7 +39,7 @@ const IconA = styled.a`
 }
 `
 const IconC = styled.a`
-padding: 0.5vh 4vh;
+padding: 0.2vh 2.5vw;
 border: 0.2vh solid #000;
 margin-right: 2vh;
 border-radius: 5rem;

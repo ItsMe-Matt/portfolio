@@ -14,7 +14,7 @@ export default function OtherProj({
     return <Container>
         <Link href={backLink}>
             <NavBtn>
-                <GrFormPrevious size="1vw"/>
+                <GrFormPrevious size="1.5em"/>
                 {back}
             </NavBtn>
         </Link>
@@ -23,7 +23,7 @@ export default function OtherProj({
         <Link href={nextLink}>
             <NavBtn>
                 {next}
-                <GrFormNext size="1vw"/>
+                <GrFormNext size="1.5em"/>
             </NavBtn>
         </Link>
     </Container>
@@ -39,8 +39,9 @@ padding: 1vw;
 
 display: flex;
 align-items: center;
+justify-content: center;
 
-font-size: 1vw;
+font-size: 1.5em;
 font-family: Lato;
 font-weight: 700;
 color: #122c5c;

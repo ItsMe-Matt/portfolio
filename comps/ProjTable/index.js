@@ -77,28 +77,28 @@ justify-content: center;
 `
 
 const ProjCont = styled.div`
-margin-bottom: 3.5vh;
+margin-bottom: 2.5vh;
 `
 const ProjHL = styled.div`
 font-family: Poppins;
-font-size: 2.5vh;
+font-size: 1.25em;
 font-weight: 400;
 
 margin-top: 2vh;
 `
 const ProjName = styled.div`
 font-family: Poppins;
-font-size: 5vh;
+font-size: 2.5em;
 font-weight: 500;
 `
 const ProjRole = styled.div`
 font-family: Roboto;
-font-size: 3vh;
+font-size: 1.5em;
 font-weight: 100;
 `
 const ProjYear = styled.div`
 font-family: Roboto;
-font-size: 3vh;
+font-size: 1.5em;
 font-weight: 300;
 
 
@@ -114,7 +114,7 @@ const Summary = styled.div`
 width: 100%;
 
 font-family: Roboto;
-font-size: 2.25vh;
+font-size: 1.2em;
 font-weight: 300;
 line-height: 1.5;
 color: #909090;

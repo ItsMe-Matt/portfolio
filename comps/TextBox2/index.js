@@ -53,8 +53,8 @@ flex-direction: column;
 align-items: center;
 `
 const H1 = styled.div`
-font-size: 1.75vw;
-font-weight: 600;
+font-size: 2em;
+font-weight: 700;
 font-family: Lato;
 text-align: center;
 
@@ -63,7 +63,7 @@ margin-bottom: 1vw;
 const Paragraph = styled.div`
 width: 80%;
 
-font-size: 1vw;
+font-size: 1.2em;
 font-family: Roboto;
 font-weight: 300;
 line-height: 1.5;

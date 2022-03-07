@@ -143,7 +143,7 @@ box-shadow: 0 0 1vw;
 const TxtHeader = styled.div`
 margin: 0;
 font-family: Poppins;
-font-size: 3.5vw;
+font-size: 2.5em;
 font-weight: 700;
 line-height: 1.75;
 margin: 0 2vw;
@@ -152,7 +152,7 @@ margin: 0 2vw;
 const TxtCont = styled.div`
 margin: 0;
 font-family: Roboto;
-font-size: 1.5vw;
+font-size: 1.2em;
 font-weight: 300;
 line-height: 1.75;
 color: #606060;

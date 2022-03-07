@@ -55,7 +55,7 @@ export default function Project2({
 
 const Container = styled.div`
 display: flex;
-width: 60%;
+width: 67%;
 margin: 0.5rem;
 cursor: pointer;
 `
@@ -81,7 +81,7 @@ const TxtCont = styled.div`
 `
 const TxtType = styled.p`
 font-family: Poppins;
-font-size: 1vw;
+font-size: 1em;
 font-weight: 300;
 color: #000000;
 margin: 0;
@@ -92,7 +92,7 @@ const TxtHeader = styled.div`
 width: fit-content;
 
 
-font-size: 1.8vw;
+font-size: 1.5em;
 font-family: Poppins;
 font-weight: 700;
 padding: 0;
@@ -108,7 +108,7 @@ box-shadow: inset 0 -0.7vh ${(props)=>props.uColor};
 const TxtP = styled.p`
 margin: 0;
 font-family: Roboto;
-font-size: 1.3vw;
+font-size: 1.15em;
 font-weight: 300;
 line-height: 1.75;
 color: #606060;
@@ -121,7 +121,7 @@ padding-bottom: 0;
 width: fit-content;
 
 font-family: Poppins;
-font-size: 1.2vw;
+font-size: 1em;
 font-weight: 700;
 line-height: 1.75;
 color: #000;

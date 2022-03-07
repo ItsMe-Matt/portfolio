@@ -25,7 +25,7 @@ align-items: center;
 padding: 6vw 0 1vw 0;
 `
 const H1 = styled.div`
-font-size: 2vw;
+font-size: 2em;
 font-weight: 800;
 font-family: Lato;
 
@@ -34,7 +34,7 @@ margin-bottom: 1vw;
 const Paragraph = styled.div`
 width: 92%;
 
-font-size: 1.1vw;
+font-size: 1.2em;
 font-family: Roboto;
 font-weight: 300;
 line-height: 1.5;
