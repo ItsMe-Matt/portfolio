@@ -116,7 +116,7 @@ width: 100%;
 font-family: Roboto;
 font-size: 1.2em;
 font-weight: 300;
-line-height: 1.75;
+line-height: 1.5;
 color: #909090;
 `
 

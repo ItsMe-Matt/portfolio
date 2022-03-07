@@ -29,7 +29,7 @@ display: flex;
 padding: 6vw 0 1vw 0;
 `
 const Left = styled.div`
-width: 20%;
+width: 25%;
 
 display: flex;
 flex-direction: column;
@@ -37,7 +37,7 @@ align-items: flex-start;
 
 `
 const Right = styled.div`
-width: 80%;
+width: 75%;
 
 display: flex;
 flex-direction: column;

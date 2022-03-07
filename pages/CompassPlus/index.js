@@ -111,6 +111,9 @@ export default function CompassPlusUI() {
               />
             </ImgCont2>
           </Div2>
+          <Caption>
+            These were the results from our user testing.
+            </Caption>
 
         <IDCont id='prob'>
           <TextBox3 
@@ -145,6 +148,18 @@ export default function CompassPlusUI() {
         header=''
         description='As the designing progressed, another team member created their own version of my cards page, and after a vote and minor user testing, we decided to progress with their design instead. After that, I decided to move on to designing components. With designing components, there was once again a hand off and evolution of ideas and designs especially when we handed the designs over to the developers.'
         />
+
+          <ImgCont3>
+            <Image 
+            src="/static/CompassPlus/components.png"
+            width={4718}
+            height={2268}
+            layout="responsive"
+            />
+          </ImgCont3>
+          <Caption>
+              Once again the top row is the low fidelity. The middle row is my work and adaptations and the bottom row is how my teammates interpreted and evolved my designs.
+          </Caption>
         
 
         <TextBox
@@ -153,12 +168,44 @@ export default function CompassPlusUI() {
         
         />
 
+          <ImgCont3>
+            <Image 
+            src="/static/CompassPlus/siteBusinessCards.png"
+            width={4052}
+            height={1554}
+            layout="responsive"
+            />
+          </ImgCont3>
+          <Caption>
+            On the left, is the website I made for CompassPlus. On the right, is the business card I designed for each team member.
+          </Caption>
 
+          <Div2>
+            <ImgCont2>
+              <Image
+              src="/static/CompassPlus/ibbydev.png"
+              width={1920}
+              height={1080}
+              layout="responsive"
+              />
+            </ImgCont2>
+
+            <ImgCont4>
+              <Image
+              src="/static/CompassPlus/businessCardBg.png"
+              width={4530}
+              height={3397}
+              layout="responsive"
+              />
+            </ImgCont4>
+
+
+          </Div2>
 
         <IDCont id='end'>
           <TextBox 
             header='End Product'
-            description='Although our final product lacked certain features due to lack of access, I am proud of the application the team was able to put together. I was also proud of the work I produced with this application. I had designed several components and one way or another, my designs had reached the final product of the app either completely intact or evolved into what is seen at the end. Moving forward, I would have liked to perform more user testing and have more of my designs reach the final product.'
+            description='Although our final product lacked certain features due to lack of access, I am proud of the application the team was able to put together. I was also proud of the work I produced with this application. I had designed several components and one way or another, my designs had reached the final product of the app either completely intact or evolved into what is seen at the end.'
           />
         </IDCont>
 
@@ -272,12 +319,15 @@ width: 50%;
 const ImgCont3 = styled.div`
 width: 99vw;
 margin: 3vw 0 0 0;
-
 `
+const ImgCont4 = styled.div`
+width: 50%;
+`
+
 const Caption = styled.div`
 width: 70vw;
 
-font-size: 1.1vw;
+font-size: 1em;
 font-family: Roboto;
 font-weight: 300;
 line-height: 1.5;
