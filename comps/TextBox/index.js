@@ -17,7 +17,7 @@ export default function TextBox({
 
 
 const Container = styled.div`
-width: 75vw;
+width: 70vw;
 
 display: flex;
 flex-direction: column;
@@ -26,13 +26,14 @@ padding: 6vw 0 1vw 0;
 `
 const H1 = styled.div`
 font-size: 2em;
-font-weight: 800;
+font-weight: 700;
 font-family: Lato;
 
 margin-bottom: 1vw;
+align-self: flex-start;
 `
 const Paragraph = styled.div`
-width: 92%;
+
 
 font-size: 1.2em;
 font-family: Roboto;

@@ -14,9 +14,11 @@ export default function ProjTable({
     return <Container>
         <Left>
             <ImgCont>
-                <ImageSrc 
-                type={imgType}
+                <Image
                 src={img}
+                height={1980}
+                width={1080}
+                layout='responsive'
                 />
             </ImgCont>
         </Left>
@@ -57,10 +59,11 @@ display: flex;
 width: 75vw;
 flex-direction: row;
 height: content-fit;
+justify-content: space-between;
 `
 
 const Left = styled.div`
-width: 50%;
+width: 45%;
 display: flex;
 justify-content: center;
 
@@ -121,6 +124,5 @@ color: #909090;
 `
 
 const ImgCont = styled.div`
-width: 100%;
-margin: 7vh;
+width: 45vh
 `

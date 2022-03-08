@@ -56,8 +56,9 @@ export default function CompassPlusUI() {
           year="2021"
           name={P0.header}
           summary={P0.description}
-          img="/static/CompassPlus/header.png"
-          imgType="1"
+          img="/static/CompassPlus/head.png"
+          imgW='1080'
+          imgH='1980'
           HL={P0.headline}
           />
         </RowCenter>
@@ -144,6 +145,7 @@ export default function CompassPlusUI() {
               The top row is my low fidelity, working its way up to my high fidelity. The bottom is the work of the rest of the team just before the final version.
           </Caption>
 
+          <IDCont id='design' />
         <TextBox
         header=''
         description='As the designing progressed, another team member created their own version of my cards page, and after a vote and minor user testing, we decided to progress with their design instead. After that, I decided to move on to designing components. With designing components, there was once again a hand off and evolution of ideas and designs especially when we handed the designs over to the developers.'
@@ -161,46 +163,41 @@ export default function CompassPlusUI() {
               Once again the top row is the low fidelity. The middle row is my work and adaptations and the bottom row is how my teammates interpreted and evolved my designs.
           </Caption>
         
-
+        <IDCont id='dev' />
         <TextBox
         header='Development Stage'
         description='At the beginning of the development stage, we realized that certain functions and elements could not be coded out due to the abilities of our coders and the lack of access provided by Translink. A good example would be the tappable NFC card. During the initial research, I found that Translink had no intention of releasing a Compass API or making the card digital. Because of that, we had to redesign some of our pages and components to fit, not only what we had, but what we could also handle skill-wise. During the Development stage, I designed a website on wordpress to track our progress and share details regarding the app and the team. Unfortunately, due to limited funds, the website was taken down earlier in 2022. I also designed the business cards at this stage. I also prepared for usability testing but that was also cut out due to time restraints.'
         
         />
 
-          <ImgCont3>
-            <Image 
-            src="/static/CompassPlus/siteBusinessCards.png"
-            width={4052}
-            height={1554}
-            layout="responsive"
-            />
-          </ImgCont3>
-          <Caption>
-            On the left, is the website I made for CompassPlus. On the right, is the business card I designed for each team member.
-          </Caption>
+        <Div2>
+          <ImgCont2>
+            
+                <Image
+                src="/static/CompassPlus/ibbydev.png"
+                width={1896}
+                height={1554}
+                layout="responsive"
+                />
+              
+          </ImgCont2>
 
-          <Div2>
+
             <ImgCont2>
-              <Image
-              src="/static/CompassPlus/ibbydev.png"
-              width={1920}
-              height={1080}
-              layout="responsive"
-              />
-            </ImgCont2>
-
-            <ImgCont4>
               <Image
               src="/static/CompassPlus/businessCardBg.png"
               width={4530}
               height={3397}
               layout="responsive"
               />
-            </ImgCont4>
+            </ImgCont2>
+            </Div2> 
+
+          <Caption>
+            On the left, is the website I made for CompassPlus. On the right, is the business card I designed for each team member.
+          </Caption>
 
 
-          </Div2>
 
         <IDCont id='end'>
           <TextBox 
@@ -310,18 +307,21 @@ flex-direction: column;
 align-items: center;
 `
 const ImgCont1 = styled.div`
-width: 20%;
+width: 30%;
 box-shadow: 0 0 1vw #75a6ff;
+margin: 0 5%
 `
 const ImgCont2 = styled.div`
 width: 50%;
+
 `
 const ImgCont3 = styled.div`
-width: 99vw;
+width: 70vw;
 margin: 3vw 0 0 0;
 `
 const ImgCont4 = styled.div`
-width: 50%;
+background-color: red;
+height: 100%;
 `
 
 const Caption = styled.div`
@@ -338,12 +338,12 @@ color: #909090;
 const Div2 = styled.div`
 display: flex;
 flex-direction: row;
-width: 98vw;
+width: 70vw;
 `
 
 const EndImg = styled.div`
 width: 100%;
-padding: 1.5vw 17vw;
+padding: 3% 15%;
 display: flex;
 justify-content: space-between;
 margin-top: 1vw;
