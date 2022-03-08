@@ -84,7 +84,7 @@ display: flex;
 width: 75vw;
 align-items: baseline;
 justify-content: space-between;
-background-color: #fff;
+background-color: #bdd0f2;
 padding: 5vh 0;
 z-index: 2;
 `
@@ -217,4 +217,5 @@ const FooterArea = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #bdd0f2;
 `

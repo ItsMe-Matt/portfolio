@@ -166,10 +166,6 @@ const Content = styled.div`
 `
 
 const FooterArea = styled.div`
-  padding: 5vh 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `
 
 /*
