@@ -31,17 +31,29 @@ export default function ContactUI({
         </Link>
         
             <GrNext size="1vw"/>
-        <IconCont4>
-            Design Phase
-        </IconCont4>
+
+        <Link href="#design">
+            <IconCont4>
+                Design Phase
+            </IconCont4>    
+        </Link>
+
+
+
             <GrNext size="1vw"/>
-        <IconCont5>
-            Development Phase
-        </IconCont5>
+        <Link href="#dev">
+            <IconCont5>
+                Development Phase
+            </IconCont5>
+        </Link>
+
             <GrNext size="1vw"/>
-        <IconCont6>
-            Conclusion
-        </IconCont6>
+        <Link href="#end">
+            <IconCont6>
+                End Product
+            </IconCont6>
+        </Link>
+
     </Container>
 }
 

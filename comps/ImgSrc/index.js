@@ -9,7 +9,7 @@ export default function ImageSrc({
     if (type === "1") {
         return <Image
             src={src}
-            height={1920}
+            height={1980}
             width={1080}
             layout="responsive"
      />

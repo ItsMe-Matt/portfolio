@@ -29,11 +29,12 @@ display: flex;
 padding: 6vw 0 1vw 0;
 `
 const Left = styled.div`
-width: 25%;
+width: 20%;
 
 display: flex;
 flex-direction: column;
 align-items: flex-start;
+margin-right: 5%;
 
 `
 const Right = styled.div`

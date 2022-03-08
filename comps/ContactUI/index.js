@@ -14,7 +14,10 @@ export default function ContactUI({
     onS3Off=()=>{},
     S3D = "none"
 }) {
-    return <Container>
+    return <FooterArea>
+
+
+    <Container>
         <Left>
             <LHead>
                 I'd love to hear from you
@@ -72,6 +75,7 @@ export default function ContactUI({
             </ContainerS>
         </Right>
     </Container>
+    </FooterArea>
 }
 
 
@@ -80,6 +84,9 @@ display: flex;
 width: 75vw;
 align-items: baseline;
 justify-content: space-between;
+background-color: #fff;
+padding: 5vh 0;
+z-index: 2;
 `
 
 const Left = styled.div`
@@ -205,4 +212,9 @@ overflow: hidden;
 
 padding: 0 1.5vw 0 1vw;
 color: #fff;
+`
+const FooterArea = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
