@@ -9,7 +9,7 @@ import TextBox from '../../comps/TextBox';
 import TextBox2 from '../../comps/TextBox2';
 import TextBox3 from '../../comps/TextBox3';
 import OtherProj from '../../comps/OtherProj';
-
+import TopBtn from '../../comps/TopBtn';
 import Video from '../../comps/Video';
 
 
@@ -62,6 +62,7 @@ export default function CompassPlusUI() {
           HL={P0.headline}
           />
         </RowCenter>
+        <TopBtn />
       </Hero>
 
       <Content>
@@ -350,10 +351,7 @@ margin-top: 1vw;
 background-color: #122c5c;
 `
 const FooterArea = styled.div`
-  padding: 5vh 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
 `
 
 /*

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components'
 import Image from 'next/image';
+import Link from 'next/link'
 
 import ContactUI from '../../comps/ContactUI';
 import HeadNav from '../../comps/HeadNav';
@@ -148,7 +149,29 @@ export default function GivingHandUI() {
         <EndImg>
 
           <EndDiv>
-            Poggy woggie
+            <EndHead>
+              Giving Hand
+            </EndHead>
+
+            <EndP>
+              Feel free to check out the web app by going to the site. If you want to take a look at the code, the link to Github is also here!
+            </EndP>
+
+            <EndBtnCont>
+              <Link href="https://giving-hand-app.vercel.app/LandingPage" target="_blank">
+              <EndBtn>
+                Go to Site
+              </EndBtn>                
+                </Link>
+
+              <Link href="https://github.com/ItsMe-Matt/GivingHandApp" target="_blank">
+              <EndBtn>
+                View Github
+              </EndBtn>
+                </Link>
+
+            </EndBtnCont>
+            
 
           </EndDiv>
 
@@ -175,7 +198,7 @@ export default function GivingHandUI() {
         />
         </Cat>
       </Content>
-      <FooterArea id='contact'>
+      <IDCont id='contact' />
         <ContactUI 
           onS1Off={()=>S1Off()}
           onS1Over={()=>S1On()}
@@ -189,7 +212,7 @@ export default function GivingHandUI() {
           onS3Over={()=>S3On()}
           S3D={S3Display}
         />
-      </FooterArea>
+      
     </Container>
     </div>)
 }
@@ -262,21 +285,50 @@ margin: 2vw 0 0 0;
 color: #909090; 
 `
 const EndDiv = styled.div`
-`
+width: 50%;
 
+`
+const EndHead = styled.div`
+font-size: 2em;
+font-weight: 700;
+font-family: Lato;
+
+margin-bottom: 1vw;
+align-self: flex-start;
+color: #fff;
+`
+const EndP = styled.div`
+font-size: 1.2em;
+font-family: Roboto;
+font-weight: 300;
+line-height: 1.5;
+color: #ccc;
+margin-bottom: 5vh;
+`
+const EndBtnCont = styled.div`
+display: flex;
+flex-direction: row;
+`
+const EndBtn = styled.div`
+background-color: lime;
+width: fit-content;
+padding: 0.5em 1em;
+font-size: 1.2em;
+font-family: Roboto;
+font-weight: 500;
+line-height: 1.5;
+color: #181818;
+border-radius: 10rem;
+margin-right: 1vw;
+`
 const EndImg = styled.div`
 width: 100%;
 padding: 3% 15%;
 display: flex;
 justify-content: space-between;
+align-items: center;
 margin-top: 1vw;
 background-color: #122c5c;
-`
-const FooterArea = styled.div`
-  padding: 5vh 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `
 
 /*
