@@ -93,6 +93,8 @@ const ProjName = styled.div`
 font-family: Poppins;
 font-size: 2.5em;
 font-weight: 500;
+
+color: #334972;
 `
 const ProjRole = styled.div`
 font-family: Roboto;
