@@ -10,31 +10,29 @@ export default function HeadNav() {
             Matthew Zhao, 
         </HTxt>
         <HP>
-            UI/UX Designer + Frontend Developer
+            UI/UX Designer
         </HP>
         </HCont>
         </Link>
 
         <NavCont>
+            <Link href="/AboutMe">
+                <AbtMe>
+                About Me
+                </AbtMe> 
+            </Link>
 
-        <Link href="/AboutMe">
-            <AbtMe>
-            About Me
-            </AbtMe> 
-        </Link>
-        
-        <Link href="/#projects">
-            <NavBtn>
-            Project and Works
-            </NavBtn> 
-        </Link>
-  
-        <Link href="#contact">
-            <ConBtn>
-            Contact Me!
-            </ConBtn> 
-        </Link>
-        
+            <Link href="/#projects">
+                <ProjectBtn>
+                Project and Works
+                </ProjectBtn> 
+            </Link>
+    
+            <Link href="#contact">
+                <ConBtn>
+                Contact Me!
+                </ConBtn> 
+            </Link>
         </NavCont>
     </Container>
     </HBar>
@@ -92,47 +90,28 @@ const HCont = styled.div`
 const NavCont = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
+    align-items: flex-end;
 `
 const AbtMe = styled.div`
 cursor: pointer;
 font-family: Roboto;
-font-size: 1.2em;
+font-size: 1em;
 font-weight: 300;
 padding: 1vh 1vw;
 color: #000;
-
 
 margin: 0 0.5vw;
 &:hover {
     transition: 1s;
     box-shadow: inset 0 -0.2vh #000;
-    font-size: 1.25em;
+    font-size: 1.1em;
 }
-
-
 `
 
-/*
-&:hover {
-
-    animation-name: box;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes box {
-    20% {box-shadow: inset 0 0.1vh #000}
-    40% {box-shadow: inset -0.1vh 0.1vh #000}
-    60% {box-shadow: inset -0.1vh 0.1vh #000, inset 0 -0.1vh #000}
-    80% {box-shadow: inset -0.1vh 0.1vh #000, inset 0.1vh -0.1vh #000}
-    100% {box-shadow: inset -0.1vh 0.1vh #fff, inset 0.1vh -0.1vh #fff}
-}
-*/
-const NavBtn = styled.div`
+const ProjectBtn = styled.div`
     cursor: pointer;
     font-family: Roboto;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 300;
     padding: 1vh 1vw;
     color: #000;
@@ -142,7 +121,7 @@ const NavBtn = styled.div`
     &:hover {
         transition: 1s;
         box-shadow: inset 0 -0.2vh #000;
-        font-size: 1.25em;
+        font-size: 1.1em;
     }
 `
 

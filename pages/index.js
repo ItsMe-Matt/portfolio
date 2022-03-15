@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import styled from 'styled-components'
+import Link from 'next/link'
+import { BsArrowDownShort } from 'react-icons/bs'
 
 import ContactUI from '../comps/ContactUI';
 import ContentHead from "../comps/ContentHead";
 import HeadNav from '../comps/HeadNav'
 import Project from "../comps/Project";
 import Project2 from "../comps/Project2";
-import Social from '../comps/Social'
 
 import Proj from "./data/Proj.json"
 
@@ -58,12 +59,17 @@ export default function Home() {
       <Hero>
         <RowCenter>
         <HeroH>
-        Hi, I’m Matt and I am a UI/UX designer and a frontend developer.
+        Hi, I’m <Link href="/AboutMe"><HeroSpan>Matt</HeroSpan></Link> and I am a UI/UX designer.
         </HeroH>
         <HeroP>
-        I design and develop cross platform applications and solutions.
+        I design beautiful cross platform applications and solutions with comfortable and familiar user experiences.
         </HeroP>
-        <Social />
+        <ProjectBtn>
+        See Projects and Works
+          <BsArrowDownShort size="5vh"/>
+          
+        </ProjectBtn>
+
         </RowCenter>
       </Hero>
       <Content id="projects">
@@ -121,36 +127,47 @@ const Container = styled.div`
 cursor: context-menu
 `
 const Hero = styled.div`
-  background-color: #fff;
   height: 91vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding: 0 12.5vw;
+
 `
 
 const HeroH = styled.div`
   font-family: Poppins;
   font-size: 6vh;
   font-weight: 400;
-  text-align: center;
+  text-align: Left;
   max-width: 75vw;
   margin-bottom: 4vh;
   color: #122C5C;
+`
+const HeroSpan = styled.span`
+font-weight: 700;
+color: #4169e1;
+
+&:hover {
+  transition: 1s;
+  box-shadow: inset 0 -0.7em #ffddcf;
+}
 `
 
 const HeroP = styled.div`
   font-family: Roboto;
   font-weight: 300;
-  font-size: 3.5vh;
+  font-size: 3vh;
   display: flex;
   max-width: 50vw;
-  text-align: center;
+  text-align: left;
   margin-bottom: 8vh;
+  line-height: 1.5;
+  color: #858585;
 `
 const RowCenter = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 `
 
@@ -163,6 +180,14 @@ const Content = styled.div`
   align-items: center;
 
   box-shadow: 0 2vh 5vh #fff inset
+`
+
+const ProjectBtn = styled.div`
+display: flex;
+align-items: center;
+font-family: Poppins;
+font-size: 3vh;
+font-weight: 5d00;
 `
 
 const FooterArea = styled.div`
