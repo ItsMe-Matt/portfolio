@@ -101,6 +101,7 @@ export default function CompassPlusUI() {
               width={1920}
               height={1080}
               layout="responsive"
+              priority={true}
               />
             </ImgCont2>
 
@@ -110,6 +111,7 @@ export default function CompassPlusUI() {
               width={1920}
               height={1080}
               layout="responsive"
+              priority={true}
               />
             </ImgCont2>
           </Div2>
@@ -140,6 +142,7 @@ export default function CompassPlusUI() {
             width={4835}
             height={1764}
             layout="responsive"
+            priority={true}
             />
           </ImgCont3>
           <Caption>
@@ -158,6 +161,7 @@ export default function CompassPlusUI() {
             width={4718}
             height={2268}
             layout="responsive"
+            priority={true}
             />
           </ImgCont3>
           <Caption>
@@ -179,6 +183,7 @@ export default function CompassPlusUI() {
                 width={1896}
                 height={1554}
                 layout="responsive"
+                priority={true}
                 />
               
           </ImgCont2>
@@ -190,6 +195,7 @@ export default function CompassPlusUI() {
               width={4530}
               height={3397}
               layout="responsive"
+              priority={true}
               />
             </ImgCont2>
             </Div2> 
@@ -214,6 +220,7 @@ export default function CompassPlusUI() {
             width={222}
             height={480}
             layout="responsive"
+            priority={true}
             />
           
           </ImgCont1>
@@ -224,6 +231,7 @@ export default function CompassPlusUI() {
             width={222}
             height={480}
             layout="responsive"
+            priority={true}
             />
           
           </ImgCont1>
@@ -234,6 +242,7 @@ export default function CompassPlusUI() {
             width={222}
             height={480}
             layout="responsive"
+            priority={true}
             />
           </ImgCont1>
 

@@ -100,6 +100,7 @@ export default function Home() {
           uColor={ULColor2}
           />
 
+
       </Content>
 
       <FooterArea id='contact'>

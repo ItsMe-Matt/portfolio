@@ -9,6 +9,7 @@ import TextBox from '../../comps/TextBox';
 import TextBox2 from '../../comps/TextBox2';
 import TextBox3 from '../../comps/TextBox3';
 import OtherProj from '../../comps/OtherProj';
+import TopBtn from '../../comps/TopBtn'
 
 import Video from '../../comps/Video';
 
@@ -61,9 +62,10 @@ export default function CompassPlusUI() {
           />
         </RowCenter>
       </Hero>
-
+      
       <Content>
-        <CaseNav />
+      <TopBtn />
+        
         <Cat>
           <IDCont id='problemId'>
             <TextBox
@@ -71,6 +73,12 @@ export default function CompassPlusUI() {
               description='In these changing times, the job market is in a state of fluctuation. Many individuals are experiencing major changes in their careers and will need support to re-establish themselves.'
             />
           </IDCont>
+         
+          
+          <TextBox
+            header='Objectives'
+            description='Our app aims to help these individuals by connecting them with a professional career and financial advisors that can empathize and understand them, and use their expertise to help construct personalized plans for the future.'
+          />
           <ImgCont1>
             <Image 
               src='/static/Actualize/whiteboard01.png'
@@ -79,26 +87,6 @@ export default function CompassPlusUI() {
               layout="responsive"
             />
           </ImgCont1>
-          
-          <TextBox
-            header='Objectives'
-            description='Our app aims to help these individuals by connecting them with a professional career and financial advisors that can empathize and understand them, and use their expertise to help construct personalized plans for the future.'
-          />
-
-          <TextBox3
-          Head='User Persona'
-          Description='Phillip Chan 
-          54 years old
-          Layed off from his full-time server job during the pandemic
-          Is left jobless after the pandemic, and searching for a better job
-          Open the app to look for a career advisor. He is met with the first-time setup, and puts in all his info. After doing so, he lands on the explore page, and decides to look for one best fit for him by looking through advisor profiles and comparing. He flips through some advisors, and lands on Thomas Edwards, who notes in his description that he specializes in helping people reintegrate into new job markets.
-          '
-          />
-
-          <TextBox 
-            header='User Journey'
-            description=''
-          />
           <Video embedId='ar5WlWITb7s'/>
 
           <TextBox 
@@ -171,13 +159,10 @@ align-items: center;
 `
 
 const ImgCont1 = styled.div`
-width: 100vw;
+width: 70vw;
 `
 
 
 const FooterArea = styled.div`
-  padding: 5vh 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
 `

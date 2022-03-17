@@ -105,14 +105,14 @@ align-items: baseline;
 const LHead = styled.p`
 font-family: Poppins;
 font-weight: 500;
-font-size: 1.8em;
+font-size: 1.6em;
 margin: 0;
 color: #122c5c;
 `
 const RP = styled.p`
 font-family: Poppins;
 font-weight: 300;
-font-size: 1.4em;
+font-size: 1.3em;
 margin: 0;
 color: #122c5c;
 margin-right: 1vw;
