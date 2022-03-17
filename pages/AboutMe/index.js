@@ -4,26 +4,11 @@ import Image from 'next/image';
 
 import ContactUI from '../../comps/ContactUI';
 import HeadNav from '../../comps/HeadNav';
-import CaseNav from '../../comps/CaseNav';
-import TextBox from '../../comps/TextBox';
-import TextBox2 from '../../comps/TextBox2';
-import TextBox3 from '../../comps/TextBox3';
-import OtherProj from '../../comps/OtherProj';
-
-import Video from '../../comps/Video';
-
-
-import ProjTable from '../../comps/ProjTable';
-
-import Proj from '../data/Proj.json'
-
 
 export default function CompassPlusUI() {
   var [S1Display, setS1Display] = useState("none")
   var [S2Display, setS2Display] = useState("none")
   var [S3Display, setS3Display] = useState("none")
-
-  var P0 = Proj[1]
 
 //For Contact Area
   function S1On(){
@@ -57,6 +42,7 @@ export default function CompassPlusUI() {
                     width={1065}
                     height={1065}
                     layout="responsive"
+                    priority={true}
                     />
                 </ImgCont>
             </HeadLeft>
