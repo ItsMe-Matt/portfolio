@@ -22,7 +22,7 @@ Video.propTypes = {
 
 const Container = styled.div`
 height: 75vh;
-width: 98vw;
+width: 70vw;
 `
 
 
