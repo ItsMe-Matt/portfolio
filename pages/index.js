@@ -99,17 +99,7 @@ export default function Home() {
           hOff = {hlOff2}
           uColor={ULColor2}
           />
-          <Project2
-          title={Proj[1].header}
-          type={Proj[1].type}
-          img={Proj[1].titleImg}
-          detail={Proj[1].description}
-          route={Proj[1].route}
-          bgcolor={Proj[1].color}
-          hOn = {()=>hlOn2(Proj[1].color)}
-          hOff = {hlOff2}
-          uColor={ULColor2}
-          />
+
 
       </Content>
 

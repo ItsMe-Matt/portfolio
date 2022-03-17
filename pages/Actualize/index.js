@@ -65,7 +65,7 @@ export default function CompassPlusUI() {
       
       <Content>
       <TopBtn />
-        <CaseNav />
+        
         <Cat>
           <IDCont id='problemId'>
             <TextBox
@@ -73,6 +73,12 @@ export default function CompassPlusUI() {
               description='In these changing times, the job market is in a state of fluctuation. Many individuals are experiencing major changes in their careers and will need support to re-establish themselves.'
             />
           </IDCont>
+         
+          
+          <TextBox
+            header='Objectives'
+            description='Our app aims to help these individuals by connecting them with a professional career and financial advisors that can empathize and understand them, and use their expertise to help construct personalized plans for the future.'
+          />
           <ImgCont1>
             <Image 
               src='/static/Actualize/whiteboard01.png'
@@ -81,12 +87,6 @@ export default function CompassPlusUI() {
               layout="responsive"
             />
           </ImgCont1>
-          
-          <TextBox
-            header='Objectives'
-            description='Our app aims to help these individuals by connecting them with a professional career and financial advisors that can empathize and understand them, and use their expertise to help construct personalized plans for the future.'
-          />
-
           <Video embedId='ar5WlWITb7s'/>
 
           <TextBox 
