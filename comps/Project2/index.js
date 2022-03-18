@@ -82,7 +82,7 @@ const TxtCont = styled.div`
 const TxtType = styled.p`
 font-family: Poppins;
 font-size: 1em;
-font-weight: 300;
+font-weight: 500;
 color: #000000;
 margin: 0;
 margin-top: 2vh;

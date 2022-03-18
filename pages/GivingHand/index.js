@@ -25,28 +25,52 @@ export default function GivingHandUI() {
   var [S1Display, setS1Display] = useState("none")
   var [S2Display, setS2Display] = useState("none")
   var [S3Display, setS3Display] = useState("none")
+  var [S1Color, setS1Color] = useState("#ffffff")
+  var [S2Color, setS2Color] = useState("#ffffff")
+  var [S3Color, setS3Color] = useState("#ffffff")
 
-  var P0 = Proj[2]
-
-//For Contact Area
+  //for contact comp
   function S1On(){
-    setS1Display("flex")
+    setS1Display("#fff")
+    setS1Color("#122c5c")
   }
   function S1Off(){
     setS1Display("none")
+    setS1Color("#ffffff")
   }
   function S2On(){
-    setS2Display("flex")
+    setS2Display("#fff")
+    setS2Color("#122c5c")
   }
   function S2Off(){
     setS2Display("none")
+    setS2Color("#ffffff")
   }
   function S3On(){
-    setS3Display("flex")
+    setS3Display("#fff")
+    setS3Color("#122c5c")
   }
   function S3Off(){
     setS3Display("none")
+    setS3Color("#fff")
   }
+
+  //for Project comp
+  function hlOn(e) {
+    setULColor(e)
+  }
+  function hlOff() {
+    setULColor("transparent")
+  }
+  function hlOn2(e) {
+    setULColor2(e)
+  }
+  function hlOff2() {
+    setULColor2("transparent")
+  }
+
+  var P0 = Proj[2]
+
 
   return (<div>
     <Container>
@@ -198,21 +222,24 @@ export default function GivingHandUI() {
         />
         </Cat>
       </Content>
-      <IDCont id='contact' />
+      <FooterArea id='contact'>
         <ContactUI 
           onS1Off={()=>S1Off()}
           onS1Over={()=>S1On()}
           S1D={S1Display}
+          S1C={S1Color}
 
           onS2Off={()=>S2Off()}
           onS2Over={()=>S2On()}
           S2D={S2Display}
+          S2C={S2Color}
 
           onS3Off={()=>S3Off()}
           onS3Over={()=>S3On()}
           S3D={S3Display}
+          S3C={S3Color}
         />
-      
+      </FooterArea>
     </Container>
     </div>)
 }
@@ -255,10 +282,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 `
-const ImgCont1 = styled.div`
-width: 20%;
-box-shadow: 0 0 1vw #75a6ff;
-`
+
 const ImgCont2 = styled.div`
 width: 30%
 
@@ -267,12 +291,7 @@ width: 30%
 const ImgCont3 = styled.div`
 width: 70vw;
 `
-const Div2 = styled.div`
-display: flex;
-flex-direction: row;
-background-color: red;
-width: 98vw;
-`
+
 const Caption = styled.div`
 width: 70vw;
 
@@ -310,7 +329,7 @@ display: flex;
 flex-direction: row;
 `
 const EndBtn = styled.div`
-background-color: lime;
+background-color: #fff;
 width: fit-content;
 padding: 0.5em 1em;
 font-size: 1.2em;
@@ -330,7 +349,7 @@ align-items: center;
 margin-top: 1vw;
 background-color: #122c5c;
 `
+const FooterArea = styled.div`
 
-/*
-<Video embedId='ar5WlWITb7s'/>
-*/
+`
+
