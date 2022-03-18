@@ -73,7 +73,7 @@ export default function Home() {
         <HeroP>
         I design beautiful cross platform applications and solutions with comfortable and familiar user experiences.
         </HeroP>
-        <Link href="">
+        <Link href="/#projects">
           <ProjectBtn>
           See Projects and Works
             <BsArrowDownShort size="5vh"/>
