@@ -18,25 +18,34 @@ export default function Home() {
   var [S1Display, setS1Display] = useState("none")
   var [S2Display, setS2Display] = useState("none")
   var [S3Display, setS3Display] = useState("none")
+  var [S1Color, setS1Color] = useState("#ffffff")
+  var [S2Color, setS2Color] = useState("#ffffff")
+  var [S3Color, setS3Color] = useState("#ffffff")
 
   //for contact comp
   function S1On(){
-    setS1Display("flex")
+    setS1Display("#fff")
+    setS1Color("#122c5c")
   }
   function S1Off(){
     setS1Display("none")
+    setS1Color("#ffffff")
   }
   function S2On(){
-    setS2Display("flex")
+    setS2Display("#fff")
+    setS2Color("#122c5c")
   }
   function S2Off(){
     setS2Display("none")
+    setS2Color("#ffffff")
   }
   function S3On(){
-    setS3Display("flex")
+    setS3Display("#fff")
+    setS3Color("#122c5c")
   }
   function S3Off(){
     setS3Display("none")
+    setS3Color("#fff")
   }
 
   //for Project comp
@@ -59,16 +68,18 @@ export default function Home() {
       <Hero>
         <RowCenter>
         <HeroH>
-        Hi, I’m <Link href="/AboutMe"><HeroSpan>Matt</HeroSpan></Link> and I am a UI/UX designer.
+        Hi, I’m <Link href="/AboutMe"><HeroSpan title="you can click me!">Matt</HeroSpan></Link> and I am a UI/UX designer.
         </HeroH>
         <HeroP>
         I design beautiful cross platform applications and solutions with comfortable and familiar user experiences.
         </HeroP>
-        <ProjectBtn>
-        See Projects and Works
-          <BsArrowDownShort size="5vh"/>
-          
-        </ProjectBtn>
+        <Link href="">
+          <ProjectBtn>
+          See Projects and Works
+            <BsArrowDownShort size="5vh"/>
+          </ProjectBtn>
+        </Link>
+
 
         </RowCenter>
       </Hero>
@@ -108,14 +119,17 @@ export default function Home() {
           onS1Off={()=>S1Off()}
           onS1Over={()=>S1On()}
           S1D={S1Display}
+          S1C={S1Color}
 
           onS2Off={()=>S2Off()}
           onS2Over={()=>S2On()}
           S2D={S2Display}
+          S2C={S2Color}
 
           onS3Off={()=>S3Off()}
           onS3Over={()=>S3On()}
           S3D={S3Display}
+          S3C={S3Color}
         />
       </FooterArea>
     </Container>
@@ -125,7 +139,6 @@ export default function Home() {
 
 
 const Container = styled.div`
-cursor: context-menu
 `
 const Hero = styled.div`
   height: 91vh;
@@ -147,6 +160,7 @@ const HeroH = styled.div`
 const HeroSpan = styled.span`
 font-weight: 700;
 color: #4169e1;
+cursor: pointer;
 
 &:hover {
   transition: 1s;
@@ -174,13 +188,11 @@ const RowCenter = styled.div`
 
 const Content = styled.div`
   min-height: 100vh;
-  background-color: #f7faff;
-  padding: 3vh 0;
+  background-color: #f2f2f2;
+  padding: 6vh 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  box-shadow: 0 2vh 5vh #fff inset
 `
 
 const ProjectBtn = styled.div`

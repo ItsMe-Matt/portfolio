@@ -6,216 +6,166 @@ import { MdOutlineEmail } from "react-icons/md"
 export default function ContactUI({
     onS1Over=()=>{},
     onS1Off=()=>{},
+    S1C = "#fff",
     S1D = "none",
     onS2Over=()=>{},
     onS2Off=()=>{},
+    S2C = "#fff",
     S2D = "none",
     onS3Over=()=>{},
     onS3Off=()=>{},
+    S3C = "#fff",
     S3D = "none"
 }) {
-    return <FooterArea>
+    return <Container>
+        <H1>
+            I'd love to hear from you!
+        </H1>
 
+        <P1>
+            You can reach me with the links below
+        </P1>
 
-    <Container>
-        <Left>
-            <LHead>
-                I'd love to hear from you
-            </LHead>
+        <IconCont>
+            <IconBtn
+            href="https://www.linkedin.com/in/mlzhao/" 
+            target="_blank"
+            onMouseOver={onS1Over}
+            onMouseLeave={onS1Off}
+            S1D={S1D}
+            S1C={S1C}
+            >
+                <FaLinkedin size="3em" color={S1C} />
+                <IconTxt S1C={S1C}>
+                    in/mlzhao
+                </IconTxt>
+            </IconBtn>
 
+            <IconBtn2
+            href="https://github.com/ItsMe-Matt" 
+            target="_blank"
+            onMouseOver={onS2Over}
+            onMouseLeave={onS2Off}
+            S2D={S2D}
+            S2C={S2C}
+            >
+                <FaGithubSquare size="3em" color={S2C} />
+                <IconTxt2 S2C={S2C}>
+                    /ItsMe-Matt
+                </IconTxt2>
+            </IconBtn2>
 
-        </Left>
-
-        <Right>
-            <RP>
-                Say Hello!
-            </RP>
-            <ContainerS>
-                <IconA1 
-                    href="https://www.linkedin.com/in/mlzhao/" 
-                    target="_blank"
-                    onMouseOver={onS1Over}
-                    onMouseLeave={onS1Off}
-                    >
-                    <IconCont>
-                        <FaLinkedin size="2em" color='#2867B2'/>
-                    </IconCont>
-                    
-                    <Hid S1D={S1D}>
-                        in/mlzhao    
-                    </Hid>                    
-                </IconA1>
-
-                <IconA1 
-                    href="https://github.com/ItsMe-Matt" 
-                    target="_blank"
-                    onMouseOver={onS2Over}
-                    onMouseLeave={onS2Off}>
-                    <IconCont>
-                        <FaGithubSquare size="2em"/>
-                    </IconCont>
-                    <Hid2 S2D={S2D}>
-                        /ItsMe-Matt    
-                    </Hid2>  
-                </IconA1>
-
-                <IconA2 
-                    href="mailto:Matthewlukez@yahoo.com" 
-                    target="_blank"
-                    onMouseOver={onS3Over}
-                    onMouseLeave={onS3Off}
-                    >
-                    <IconCont>
-                        <MdOutlineEmail size="2em" />
-                    </IconCont>
-                    <Hid3 S3D={S3D}>
-                        matthewlukez@yahoo.com   
-                    </Hid3> 
-                </IconA2>
-            </ContainerS>
-        </Right>
+            <IconBtn3
+            href="mailto:Matthewlukez@yahoo.com" 
+            target="_blank"
+            onMouseOver={onS3Over}
+            onMouseLeave={onS3Off}
+            S3D={S3D}
+            S3C={S3C}
+            >
+                <MdOutlineEmail size="3em" color={S3C} />
+                <IconTxt3 S3C={S3C}>
+                    matthewlukez@yahoo.com
+                </IconTxt3>
+            </IconBtn3>
+        </IconCont>
     </Container>
-    </FooterArea>
 }
-
 
 const Container = styled.div`
+background-color: #4169e1;
+
 display: flex;
-width: 75vw;
-align-items: baseline;
-justify-content: space-between;
-background-color: #bdd0f2;
-padding: 5vh 0;
-z-index: 2;
-`
+flex-direction: column;
+align-items: center;
+justify-content: center;
 
-const Left = styled.div`
-display: flex; 
-flex-direction: row;
-align-items: baseline;
-`
+padding: 5vw 12.5vw;
+z-index: 100;
 
-const Right = styled.div`
-display: flex; 
-justify-content: flex-end;
-flex-direction: row;
-align-items: baseline;
+position: relative;
 `
-
-const LHead = styled.p`
+const H1 = styled.div`
 font-family: Poppins;
-font-weight: 500;
-font-size: 1.6em;
+font-weight: 700;
+font-size: 2.5em;
 margin: 0;
-color: #122c5c;
+color: #fff;
+margin-bottom: 1em;
 `
-const RP = styled.p`
+const P1 = styled.div`
 font-family: Poppins;
 font-weight: 300;
-font-size: 1.3em;
+font-size: 1.5em;
 margin: 0;
-color: #122c5c;
+color: #c7c7c7;
 margin-right: 1vw;
 `
-
-const ContainerS = styled.div`
-    display: flex;
-    width: fit-content;
-    flex-direction: row;
-`
-
-const IconA1 = styled.a`
-display: flex;
-align-items: center;
-margin-right: 0.75vw;
-background-color: #2868de;
-border-radius: 5rem;
-width: max-content;
-
-&:hover {
-    transition: 1.5s;
-    box-shadow: inset 16vw 0 0 0 #28994c;
-}
-`
-
-const IconA2 = styled.a`
-display: flex;
-align-items: center;
-margin-right: 0.75vw;
-background-color: #2868de;
-border-radius: 5rem;
-width: max-content;
-
-&:hover {
-    transition: 1.5s;
-    box-shadow: inset 25vw 0 0 0 #28994c;
-}
-`
 const IconCont = styled.div`
+margin-top: 2em;
+
 display: flex;
-justify-content: center;
-align-items: center;
-background-color: #fff;
-
-border-radius: 5rem;
-border: 0.1vw solid black;
-
-padding: 0.75vh 2vw;
+flex-direction: row;
 `
-
-const Hid = styled.div`
-height: 1em; 
+const IconBtn = styled.a`
+display: flex;
+flex-direction: column;
 align-items: center;
 
+padding: 1em 3vw;
+margin: 0.25em;
+border-radius: 1em;
+border: solid 0.2em ${(props)=>props.S1C};
+background-color: ${(props)=>props.S1D};
 
-font-family: Roboto;
-font-weight: 300;
-font-size: 1em;
-
-transition: 3s;
-display: ${(props)=>props.S1D};
-overflow: hidden;
-
-padding: 0 1.5vw 0 1vw;
-color: #fff;
+color: #ffffff;
 `
-
-const Hid2 = styled.div`
-height: 1em; 
+const IconBtn2 = styled.a`
+display: flex;
+flex-direction: column;
 align-items: center;
 
+padding: 1em 3vw;
+margin: 0.25em;
+border-radius: 1em;
+border: solid 0.2em ${(props)=>props.S2C};
+background-color: ${(props)=>props.S2D};
 
-font-family: Roboto;
-font-weight: 300;
-font-size: 1em;
-
-transition: 3s;
-display: ${(props)=>props.S2D};
-overflow: hidden;
-
-padding: 0 1.5vw 0 1vw;
-color: #fff;
+color: #ffffff;
 `
-
-const Hid3 = styled.div`
-height: 1em; 
+const IconBtn3 = styled.a`
+display: flex;
+flex-direction: column;
 align-items: center;
 
+padding: 1em 3vw;
+margin: 0.25em;
+border-radius: 1em;
+border: solid 0.2em ${(props)=>props.S3C};
+background-color: ${(props)=>props.S3D};
 
-font-family: Roboto;
-font-weight: 300;
-font-size: 1em;
-
-transition: 3s;
-display: ${(props)=>props.S3D};
-overflow: hidden;
-
-padding: 0 1.5vw 0 1vw;
-color: #fff;
+color: #ffffff;
 `
-const FooterArea = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #bdd0f2;
+const IconTxt = styled.div`
+margin-top: 1em;
+
+font-family: Poppins;
+font-weight: 400;
+
+color: ${(props)=>props.S1C};
 `
+const IconTxt2 = styled.div`
+margin-top: 1em;
+
+font-family: Poppins;
+font-weight: 400;
+color: ${(props)=>props.S2C};
+`
+const IconTxt3 = styled.div`
+margin-top: 1em;
+
+font-family: Poppins;
+font-weight: 400;
+color: ${(props)=>props.S3C};
+`
+

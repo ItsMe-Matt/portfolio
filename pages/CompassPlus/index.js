@@ -23,28 +23,52 @@ export default function CompassPlusUI() {
   var [S1Display, setS1Display] = useState("none")
   var [S2Display, setS2Display] = useState("none")
   var [S3Display, setS3Display] = useState("none")
+  var [S1Color, setS1Color] = useState("#ffffff")
+  var [S2Color, setS2Color] = useState("#ffffff")
+  var [S3Color, setS3Color] = useState("#ffffff")
 
-  var P0 = Proj[0]
-
-//For Contact Area
+  //for contact comp
   function S1On(){
-    setS1Display("flex")
+    setS1Display("#fff")
+    setS1Color("#122c5c")
   }
   function S1Off(){
     setS1Display("none")
+    setS1Color("#ffffff")
   }
   function S2On(){
-    setS2Display("flex")
+    setS2Display("#fff")
+    setS2Color("#122c5c")
   }
   function S2Off(){
     setS2Display("none")
+    setS2Color("#ffffff")
   }
   function S3On(){
-    setS3Display("flex")
+    setS3Display("#fff")
+    setS3Color("#122c5c")
   }
   function S3Off(){
     setS3Display("none")
+    setS3Color("#fff")
   }
+
+  //for Project comp
+  function hlOn(e) {
+    setULColor(e)
+  }
+  function hlOff() {
+    setULColor("transparent")
+  }
+  function hlOn2(e) {
+    setULColor2(e)
+  }
+  function hlOff2() {
+    setULColor2("transparent")
+  }
+  var P0 = Proj[0]
+
+
 
   return (<div>
     <Container>
@@ -130,7 +154,7 @@ export default function CompassPlusUI() {
           description='Our solution is to develop a cross-platform application that allows you to find your route through Translink, buy tickets, and reload them for your trip, with the added feature of checking for live Translink updates. This would allow experienced riders to continue using Translink without losing time in case they are missing their compass card or if they are going to a place they are not familiar with. This would also allow new travelers to easily learn how to navigate through Translink with one convenient application.'
           />
         </IDCont>
-
+        <IDCont id='design' />
         <TextBox
         header='Design Stage'
         description='Taking our goal into consideration, we began the design of our low fidelity and medium-fidelity prototype. I was personally in charge of the card page. For the low fidelity, it felt really strange and clunky. I initially drew inspiration from other mobile payment apps like Apple Pay or Google Pay. However, as designs and user testing progressed, I found that users much preferred a more Starbucks-styled card page, so I based the next design on that.'
@@ -149,7 +173,7 @@ export default function CompassPlusUI() {
               The top row is my low fidelity, working its way up to my high fidelity. The bottom is the work of the rest of the team just before the final version.
           </Caption>
 
-          <IDCont id='design' />
+          
         <TextBox
         header=''
         description='As the designing progressed, another team member created their own version of my cards page, and after a vote and minor user testing, we decided to progress with their design instead. After that, I decided to move on to designing components. With designing components, there was once again a hand off and evolution of ideas and designs especially when we handed the designs over to the developers.'
@@ -209,7 +233,7 @@ export default function CompassPlusUI() {
         <IDCont id='end'>
           <TextBox 
             header='End Product'
-            description='Although our final product lacked certain features due to lack of access, I am proud of the application the team was able to put together. I was also proud of the work I produced with this application. I had designed several components and one way or another, my designs had reached the final product of the app either completely intact or evolved into what is seen at the end.'
+            description='I am proud of the application the team was able to put together. I was also proud of the work I produced with this application. I had designed several components and one way or another, my designs had reached the final product of the app either completely intact or evolved into what is seen at the end.'
           />
         </IDCont>
 
@@ -264,14 +288,17 @@ export default function CompassPlusUI() {
           onS1Off={()=>S1Off()}
           onS1Over={()=>S1On()}
           S1D={S1Display}
+          S1C={S1Color}
 
           onS2Off={()=>S2Off()}
           onS2Over={()=>S2On()}
           S2D={S2Display}
+          S2C={S2Color}
 
           onS3Off={()=>S3Off()}
           onS3Over={()=>S3On()}
           S3D={S3Display}
+          S3C={S3Color}
         />
       </FooterArea>
     </Container>
