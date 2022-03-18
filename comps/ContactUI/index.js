@@ -41,6 +41,20 @@ export default function ContactUI({
                 </IconTxt>
             </IconBtn>
 
+            <IconBtn3
+            href="mailto:Matthewlukez@yahoo.com" 
+            target="_blank"
+            onMouseOver={onS3Over}
+            onMouseLeave={onS3Off}
+            S3D={S3D}
+            S3C={S3C}
+            >
+                <MdOutlineEmail size="3em" color={S3C} />
+                <IconTxt3 S3C={S3C}>
+                    matthewlukez@yahoo.com
+                </IconTxt3>
+            </IconBtn3>
+
             <IconBtn2
             href="https://github.com/ItsMe-Matt" 
             target="_blank"
@@ -55,19 +69,7 @@ export default function ContactUI({
                 </IconTxt2>
             </IconBtn2>
 
-            <IconBtn3
-            href="mailto:Matthewlukez@yahoo.com" 
-            target="_blank"
-            onMouseOver={onS3Over}
-            onMouseLeave={onS3Off}
-            S3D={S3D}
-            S3C={S3C}
-            >
-                <MdOutlineEmail size="3em" color={S3C} />
-                <IconTxt3 S3C={S3C}>
-                    matthewlukez@yahoo.com
-                </IconTxt3>
-            </IconBtn3>
+
         </IconCont>
     </Container>
 }
