@@ -27,19 +27,36 @@ export default function ContactUI({
         </P1>
 
         <IconCont>
-            <IconBtn
-            href="https://www.linkedin.com/in/mlzhao/" 
-            target="_blank"
-            onMouseOver={onS1Over}
-            onMouseLeave={onS1Off}
-            S1D={S1D}
-            S1C={S1C}
-            >
-                <FaLinkedin size="3em" color={S1C} />
-                <IconTxt S1C={S1C}>
-                    in/mlzhao
-                </IconTxt>
-            </IconBtn>
+            <Row>
+                <IconBtn
+                href="https://www.linkedin.com/in/mlzhao/" 
+                target="_blank"
+                onMouseOver={onS1Over}
+                onMouseLeave={onS1Off}
+                S1D={S1D}
+                S1C={S1C}
+                >
+                    <FaLinkedin size="3em" color={S1C} />
+                    <IconTxt S1C={S1C}>
+                        in/mlzhao
+                    </IconTxt>
+                </IconBtn>
+
+                <IconBtn2
+                href="https://github.com/ItsMe-Matt" 
+                target="_blank"
+                onMouseOver={onS2Over}
+                onMouseLeave={onS2Off}
+                S2D={S2D}
+                S2C={S2C}
+                >
+                    <FaGithubSquare size="3em" color={S2C} />
+                    <IconTxt2 S2C={S2C}>
+                        /ItsMe-Matt
+                    </IconTxt2>
+                </IconBtn2>
+            </Row>
+
 
             <IconBtn3
             href="mailto:Matthewlukez@yahoo.com" 
@@ -55,19 +72,7 @@ export default function ContactUI({
                 </IconTxt3>
             </IconBtn3>
 
-            <IconBtn2
-            href="https://github.com/ItsMe-Matt" 
-            target="_blank"
-            onMouseOver={onS2Over}
-            onMouseLeave={onS2Off}
-            S2D={S2D}
-            S2C={S2C}
-            >
-                <FaGithubSquare size="3em" color={S2C} />
-                <IconTxt2 S2C={S2C}>
-                    /ItsMe-Matt
-                </IconTxt2>
-            </IconBtn2>
+            
 
 
         </IconCont>
@@ -108,7 +113,7 @@ font-family: Poppins;
 font-weight: 300;
 font-size: 1.5em;
 margin: 0;
-color: #c7c7c7;
+color: #fff;
 margin-right: 1vw;
 
 @media (max-width: 768px) {
@@ -120,6 +125,11 @@ margin-top: 2em;
 
 display: flex;
 flex-direction: row;
+
+@media (max-width: 768px) {
+flex-direction: column;
+justify-content: center;
+  }
 `
 const IconBtn = styled.a`
 display: flex;
@@ -183,3 +193,7 @@ font-weight: 400;
 color: ${(props)=>props.S3C};
 `
 
+const Row = styled.div`
+display: flex;
+justify-content: center;
+`

@@ -179,7 +179,7 @@ const HeroH2 = styled.div`
   font-size: 6vh;
   font-weight: 400;
   text-align: Left;
-  max-width: 75vw;
+  width: 100%;
   margin-bottom: 4vh;
   color: #122C5C;
 
@@ -213,11 +213,16 @@ const HeroP = styled.div`
   font-weight: 300;
   font-size: 3vh;
   display: flex;
-  max-width: 50vw;
+  width: 50vw;
   text-align: left;
   margin-bottom: 8vh;
   line-height: 1.5;
   color: #858585;
+
+
+  @media (max-width: 768px) {
+    width: 100vw;
+  }
 `
 const RowCenter = styled.div`
   display: flex;
@@ -240,7 +245,7 @@ display: flex;
 align-items: center;
 font-family: Poppins;
 font-size: 3vh;
-font-weight: 5d00;
+font-weight: 500;
 `
 
 const FooterArea = styled.div`
