@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { BsArrowDownShort } from 'react-icons/bs'
 
 import ContactUI from '../comps/ContactUI';
-import ContentHead from "../comps/ContentHead";
 import HeadNav from '../comps/HeadNav'
 import Project from "../comps/Project";
 import Project2 from "../comps/Project2";
@@ -71,7 +70,7 @@ export default function Home() {
         Hi, I’m <Link href="/AboutMe"><HeroSpan title="you can click me!">Matt</HeroSpan></Link> and I am a UI/UX designer.
         </HeroH>
         <HeroP>
-        I design beautiful cross platform applications and solutions with comfortable and familiar user experiences.
+        I design beautiful cross platform applications and solutions with comfortable and familiar experiences.
         </HeroP>
         <Link href="/#projects">
           <ProjectBtn>
@@ -84,7 +83,7 @@ export default function Home() {
         </RowCenter>
       </Hero>
       <Content id="projects">
-        <ContentHead title="Project and Works"/>
+        
         
 
         <Project
