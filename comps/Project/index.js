@@ -60,10 +60,19 @@ display: flex;
 width: 67%;
 margin: 0.5rem;
 cursor: pointer;
+
+@media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 const Left = styled.div`
 width: 45%;
 margin-right: 3vw; 
+
+@media (max-width: 768px) {
+    width: 100%;
+    margin: 2em 0;
+  }
 `
 const Right = styled.div`
 width: 55%;
@@ -72,12 +81,20 @@ margin-left: 3vw;
 
 display: flex;
 align-items: center;
+
+@media (max-width: 768px) {
+    width: 100%;
+  }
 `
 const ImgCont = styled.div`
 overflow: hidden;
 border-radius: 0.5rem;
 background-color: ${(props)=>props.bgcolor};
 box-shadow: 0 0.5vh 0.3vh #adadad;
+
+@media (max-width: 768px) {
+    width: 100%;
+  }
 `
 const TxtCont = styled.div`
 `

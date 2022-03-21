@@ -18,4 +18,8 @@ const Container = styled.div`
     padding-bottom: 1vh;
     margin-bottom: 1vh;
     width: 75vw;
+
+    @media (max-width: 768px) {
+        display: none;
+      }
 `
