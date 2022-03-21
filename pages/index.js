@@ -62,8 +62,7 @@ export default function Home() {
     setULColor2("transparent")
   }
 
-  return (<div>
-    <Container>
+  return <Container>
     <HeadNav />
       <Hero>
         <RowCenter>
@@ -133,12 +132,14 @@ export default function Home() {
         />
       </FooterArea>
     </Container>
-    </div>)
+  
 }
 
 
 
 const Container = styled.div`
+width: 100vw;
+background-color: pink;
 `
 const Hero = styled.div`
   height: 91vh;
