@@ -2,7 +2,6 @@ import { useState } from 'react';
 import styled from 'styled-components'
 import Link from 'next/link'
 import { BsArrowDownShort } from 'react-icons/bs'
-import Head from 'next/head'
 
 import ContactUI from '../comps/ContactUI';
 import ContentHead from "../comps/ContentHead";
@@ -64,9 +63,6 @@ export default function Home() {
   }
 
   return (<div>
-    <Head>
-      <title>Matt's Portfolio</title>
-    </Head>
     <Container>
     <HeadNav />
       <Hero>
