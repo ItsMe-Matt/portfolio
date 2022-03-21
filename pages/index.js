@@ -138,8 +138,12 @@ export default function Home() {
 
 
 const Container = styled.div`
-width: 100vw;
-background-color: pink;
+width: 100%;
+
+@media (max-width: 768px) {
+  width: 120%;
+}
+
 `
 const Hero = styled.div`
   height: 91vh;

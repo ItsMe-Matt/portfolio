@@ -48,9 +48,7 @@ const HBar = styled.div`
     background-color: #ffffff;
     box-shadow: 0 1vh 2vh #fff;
 
-    @media (max-width: 768px) {
-        background-color: blue;
-      }
+
 `
 
 const Container = styled.div`
@@ -61,8 +59,8 @@ const Container = styled.div`
     width: 75vw;
 
     @media (max-width: 768px) {
-        width: 100vw;
-        background-color: red;
+        width: 100%;
+
       }
 `
 
@@ -78,6 +76,9 @@ const HTxt = styled.p`
     &:hover {
         color: royalblue;
     }
+    @media (max-width: 768px) {
+        margin-left: 5vw;
+      }
     
 `
 const HP = styled.p`
@@ -165,4 +166,7 @@ const ConBtn = styled.div`
         color: #fff;
         font-size: 1.25em
     }
+    @media (max-width: 768px) {
+        padding: 5vw 5vw;
+      }
 `
