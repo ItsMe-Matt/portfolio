@@ -63,6 +63,7 @@ cursor: pointer;
 
 @media (max-width: 768px) {
     flex-direction: column;
+    width: 80%;
   }
 `
 const Left = styled.div`

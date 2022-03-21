@@ -78,6 +78,7 @@ const HTxt = styled.p`
     }
     @media (max-width: 768px) {
         margin-left: 5vw;
+        font-size: 1.25em;
       }
     
 `
@@ -164,11 +165,16 @@ const ConBtn = styled.div`
         transition: 1.5s;
         box-shadow: inset 10vw 0 0 0 #00d45c;
         color: #fff;
-        font-size: 1.25em
+        font-size: 1.25em;
+
+
+
     }
     @media (max-width: 768px) {
-        padding: 3vw 5vw;
-        
-        &:hover {}
+        padding: 2.5vw 4vw;
+        margin-right: 5vw;
+        font-weight: 500;
+        font-size: 1em;
+
       }
 `

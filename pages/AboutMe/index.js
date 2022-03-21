@@ -96,7 +96,7 @@ export default function CompassPlusUI() {
 
 const Container = styled.div`
 @media (max-width: 768px) {
-  width: 120%;
+  width: 100%;
 }
 `
 const Hero = styled.div`
@@ -122,7 +122,9 @@ const RowCenter = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    width: 80%;
+    width: 100%;
+    padding: 0 10%;
+    
   }
 `
 

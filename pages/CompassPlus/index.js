@@ -309,7 +309,7 @@ export default function CompassPlusUI() {
 
 const Container = styled.div`
 @media (max-width: 768px) {
-width: 120%;
+width: 100%;
 }
 `
 const Hero = styled.div`

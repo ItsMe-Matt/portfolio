@@ -145,7 +145,7 @@ const Container = styled.div`
 width: 100%;
 
 @media (max-width: 768px) {
-  width: 120%;
+  width: 100%;
 }
 
 `
@@ -156,7 +156,7 @@ const Hero = styled.div`
   padding: 0 12.5vw;
 
   @media (max-width: 768px) {
-    height: 100vh;
+    height: 90vh;
   }
 `
 
@@ -176,7 +176,7 @@ const HeroH = styled.div`
 
 const HeroH2 = styled.div`
   font-family: Poppins;
-  font-size: 6vh;
+  font-size: 5vh;
   font-weight: 400;
   text-align: Left;
   width: 100%;
@@ -221,7 +221,8 @@ const HeroP = styled.div`
 
 
   @media (max-width: 768px) {
-    width: 100vw;
+    width: 100%;
+    font-size: 2.25vh;
   }
 `
 const RowCenter = styled.div`
@@ -246,6 +247,12 @@ align-items: center;
 font-family: Poppins;
 font-size: 3vh;
 font-weight: 500;
+
+
+@media (max-width: 768px) {
+font-size: 1.25em;
+}
+
 `
 
 const FooterArea = styled.div`

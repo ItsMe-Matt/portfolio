@@ -61,6 +61,7 @@ cursor: pointer;
 
 @media (max-width: 768px) {
     flex-direction: column-reverse;
+    width: 80%;
   }
 `
 const Left = styled.div`
@@ -81,6 +82,7 @@ margin-left: 3vw;
 
 @media (max-width: 768px) {
     width: 100%;
+    margin: 2em 0;
   }
 `
 const ImgCont = styled.div`
