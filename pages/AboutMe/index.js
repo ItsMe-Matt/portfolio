@@ -95,6 +95,9 @@ export default function CompassPlusUI() {
 
 
 const Container = styled.div`
+@media (max-width: 768px) {
+  width: 120%;
+}
 `
 const Hero = styled.div`
   background-color: #fff;
