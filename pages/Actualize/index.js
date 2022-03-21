@@ -147,7 +147,6 @@ export default function CompassPlusUI() {
 
 
 const Container = styled.div`
-cursor: context-menu
 `
 const Hero = styled.div`
   background-color: #fff;
@@ -186,6 +185,10 @@ align-items: center;
 
 const ImgCont1 = styled.div`
 width: 70vw;
+
+@media (max-width: 768px) {
+  width: 100%;
+  }
 `
 
 

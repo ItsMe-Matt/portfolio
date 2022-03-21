@@ -354,18 +354,25 @@ const ImgCont1 = styled.div`
 width: 30%;
 box-shadow: 0 0 1vw #75a6ff;
 margin: 0 5%
+
+@media (max-width: 768px) {
+  width: 100%;  
+}
 `
 const ImgCont2 = styled.div`
 width: 50%;
 
+@media (max-width: 768px) {
+  width: 100%;  
+}
 `
 const ImgCont3 = styled.div`
 width: 70vw;
 margin: 3vw 0 0 0;
-`
-const ImgCont4 = styled.div`
-background-color: red;
-height: 100%;
+
+@media (max-width: 768px) {
+  width: 100%;  
+}
 `
 
 const Caption = styled.div`
@@ -383,6 +390,12 @@ const Div2 = styled.div`
 display: flex;
 flex-direction: row;
 width: 70vw;
+
+@media (max-width: 768px) {
+  width: 100%;
+  flex-direction: column;
+
+}
 `
 
 const EndImg = styled.div`

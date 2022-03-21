@@ -34,6 +34,9 @@ width: 75vw;
 display: flex;
 justify-content: space-between;
 margin-top: 1vh;
+@media (max-width: 768px) {
+    width: 100%;
+    }
 `
 const NavBtn = styled.div`
 padding: 1vw;
@@ -46,4 +49,8 @@ font-size: 1.3em;
 font-family: Lato;
 font-weight: 700;
 color: #122c5c;
+
+@media (max-width: 768px) {
+font-size: 1.2em;
+    }
 `

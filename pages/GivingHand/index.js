@@ -288,10 +288,17 @@ align-items: center;
 const ImgCont2 = styled.div`
 width: 30%
 
+@media (max-width: 768px) {
+  width: 100%;
+  }
 
 `
 const ImgCont3 = styled.div`
 width: 70vw;
+
+@media (max-width: 768px) {
+  width: 100%;
+  }
 `
 
 const Caption = styled.div`
