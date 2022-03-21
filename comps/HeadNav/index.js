@@ -30,7 +30,7 @@ export default function HeadNav() {
     
             <Link href="#contact">
                 <ConBtn>
-                Contact Me!
+                Contact Me
                 </ConBtn> 
             </Link>
         </NavCont>
@@ -167,6 +167,8 @@ const ConBtn = styled.div`
         font-size: 1.25em
     }
     @media (max-width: 768px) {
-        padding: 5vw 5vw;
+        padding: 3vw 5vw;
+        
+        &:hover {}
       }
 `
