@@ -243,7 +243,7 @@ export default function GivingHandUI() {
 
 const Container = styled.div`
 @media (max-width: 768px) {
-  width: 120%;
+  width: 100%;
   }
 `
 const Hero = styled.div`
@@ -357,6 +357,7 @@ justify-content: space-between;
 align-items: center;
 margin-top: 1vw;
 background-color: #122c5c;
+
 `
 const FooterArea = styled.div`
 
