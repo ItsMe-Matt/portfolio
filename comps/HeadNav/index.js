@@ -7,7 +7,7 @@ export default function HeadNav() {
         <Link href="/">
         <HCont>
         <HTxt>
-            Matthew Zhao, 
+            Matthew Zhao 
         </HTxt>
         <HP>
             UI/UX Designer
@@ -30,7 +30,7 @@ export default function HeadNav() {
     
             <Link href="#contact">
                 <ConBtn>
-                Contact Me!
+                Contact Me
                 </ConBtn> 
             </Link>
         </NavCont>
@@ -47,6 +47,8 @@ const HBar = styled.div`
     height: 9vh;
     background-color: #ffffff;
     box-shadow: 0 1vh 2vh #fff;
+
+
 `
 
 const Container = styled.div`
@@ -55,6 +57,11 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 75vw;
+
+    @media (max-width: 768px) {
+        width: 100%;
+
+      }
 `
 
 const HTxt = styled.p`
@@ -69,6 +76,9 @@ const HTxt = styled.p`
     &:hover {
         color: royalblue;
     }
+    @media (max-width: 768px) {
+        margin-left: 5vw;
+      }
     
 `
 const HP = styled.p`
@@ -77,6 +87,10 @@ const HP = styled.p`
     color: #122C5C;
     font-size: 1em;
     padding: 0;
+
+    @media (max-width: 768px) {
+        display: none;
+      }
 
 `
 const HCont = styled.div`
@@ -106,6 +120,10 @@ margin: 0 0.5vw;
     box-shadow: inset 0 -0.2vh #000;
     font-size: 1.1em;
 }
+
+@media (max-width: 768px) {
+    display: none;
+  }
 `
 
 const ProjectBtn = styled.div`
@@ -123,6 +141,10 @@ const ProjectBtn = styled.div`
         box-shadow: inset 0 -0.2vh #000;
         font-size: 1.1em;
     }
+
+    @media (max-width: 768px) {
+        display: none;
+      }
 `
 
 const ConBtn = styled.div`
@@ -144,4 +166,9 @@ const ConBtn = styled.div`
         color: #fff;
         font-size: 1.25em
     }
+    @media (max-width: 768px) {
+        padding: 3vw 5vw;
+        
+        &:hover {}
+      }
 `

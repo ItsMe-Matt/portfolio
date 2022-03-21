@@ -97,7 +97,7 @@ line-height: 1.5;
 const LItem = styled.li`
 width: 80%;
 
-font-size: 1.2 em;
+font-size: 1.2em;
 font-family: Roboto;
 font-weight: 300;
 LItemne-height: 1.5;

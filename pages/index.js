@@ -61,14 +61,18 @@ export default function Home() {
     setULColor2("transparent")
   }
 
-  return (<div>
-    <Container>
+  return <Container>
     <HeadNav />
       <Hero>
         <RowCenter>
         <HeroH>
         Hi, I’m <Link href="/AboutMe"><HeroSpan title="you can click me!">Matt</HeroSpan></Link> and I am a UI/UX designer.
         </HeroH>
+
+        <HeroH2>
+        Hi, I’m <Link href="/AboutMe"><HeroSpan2 title="you can click me!">Matt</HeroSpan2></Link> <br />I am a UI/UX designer.
+        </HeroH2>
+
         <HeroP>
         I design beautiful cross platform applications and solutions with comfortable and familiar experiences.
         </HeroP>
@@ -132,12 +136,18 @@ export default function Home() {
         />
       </FooterArea>
     </Container>
-    </div>)
+  
 }
 
 
 
 const Container = styled.div`
+width: 100%;
+
+@media (max-width: 768px) {
+  width: 120%;
+}
+
 `
 const Hero = styled.div`
   height: 91vh;
@@ -145,6 +155,9 @@ const Hero = styled.div`
   align-items: center;
   padding: 0 12.5vw;
 
+  @media (max-width: 768px) {
+    height: 100vh;
+  }
 `
 
 const HeroH = styled.div`
@@ -155,8 +168,36 @@ const HeroH = styled.div`
   max-width: 75vw;
   margin-bottom: 4vh;
   color: #122C5C;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
+
+const HeroH2 = styled.div`
+  font-family: Poppins;
+  font-size: 6vh;
+  font-weight: 400;
+  text-align: Left;
+  max-width: 75vw;
+  margin-bottom: 4vh;
+  color: #122C5C;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `
 const HeroSpan = styled.span`
+font-weight: 700;
+color: #4169e1;
+cursor: pointer;
+
+&:hover {
+  transition: 1s;
+  box-shadow: inset 0 -0.7em #ffddcf;
+}
+`
+const HeroSpan2 = styled.span`
 font-weight: 700;
 color: #4169e1;
 cursor: pointer;

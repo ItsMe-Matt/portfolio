@@ -86,6 +86,10 @@ padding: 5vw 12.5vw;
 z-index: 100;
 
 position: relative;
+
+@media (max-width: 768px) {
+    width: 100%;
+  }
 `
 const H1 = styled.div`
 font-family: Poppins;
@@ -94,6 +98,10 @@ font-size: 2.5em;
 margin: 0;
 color: #fff;
 margin-bottom: 1em;
+
+@media (max-width: 768px) {
+    text-align: center;
+  }
 `
 const P1 = styled.div`
 font-family: Poppins;
@@ -102,6 +110,10 @@ font-size: 1.5em;
 margin: 0;
 color: #c7c7c7;
 margin-right: 1vw;
+
+@media (max-width: 768px) {
+    text-align: center;
+  }
 `
 const IconCont = styled.div`
 margin-top: 2em;
