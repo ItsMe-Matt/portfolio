@@ -308,7 +308,9 @@ export default function CompassPlusUI() {
 
 
 const Container = styled.div`
-cursor: context-menu
+@media (max-width: 768px) {
+width: 120%;
+}
 `
 const Hero = styled.div`
   background-color: #fff;
@@ -318,6 +320,11 @@ const Hero = styled.div`
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    height: max-content;
+    padding: 5vh 0;
+    }
 `
 const RowCenter = styled.div`
   display: flex;
@@ -327,7 +334,7 @@ const RowCenter = styled.div`
 `
 const Content = styled.div`
   min-height: 100vh;
-  background-color: #f7faff;
+  background-color: #f2f2f2;
   padding: 3vh 0;
   display: flex;
   flex-direction: column;

@@ -60,6 +60,13 @@ width: 75vw;
 flex-direction: row;
 height: content-fit;
 justify-content: space-between;
+
+@media (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
 `
 
 const Left = styled.div`
@@ -68,6 +75,10 @@ display: flex;
 justify-content: center;
 
 margin-right: 0.5vw;
+
+@media (max-width: 768px) {
+    width: 100%;
+      }
 `
 
 const Right = styled.div`
@@ -77,6 +88,11 @@ margin-left: 0.5vw;
 display: flex;
 flex-direction: column;
 justify-content: center;
+
+@media (max-width: 768px) {
+    align-items: flex-start;
+    width: 100%;
+      }
 `
 
 const ProjCont = styled.div`
@@ -95,6 +111,10 @@ font-size: 2.5em;
 font-weight: 500;
 
 color: #334972;
+
+@media (max-width: 768px) {
+    font-size: 2em;
+    }
 `
 const ProjRole = styled.div`
 font-family: Roboto;

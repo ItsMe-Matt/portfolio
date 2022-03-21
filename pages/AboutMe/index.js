@@ -109,7 +109,7 @@ const Hero = styled.div`
 
   @media (max-width: 768px) {
     height: max-content;
-    margin: 10vh 0;  
+    margin: 10vh 0;
   }
 `
 
@@ -122,10 +122,8 @@ const RowCenter = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    width: 90%;
-    
+    width: 80%;
   }
-
 `
 
 const HeadLeft = styled.div`

@@ -37,6 +37,12 @@ width: 75vw;
 
 display: flex;
 padding: 6vw 0 1vw 0;
+
+@media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    padding: 5% 10%;
+    }
 `
 const Left = styled.div`
 width: 50%;
@@ -44,6 +50,12 @@ width: 50%;
 display: flex;
 flex-direction: column;
 align-items: center;
+
+@media (max-width: 768px) {
+    width: 100%;
+    align-items: flex-start;
+    padding: 5% 0;
+    }
 `
 const Right = styled.div`
 width: 50%;
@@ -51,6 +63,12 @@ width: 50%;
 display: flex;
 flex-direction: column;
 align-items: center;
+
+@media (max-width: 768px) {
+    align-items: flex-start;
+    width: 100%;
+    padding: 5% 0;
+    }
 `
 const H1 = styled.div`
 font-size: 2em;
@@ -68,4 +86,7 @@ font-family: Roboto;
 font-weight: 300;
 line-height: 1.5;
 
+@media (max-width: 768px) {
+    width: 100%;
+    }
 `

@@ -11,14 +11,9 @@ import TextBox2 from '../../comps/TextBox2';
 import TextBox3 from '../../comps/TextBox3';
 import OtherProj from '../../comps/OtherProj';
 import TopBtn from '../../comps/TopBtn';
-
-import Video from '../../comps/Video';
-
-
 import ProjTable from '../../comps/ProjTable';
 
 import Proj from '../data/Proj.json'
-import CaseTable from '../../comps/CaseTable';
 
 
 export default function GivingHandUI() {
@@ -247,16 +242,23 @@ export default function GivingHandUI() {
 
 
 const Container = styled.div`
-cursor: context-menu
+@media (max-width: 768px) {
+  width: 120%;
+  }
 `
 const Hero = styled.div`
-  background-color: #fff;
-  height: 91vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+background-color: #fff;
+height: 91vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+
+@media (max-width: 768px) {
+  height: max-content;
+  padding: 5vh 0;
+  }
 `
 const RowCenter = styled.div`
   display: flex;

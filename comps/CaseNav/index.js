@@ -64,6 +64,10 @@ align-items: baseline;
 height: 3vh;
 
 width: 75vw;
+
+@media (max-width: 768px) {
+    display: none;
+      }
 `
 
 const IconCont = styled.div`

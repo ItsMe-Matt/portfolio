@@ -23,6 +23,11 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 6vw 0 1vw 0;
+
+@media (max-width: 768px) {
+    width: 100%;
+    padding: 5% 10%;
+    }
 `
 const H1 = styled.div`
 font-size: 2em;
