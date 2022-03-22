@@ -25,6 +25,15 @@
         "route": "/GivingHand",
         "color": "#ffc3a3",
         "headline": "Helping, providing for, and nurturing the homeless."
+    },
+    {
+        "header": "Media Gallery",
+        "type" : "Graphic Design + Photography",
+        "titleImg": "/static/projImg/GHTitle.png",
+        "description": "This is a gallery of some of my graphic design work, along with some photography pieces",
+        "route": "/Media",
+        "color": "#dbbaff",
+        "headline": "Check out this cool stuff I made"
     }
 
 ]

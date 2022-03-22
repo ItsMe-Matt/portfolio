@@ -48,20 +48,7 @@ export default function CompassPlusUI() {
     setS3Display("none")
     setS3Color("#fff")
   }
-
-  //for Project comp
-  function hlOn(e) {
-    setULColor(e)
-  }
-  function hlOff() {
-    setULColor("transparent")
-  }
-  function hlOn2(e) {
-    setULColor2(e)
-  }
-  function hlOff2() {
-    setULColor2("transparent")
-  }
+  
   var P0 = Proj[0]
 
 
