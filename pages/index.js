@@ -64,10 +64,8 @@ export default function Home() {
 
   return <Container>
     <Head>
-      <title>
-        Matt's Portfolio
-      </title>
-      <meta name='description' content="Welcome to Matt's Portfolio. This will showcase Matt's awesome skills and experience with ui/ux design, graphic design, and frontend development." />
+      <title> Matt&apos;s Portfolio </title>
+      <meta name='description' content="Welcome to Matt&apos;s Portfolio. This will showcase Matt&apos;s awesome skills and experience with ui/ux design, graphic design, and frontend development." />
     </Head>
     <HeadNav />
       <Hero>
