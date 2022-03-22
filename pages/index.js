@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components'
 import Link from 'next/link'
 import { BsArrowDownShort } from 'react-icons/bs'
+import Head from 'next/head'
 
 import ContactUI from '../comps/ContactUI';
 import HeadNav from '../comps/HeadNav'
@@ -62,6 +63,12 @@ export default function Home() {
   }
 
   return <Container>
+    <Head>
+      <title>
+        Matt's Portfolio
+      </title>
+      <meta name='description' content="Welcome to Matt's Portfolio. This will showcase Matt's awesome skills and experience with ui/ux design, graphic design, and frontend development." />
+    </Head>
     <HeadNav />
       <Hero>
         <RowCenter>
