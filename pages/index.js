@@ -119,18 +119,6 @@ export default function Home() {
           uColor={ULColor2}
           />
 
-        <Project
-          title={Proj[3].header}
-          type={Proj[3].type}
-          img={Proj[3].titleImg}
-          detail={Proj[3].description}
-          route={Proj[3].route}
-          bgcolor={Proj[3].color}
-          hOn = {()=>hlOn(Proj[3].color)}
-          hOff = {hlOff}
-          uColor={ULColor}
-          />
-          
 
 
       </Content>
@@ -287,5 +275,19 @@ const FooterArea = styled.div`
           hOn = {()=>hlOn2(Proj[1].color)}
           hOff = {hlOff2}
           uColor={ULColor2}
+          />
+*/
+
+/*
+        <Project
+          title={Proj[3].header}
+          type={Proj[3].type}
+          img={Proj[3].titleImg}
+          detail={Proj[3].description}
+          route={Proj[3].route}
+          bgcolor={Proj[3].color}
+          hOn = {()=>hlOn(Proj[3].color)}
+          hOff = {hlOff}
+          uColor={ULColor}
           />
 */
