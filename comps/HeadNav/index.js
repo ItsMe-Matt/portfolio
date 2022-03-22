@@ -10,7 +10,7 @@ export default function HeadNav() {
             Matthew Zhao 
         </HTxt>
         <HP>
-            UI/UX Designer + Graphic Designer
+            UI/UX Designer
         </HP>
         </HCont>
         </Link>
