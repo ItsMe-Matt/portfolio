@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Link from 'next/link'
-import { AiOutlineToTop } from 'react-icons/AI'
+import { AiOutlineToTop } from 'react-icons/ai'
 
 export default function TopBtn() {
 
