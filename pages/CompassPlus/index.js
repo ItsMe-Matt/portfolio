@@ -6,17 +6,13 @@ import ContactUI from '../../comps/ContactUI';
 import HeadNav from '../../comps/HeadNav';
 import CaseNav from '../../comps/CaseNav';
 import TextBox from '../../comps/TextBox';
-import TextBox2 from '../../comps/TextBox2';
 import TextBox3 from '../../comps/TextBox3';
 import OtherProj from '../../comps/OtherProj';
 import TopBtn from '../../comps/TopBtn';
-import Video from '../../comps/Video';
-
-
 import ProjTable from '../../comps/ProjTable';
-
-import Proj from '../data/Proj.json'
 import CaseTable from '../../comps/CaseTable';
+import Proj from '../data/Proj.json'
+
 
 
 export default function CompassPlusUI() {
@@ -126,6 +122,7 @@ export default function CompassPlusUI() {
               height={1080}
               layout="responsive"
               priority={true}
+              alt="User Survey Results"
               />
             </ImgCont2>
 
@@ -136,6 +133,7 @@ export default function CompassPlusUI() {
               height={1080}
               layout="responsive"
               priority={true}
+              alt="User Survey Results 2"
               />
             </ImgCont2>
           </Div2>
