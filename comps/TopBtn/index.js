@@ -13,7 +13,7 @@ export default function TopBtn() {
                     </Btn>
 
                     <Btn2>
-                        <AiOutlineToTop size="3em" color="#fff" />
+                        <AiOutlineToTop size="2.5em" color="#fff" />
                     </Btn2>
                 </div>
 
@@ -35,8 +35,8 @@ top: 90vh;
 
 @media (max-width: 768px) {
     width: 100%;
-    top: 95vh;
-    right: 10vw;
+    top: 90%;
+    right: 5%;
     }
 `
 
@@ -60,11 +60,11 @@ display: none;
 
 @media (max-width: 768px) {
     display: flex;
-align-items: center;
-justify-content: center;
-height: 4em;
-width: 4em;
-background-color: royalblue;
-border-radius: 10rem;
-        }
+    align-items: center;
+    justify-content: center;
+    height: 4em;
+    width: 4em;
+    background-color: royalblue;
+    border-radius: 10rem;
+}
 `
