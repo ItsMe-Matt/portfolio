@@ -79,7 +79,7 @@ export default function Home() {
         </HeroH2>
 
         <HeroP>
-        I design beautiful cross platform applications and solutions with comfortable and familiar experiences.
+        I design beautiful cross platform applications and solutions with comfortable and familiar experiences. I also have experience with graphic design and frontend development.
         </HeroP>
         <Link href="/#projects">
           <ProjectBtn>
@@ -119,6 +119,17 @@ export default function Home() {
           uColor={ULColor2}
           />
 
+        <Project
+          title={Proj[3].header}
+          type={Proj[3].type}
+          img={Proj[3].titleImg}
+          detail={Proj[3].description}
+          route={Proj[3].route}
+          bgcolor={Proj[3].color}
+          hOn = {()=>hlOn(Proj[3].color)}
+          hOff = {hlOff}
+          uColor={ULColor}
+          />
 
 
       </Content>

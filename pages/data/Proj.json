@@ -27,11 +27,11 @@
         "headline": "Helping, providing for, and nurturing the homeless."
     },
     {
-        "header": "Media Gallery",
+        "header": "Gundam Box/Poster",
         "type" : "Graphic Design + Photography",
-        "titleImg": "/static/projImg/GHTitle.png",
-        "description": "This is a gallery of some of my graphic design work, along with some photography pieces",
-        "route": "/Media",
+        "titleImg": "/static/projImg/gundamTitle.png",
+        "description": "This is a gundam box that I designed for an in class assignment. It features the Seravee Gundam from Gundam 00.",
+        "route": "/Gundam",
         "color": "#dbbaff",
         "headline": "Check out this cool stuff I made"
     }

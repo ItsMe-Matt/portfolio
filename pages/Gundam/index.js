@@ -4,12 +4,7 @@ import Image from 'next/image';
 
 import ContactUI from '../../comps/ContactUI';
 import HeadNav from '../../comps/HeadNav';
-import TopBtn from '../../comps/TopBtn';
-import ProjTable from '../../comps/ProjTable';
-
-import Proj from '../data/Proj.json'
-
-
+import MediaTable from '../../comps/MediaTable';
 
 export default function MediaUI() {
   var [S1Display, setS1Display] = useState("none")
@@ -45,28 +40,12 @@ export default function MediaUI() {
     setS3Color("#fff")
   }
 
-
-  var P0 = Proj[0]
-
-
-
   return (<div>
     <Container>
     <HeadNav />
       <Hero>
-        <RowCenter>
-          <ProjTable
-          role={P0.type}
-          year="2021"
-          name={P0.header}
-          summary={P0.description}
-          img="/static/CompassPlus/head.png"
-          imgW='1080'
-          imgH='1980'
-          HL={P0.headline}
-          />
-        </RowCenter>
-        <TopBtn />
+        <MediaTable />
+        
       </Hero>
 
       <Content>
@@ -109,17 +88,24 @@ const Hero = styled.div`
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding: 0 12.5%;
 
   @media (max-width: 768px) {
     height: max-content;
     padding: 5vh 0;
     }
 `
-const RowCenter = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+const HeroTable = styled.div`
+display: flex;
+width: 100%;
+`
+const HeroL = styled.div`
+width: 100%;
+background-color: red;
+`
+const HeroR = styled.div`
+width: 100%;
+background-color: blue;
 `
 const Content = styled.div`
   min-height: 100vh;
@@ -133,36 +119,8 @@ const Content = styled.div`
 `
 const IDCont = styled.div`
 `
-const Cat = styled.div`
-margin: 3vh 0;
-display: flex;
-flex-direction: column;
-align-items: center;
-`
-const ImgCont1 = styled.div`
-width: 30%;
-box-shadow: 0 0 1vw #75a6ff;
-margin: 0 5%
 
-@media (max-width: 768px) {
-  width: 100%;  
-}
-`
-const ImgCont2 = styled.div`
-width: 50%;
 
-@media (max-width: 768px) {
-  width: 100%;  
-}
-`
-const ImgCont3 = styled.div`
-width: 70vw;
-margin: 3vw 0 0 0;
-
-@media (max-width: 768px) {
-  width: 100%;  
-}
-`
 
 const Caption = styled.div`
 width: 70vw;
@@ -174,17 +132,6 @@ line-height: 1.5;
 text-align: center;
 margin: 2vw 0 0 0;
 color: #909090; 
-`
-const Div2 = styled.div`
-display: flex;
-flex-direction: row;
-width: 70vw;
-
-@media (max-width: 768px) {
-  width: 100%;
-  flex-direction: column;
-
-}
 `
 
 const EndImg = styled.div`

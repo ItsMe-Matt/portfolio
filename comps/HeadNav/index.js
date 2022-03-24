@@ -16,7 +16,7 @@ export default function HeadNav() {
         </Link>
 
         <NavCont>
-            <Link href="/AboutMe">
+            <Link href="/About">
                 <AbtMe>
                 About Me
                 </AbtMe> 
