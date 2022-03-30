@@ -33,7 +33,7 @@ export default function CaseHP2({
 }
 
 const Container = styled.div`
-width: 75vw;
+width: 65vw;
 
 display: flex;
 padding: 6vw 0 1vw 0;

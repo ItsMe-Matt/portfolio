@@ -56,7 +56,7 @@ export default function CaseTable({
 }
 
 const Container = styled.div`
-width: 75vw;
+width: 65vw;
 
 display: flex;
 padding: 5vh 0;

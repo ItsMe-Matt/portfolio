@@ -25,13 +25,14 @@ export default function TopBtn() {
 }
 
 const Container = styled.div`
-width: 75vw;
+width: 65vw;
 display: flex;
 justify-content: flex-end;
 
 position: fixed;
 z-index: 1;
 top: 90vh;
+right: 18vw;
 
 @media (max-width: 768px) {
     width: 100%;

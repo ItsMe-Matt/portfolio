@@ -59,7 +59,6 @@ width: 55%;
 margin: 0.5rem;
 cursor: pointer;
 padding: 1em;
-border: solid black 2px;
 
 @media (max-width: 768px) {
     flex-direction: column-reverse;
@@ -69,7 +68,7 @@ border: solid black 2px;
 const Left = styled.div`
 width: 55%;
 float: right;
-margin: 0 2em;
+margin: 0;
 display: flex;
 align-items: center;
 

@@ -165,19 +165,17 @@ export default function GivingHandUI() {
 
             <EndBtnCont>
               <Link href="https://giving-hand-app.vercel.app/LandingPage" target="_blank">
-              <EndBtn>
-                Go to Site
-              </EndBtn>                
-                </Link>
+                <EndBtn>
+                  Go to Site
+                </EndBtn>                
+              </Link>
 
               <Link href="https://github.com/ItsMe-Matt/GivingHandApp" target="_blank">
-              <EndBtn>
-                View Github
-              </EndBtn>
-                </Link>
-
+                <EndBtn>
+                  View Github
+                </EndBtn>
+              </Link>
             </EndBtnCont>
-            
 
           </EndDiv>
 
@@ -187,12 +185,8 @@ export default function GivingHandUI() {
             width={600}
             height={1234}
             layout="responsive"
-            
-            
             />
           </ImgCont2>
-
-
         </EndImg>
 
 
@@ -280,7 +274,7 @@ width: 30%;
   }
 `
 const ImgCont3 = styled.div`
-width: 70vw;
+width: 65vw;
 
 @media (max-width: 768px) {
   width: 100%;
@@ -297,6 +291,16 @@ line-height: 1.5;
 text-align: center;
 margin: 2vw 0 0 0;
 color: #909090; 
+`
+const EndImg = styled.div`
+width: 65vw;
+padding: 3% 15%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 1vw;
+background-color: #122c5c;
+
 `
 const EndDiv = styled.div`
 width: 50%;
@@ -335,16 +339,7 @@ color: #181818;
 border-radius: 10rem;
 margin-right: 1vw;
 `
-const EndImg = styled.div`
-width: 100%;
-padding: 3% 15%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-top: 1vw;
-background-color: #122c5c;
 
-`
 const FooterArea = styled.div`
 
 `

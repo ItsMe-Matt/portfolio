@@ -54,7 +54,7 @@ export default function CaseHero({
 
 const Container = styled.div`
 display: flex;
-width: 75vw;
+width: 65vw;
 flex-direction: row;
 height: content-fit;
 justify-content: space-between;

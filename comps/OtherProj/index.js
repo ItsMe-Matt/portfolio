@@ -30,7 +30,7 @@ export default function OtherProj({
 }
 
 const Container = styled.div`
-width: 75vw;
+width: 65vw;
 display: flex;
 justify-content: space-between;
 margin-top: 1vh;
