@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import styled from 'styled-components'
-import Image from 'next/image';
 
-import ContactUI from '../../comps/ContactUI';
-import HeadNav from '../../comps/HeadNav';
-import MediaTable from '../../comps/MediaTable';
+import ContactUI from '@/comps/ContactUI';
+import HeadNav from '@/comps/HeadNav';
+import CaseHeroMedia from '@/comps/CaseHeroMedia';
+
+import Proj from '@/pages/data/Proj.json'
 
 export default function MediaUI() {
   var [S1Display, setS1Display] = useState("none")
@@ -40,11 +41,21 @@ export default function MediaUI() {
     setS3Color("#fff")
   }
 
+  var P0 = Proj[3]
+
   return (<div>
     <Container>
     <HeadNav />
       <Hero>
-        <MediaTable />
+      <CaseHeroMedia
+        role={P0.type}
+        year="2021"
+        name={P0.header}
+        img="/static/projImg/gundamTitle.png"
+        imgW='1080'
+        imgH='1440'
+        HL={P0.description}
+        />
         
       </Hero>
 

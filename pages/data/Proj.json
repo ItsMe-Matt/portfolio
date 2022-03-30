@@ -28,9 +28,9 @@
     },
     {
         "header": "Gundam Box/Poster",
-        "type" : "Graphic Design + Photography",
+        "type" : "Graphic Design",
         "titleImg": "/static/projImg/gundamTitle.png",
-        "description": "This is a gundam box that I designed for an in class assignment. It features the Seravee Gundam from Gundam 00.",
+        "description": "This is the front box art of a Master Grade Gundam Seravee plastic model.",
         "route": "/Gundam",
         "color": "#dbbaff",
         "headline": "Check out this cool stuff I made"

@@ -5,9 +5,6 @@ import Image from 'next/image';
 import ContactUI from '../../comps/ContactUI';
 import HeadNav from '../../comps/HeadNav';
 import CaseNav from '../../comps/CaseNav';
-import TextBox from '../../comps/TextBox';
-import TextBox2 from '../../comps/TextBox2';
-import TextBox3 from '../../comps/TextBox3';
 import OtherProj from '../../comps/OtherProj';
 import TopBtn from '../../comps/TopBtn'
 

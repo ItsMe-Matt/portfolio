@@ -1,23 +1,22 @@
 import styled from "styled-components"
-import ImageSrc from "../ImgSrc"
 import Image from "next/image"
 
-export default function ProjTable({
+export default function CaseHeroMedia({
     role="UI/UX Design",
     year="2021",
     name="The Giving Hand",
-    summary="CompassPlus is an app designed to replace your physical Compass card with a digital NFC card you can use on your phone.",
-    img="/projImg/cPTitle.png",
-    imgType="1",
-    HL = "This is a one sentenced head liner for the application"
+    HL = "This is a one sentenced head liner for the application",
+    img = "",
+    imgW = "",
+    imgH = ""
 }) {
     return <Container>
         <Left>
             <ImgCont>
                 <Image
                 src={img}
-                height={1980}
-                width={1080}
+                height={imgH}
+                width={imgW}
                 layout='responsive'
                 />
             </ImgCont>
@@ -44,10 +43,6 @@ export default function ProjTable({
                 </ProjHL>
                
             </ProjCont>
-
-            <Summary>
-                {summary}
-            </Summary>
             
         </Right>
     </Container>

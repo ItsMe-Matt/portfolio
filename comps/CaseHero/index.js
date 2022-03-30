@@ -1,15 +1,20 @@
 import styled from "styled-components"
 import Image from "next/image"
 
-export default function MediaTable({
-    imgsrc="/projImg/cPTitle.png"
+export default function CaseHero({
+    role="UI/UX Design",
+    year="2021",
+    name="The Giving Hand",
+    summary="CompassPlus is an app designed to replace your physical Compass card with a digital NFC card you can use on your phone.",
+    img="/projImg/cPTitle.png",
+    HL = "This is a one sentenced head liner for the application"
 }) {
     return <Container>
         <Left>
             <ImgCont>
                 <Image
-                src={imgsrc}
-                height={1440}
+                src={img}
+                height={1980}
                 width={1080}
                 layout='responsive'
                 />

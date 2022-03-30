@@ -4,14 +4,15 @@ import Image from 'next/image';
 import Link from 'next/link'
 
 import ContactUI from '../../comps/ContactUI';
-import HeadNav from '../../comps/HeadNav';
+import CaseHP1 from '@/comps/CaseHP1'
+import CaseHP2 from '@/comps/CaseHP2'
+import CaseHP3 from '@/comps/CaseHP3'
 import CaseNav from '../../comps/CaseNav';
-import TextBox from '../../comps/TextBox';
-import TextBox2 from '../../comps/TextBox2';
-import TextBox3 from '../../comps/TextBox3';
+import CaseHero from '../../comps/CaseHero';
+import CaseTable from '../../comps/CaseTable';
+import HeadNav from '../../comps/HeadNav';
 import OtherProj from '../../comps/OtherProj';
 import TopBtn from '../../comps/TopBtn';
-import ProjTable from '../../comps/ProjTable';
 
 import Proj from '../data/Proj.json'
 
@@ -58,7 +59,7 @@ export default function GivingHandUI() {
     <HeadNav />
       <Hero>
         <RowCenter>
-          <ProjTable
+          <CaseHero
           role={P0.type}
           year="2021"
           name={P0.header}
@@ -76,14 +77,14 @@ export default function GivingHandUI() {
         <CaseNav />
         <Cat>
           <IDCont id='role'>
-            <TextBox3
+            <CaseHP3
               header='My Role'
               description='My role in the Giving Hand was an especially challenging one as I had to take on all the roles at some point. In this project, my roles included project manager, developer, and designer. Most of my team was very passive compared to me so it encouraged me to take the initiative to get the project off the ground and running. My team consisted of two other designers and another developer. At the beginning, I really had to take the initiative to push the team forward because everyone on the team was very passive. As the initiator, I set goals, deadlines, and frequently checked on teammates to make sure we were making progress and made sure that everyone who needed support was acknowledged and received it.'
             />
           </IDCont>
 
           <IDCont id='research'>
-            <TextBox
+            <CaseHP1
               header='User Research'
               description='Through our user survey, we discovered that a lot of the people we interviewed had actually donated to homeless people at one point or another. From our survey, we learned that the top reason that stops people from donating is that they don’t know where or what the money is going to. They don’t know if the organization they are donating to is trustable or if the money even reaches the people they are hoping to help.'
             />
@@ -92,7 +93,7 @@ export default function GivingHandUI() {
          
 
         <IDCont id='prob'>
-          <TextBox2 
+          <CaseHP2 
             LHead='Problem Identification'
             LDescription='A lot of people in Vancouver want to help and donate to the homeless but most people do not know if the organization is trustable or if the money even reaches the people they are hoping to help with their donation.'
     
@@ -102,7 +103,7 @@ export default function GivingHandUI() {
         </IDCont>
 
         <IDCont id='design' />
-        <TextBox
+        <CaseHP1
         header='Design Stage'
         description='During the design stage, I made a medium fidelity prototype along with the rest of the team. Although, not too many of the designs remained too intact at the end, ideas did evolve and this gave us the chance to explore which designs worked and which designs did not work too well. '
         />
@@ -119,7 +120,7 @@ export default function GivingHandUI() {
           This was my medium fidelity that I designed.
         </Caption>
 
-        <TextBox
+        <CaseHP1
         header=''
         description='One of the designs that was well received was my organization question page. On this page, on my medium fidelity, it would drop down to show more details about the organizations. On the final version, it would open a Pop up and then you can confirm on the pop up. One of the reasons we did this was to make sure that the users would at least glance through the information about the organizations. We cannot force the users to do anything but we can always work certain behaviors into the flow. As the development phase began, I was no longer able to put as much time into design and focused more time into building out the components and layout of the page.'
         />
@@ -137,7 +138,7 @@ export default function GivingHandUI() {
         </Caption>
 
         <IDCont id='dev' />
-        <TextBox
+        <CaseHP1
         header='Development Stage'
         description='When the development stage began, the designs were simple enough to not require too many edits and changes. I created most of the components and page layouts as well as the pop ups which took a while to figure out. Other than that everything was just a grind. There was one more feature that I wanted to implement which was a map for the organizations where you just got to look around and see the organizations and where they were located.'
         
@@ -146,7 +147,7 @@ export default function GivingHandUI() {
 
 
         <IDCont id='end' />
-          <TextBox 
+          <CaseHP1 
             header='End Product'
             description='At the end, I was pretty happy with how the project came out. With my knowledge and experience of NextJS now, I would definitely attach the app to a dataset and get the maps feature working. I would also make the app more interactive with animations and different effects. From this project, I was given the opportunity to work on every aspect of the application and initiate and improve the workflow of the team with meetings and check-ins.'
           />
