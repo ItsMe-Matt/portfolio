@@ -104,7 +104,7 @@ font-weight: 400;
 margin-top: 2vh;
 `
 const ProjName = styled.div`
-font-family: Poppins;
+font-family: Montserrat;
 font-size: 2.5em;
 font-weight: 500;
 
@@ -115,12 +115,13 @@ color: #334972;
     }
 `
 const ProjRole = styled.div`
-font-family: Roboto;
-font-size: 1.5em;
-font-weight: 100;
+font-family: Poppins;
+font-size: 1.25em;
+font-weight: 300;
+color: #999;
 `
 const ProjYear = styled.div`
-font-family: Roboto;
+font-family: Poppins;
 font-size: 1.5em;
 font-weight: 300;
 
