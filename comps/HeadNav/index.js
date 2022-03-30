@@ -24,7 +24,7 @@ export default function HeadNav() {
 
             <Link href="/#projects">
                 <ProjectBtn>
-                Project and Works
+                Project
                 </ProjectBtn> 
             </Link>
     
@@ -39,74 +39,116 @@ export default function HeadNav() {
 }
 
 const HBar = styled.div`
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    height: 9vh;
-    background-color: #ffffff;
-    box-shadow: 0 1vh 2vh #fff;
-
-
+display: flex;
+justify-content: center;
+position: sticky;
+top: 0;
+z-index: 1;
+background-color: #ffffff;
+box-shadow: 0 1vh 2vh #fff;
 `
 
 const Container = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 75vw;
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+justify-content: space-between;
+width: 65vw;
 
-    @media (max-width: 768px) {
-        width: 100%;
-
-      }
+@media (max-width: 768px) {
+    width: 100%;
+}
 `
 
 const HTxt = styled.p`
-    font-family: Poppins;
-    font-weight: 500;
-    color: #122C5C;
-    font-size: 1.5em;
-    padding: 0;
+font-family: Montserrat;
+font-weight: 500;
+color: #122C5C;
+font-size: 1.5em;
+padding: 0;
+margin-right: 0.5vw;
 
-    margin-right: 0.5vw;
-
-    &:hover {
-        color: royalblue;
-    }
-    @media (max-width: 768px) {
-        margin-left: 5vw;
-        font-size: 1.25em;
-      }
-    
+&:hover {
+    color: royalblue;
+}
+@media (max-width: 768px) {
+    margin-left: 5vw;
+    font-size: 1.25em;
+  }
 `
 const HP = styled.p`
-    font-family: Poppins;
-    font-weight: 300;
-    color: #122C5C;
-    font-size: 1em;
-    padding: 0;
+font-family: Poppins;
+font-weight: 300;
+font-size: 1em;
 
-    @media (max-width: 768px) {
-        display: none;
-      }
-
+@media (max-width: 768px) {
+    display: none;
+  }
 `
 const HCont = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    cursor: pointer;
+display: flex;
+flex-direction: row;
+align-items: baseline;
+cursor: pointer;
 `
 
 
 const NavCont = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+display: flex;
+flex-direction: row;
+align-items: flex-end;
 `
+
+const AbtMe = styled.div`
+cursor: pointer;
+font-family: Poppins;
+font-size: 1em;
+font-weight: 500;
+margin: 0.5vh 0.5vw;
+padding: 0.5vh 0.5vw;
+border-radius: 0.5em;
+transition: 2s;
+
+&:hover {
+    box-shadow: inset 0 -5em #ffddcf;
+    font-size: 1.1em;
+    padding: 0.4vh 0.4vw;
+}
+`
+const ProjectBtn = styled.div`
+cursor: pointer;
+font-family: Poppins;
+font-size: 1em;
+font-weight: 500;
+margin: 0.5vh 0.5vw;
+padding: 0.5vh 0.5vw;
+border-radius: 0.5em;
+transition: 2s;
+
+&:hover {
+    box-shadow: inset 0 -5em #ffddcf;
+    font-size: 1.1em;
+    padding: 0.4vh 0.4vw;
+}
+`
+const ConBtn = styled.div`
+cursor: pointer;
+font-family: Poppins;
+font-size: 1em;
+font-weight: 500;
+margin: 0.5vh 0.5vw;
+padding: 0.5vh 0.5vw;
+border-radius: 0.5em;
+transition: 2s;
+
+&:hover {
+    box-shadow: inset 0 -5em #ffddcf;
+    font-size: 1.1em;
+    padding: 0.4vh 0.4vw;
+}
+`
+
+/*
 const AbtMe = styled.div`
 cursor: pointer;
 font-family: Roboto;
@@ -149,7 +191,6 @@ const ProjectBtn = styled.div`
 `
 
 const ConBtn = styled.div`
-
     cursor: pointer;
     font-family: Roboto;
     font-size: 1.2em;
@@ -178,3 +219,5 @@ const ConBtn = styled.div`
 
       }
 `
+
+*/

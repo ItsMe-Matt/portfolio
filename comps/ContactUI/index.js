@@ -98,8 +98,8 @@ position: relative;
   }
 `
 const H1 = styled.div`
-font-family: Poppins;
-font-weight: 700;
+font-family: Montserrat;
+font-weight: 900;
 font-size: 2.5em;
 margin: 0;
 color: #fff;

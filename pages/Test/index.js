@@ -1,12 +1,19 @@
 import { useState } from 'react';
 import styled from 'styled-components'
+import Link from 'next/link'
+import { BsArrowDownShort } from 'react-icons/bs'
+import Head from 'next/head'
 
 import ContactUI from '@/comps/ContactUI';
 import HeadNav from '@/comps/HeadNav'
-import CaseP1 from '@/comps/CaseP1';
-import CaseP3 from '@/comps/CaseP3';
+import Project from "@/comps/Project";
+import Project2 from "@/comps/Project2";
+import ProjectCard from '@/comps/ProjectCard';
 
-export default function Home() {
+import Proj from "@/pages/data/Proj.json"
+
+
+export default function Test() {
   var [ULColor, setULColor] = useState("transparent")
   var [ULColor2, setULColor2] = useState("transparent")
   var [S1Display, setS1Display] = useState("none")
@@ -42,13 +49,77 @@ export default function Home() {
     setS3Color("#fff")
   }
 
+  //for Project comp
+  function hlOn(e) {
+    setULColor(e)
+  }
+  function hlOff() {
+    setULColor("transparent")
+  }
+  function hlOn2(e) {
+    setULColor2(e)
+  }
+  function hlOff2() {
+    setULColor2("transparent")
+  }
+
   return <Container>
+    <Head>
+      <title> Matt&apos;s Portfolio </title>
+      <meta name='description' content="Welcome to Matt&apos;s Portfolio. This will showcase Matt&apos;s awesome skills and experience with ui/ux design, graphic design, and frontend development." />
+    </Head>
     <HeadNav />
       <Hero>
-        <CaseP1 />
+        <RowCenter>
+        <HeroH>
+        Hi, I’m <Link href="/AboutMe"><HeroSpan title="you can click me!">Matt</HeroSpan></Link> and I am a UI/UX designer.
+        </HeroH>
+
+        <HeroH2>
+        Hi, I’m <Link href="/AboutMe"><HeroSpan2 title="you can click me!">Matt</HeroSpan2></Link> <br />I am a UI/UX designer.
+        </HeroH2>
+
+        <HeroP>
+        I design beautiful cross platform applications and solutions with comfortable and familiar experiences. I also have experience with graphic design and frontend development.
+        </HeroP>
+        <Link href="/#projects">
+          <ProjectBtn>
+          See Projects
+            <BsArrowDownShort size="4vh"/>
+          </ProjectBtn>
+        </Link>
+
+
+        </RowCenter>
       </Hero>
       <Content id="projects">
-        
+
+        <Div2Proj>
+          <ProjectCard 
+            title={Proj[0].headline}
+            type={Proj[0].type}
+            img={Proj[0].titleImg}
+            detail={Proj[0].header}
+            route={Proj[0].route}
+            bgcolor={Proj[0].color}
+            hOn = {()=>hlOn(Proj[0].color)}
+            hOff = {hlOff}
+            uColor={ULColor}
+          />
+          <ProjectCard 
+            title={Proj[3].description}
+            type={Proj[3].type}
+            img={Proj[3].titleImg}
+            detail={Proj[3].description}
+            route={Proj[3].route}
+            bgcolor={Proj[3].color}
+            hOn = {()=>hlOn2(Proj[3].color)}
+            hOff = {hlOff2}
+            uColor={ULColor2}
+          />
+
+        </Div2Proj>
+
       </Content>
 
       <FooterArea id='contact'>
@@ -87,6 +158,7 @@ const Hero = styled.div`
   height: 91vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 12.5vw;
 
   @media (max-width: 768px) {
@@ -95,11 +167,10 @@ const Hero = styled.div`
 `
 
 const HeroH = styled.div`
-  font-family: Poppins;
-  font-size: 6vh;
-  font-weight: 400;
-  text-align: Left;
-  max-width: 75vw;
+  font-family: Montserrat;
+  font-size: 3.25em;
+  font-weight: 900;
+  width: 65vw;
   margin-bottom: 4vh;
   color: #122C5C;
 
@@ -109,7 +180,7 @@ const HeroH = styled.div`
 `
 
 const HeroH2 = styled.div`
-  font-family: Poppins;
+  font-family: Montserrat;
   font-size: 5vh;
   font-weight: 400;
   text-align: Left;
@@ -122,17 +193,16 @@ const HeroH2 = styled.div`
   }
 `
 const HeroSpan = styled.span`
-font-weight: 700;
 color: #4169e1;
+box-shadow: inset 0 -0.15em #ffddcf;
 cursor: pointer;
 
 &:hover {
   transition: 1s;
-  box-shadow: inset 0 -0.7em #ffddcf;
+  box-shadow: inset 0 -0.8em #ffddcf;
 }
 `
 const HeroSpan2 = styled.span`
-font-weight: 700;
 color: #4169e1;
 cursor: pointer;
 
@@ -143,51 +213,53 @@ cursor: pointer;
 `
 
 const HeroP = styled.div`
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: 3vh;
-  display: flex;
-  width: 50vw;
-  text-align: left;
-  margin-bottom: 8vh;
-  line-height: 1.5;
-  color: #858585;
+font-family: Poppins;
+font-weight: 300;
+font-size: 1.25em;
+line-height: 1.5;
+color: #858585;
+display: flex;
+width: 50vw;
+margin-bottom: 8vh;
 
-
-  @media (max-width: 768px) {
-    width: 100%;
-    font-size: 2.25vh;
-  }
+@media (max-width: 768px) {
+  width: 100%;
+  font-size: 2.25vh;
+}
 `
-const RowCenter = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-`
-
-const Content = styled.div`
-  min-height: 100vh;
-  background-color: #f2f2f2;
-  padding: 6vh 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-
 const ProjectBtn = styled.div`
 display: flex;
 align-items: center;
-font-family: Poppins;
-font-size: 3vh;
+font-family: Montserrat;
+font-size: 2.3vh;
 font-weight: 500;
-
 
 @media (max-width: 768px) {
 font-size: 1.25em;
 }
 
 `
+const RowCenter = styled.div`
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+`
+
+const Content = styled.div`
+min-height: 100vh;
+background-color: #f2f2f2;
+padding: 6vh 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+`
+const Div2Proj = styled.div`
+width: 65%;
+min-height: 10vh;
+display: flex;
+`
+
 
 const FooterArea = styled.div`
 `
