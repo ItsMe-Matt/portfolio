@@ -334,7 +334,7 @@ width: 50%;
 }
 `
 const ImgCont3 = styled.div`
-width: 65vw;
+width: 70vw;
 margin: 3vw 0 0 0;
 
 @media (max-width: 768px) {
@@ -354,7 +354,7 @@ color: #909090;
 const Div2 = styled.div`
 display: flex;
 flex-direction: row;
-width: 65vw;
+width: 70vw;
 
 @media (max-width: 768px) {
   width: 100%;
@@ -362,7 +362,7 @@ width: 65vw;
 }
 `
 const EndImg = styled.div`
-width: 65%;
+width: 70%;
 padding: 3% 10%;
 display: flex;
 justify-content: space-between;

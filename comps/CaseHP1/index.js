@@ -19,7 +19,7 @@ const Container = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 65vw;
+width: 70vw;
 padding: 6vw 0 1vw 0;
 
 @media (max-width: 768px) {

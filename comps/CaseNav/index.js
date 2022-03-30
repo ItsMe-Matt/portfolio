@@ -63,7 +63,7 @@ justify-content: space-between;
 align-items: baseline;
 height: 3vh;
 
-width: 65vw;
+width: 70vw;
 
 @media (max-width: 768px) {
     display: none;

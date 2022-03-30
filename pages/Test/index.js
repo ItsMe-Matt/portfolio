@@ -80,7 +80,7 @@ export default function Test() {
         </HeroH2>
 
         <HeroP>
-        I design beautiful cross platform applications and solutions with comfortable and familiar experiences. I also have experience with graphic design and frontend development.
+        I design beautiful cross platform applications and solutions with comfortable and familiar experiences. I also have a background in graphic design and frontend development.
         </HeroP>
         <Link href="/#projects">
           <ProjectBtn>
@@ -96,10 +96,9 @@ export default function Test() {
 
         <Div2Proj>
           <ProjectCard 
-            title={Proj[0].headline}
-            type={Proj[0].type}
+            title={Proj[0].header}
             img={Proj[0].titleImg}
-            detail={Proj[0].header}
+            headline={Proj[0].headline}
             route={Proj[0].route}
             bgcolor={Proj[0].color}
             hOn = {()=>hlOn(Proj[0].color)}
@@ -107,10 +106,9 @@ export default function Test() {
             uColor={ULColor}
           />
           <ProjectCard 
-            title={Proj[3].description}
-            type={Proj[3].type}
+            title={Proj[3].header}
             img={Proj[3].titleImg}
-            detail={Proj[3].description}
+            headline={Proj[3].headline}
             route={Proj[3].route}
             bgcolor={Proj[3].color}
             hOn = {()=>hlOn2(Proj[3].color)}
@@ -155,7 +153,7 @@ width: 100%;
 
 `
 const Hero = styled.div`
-  height: 91vh;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,6 +161,7 @@ const Hero = styled.div`
 
   @media (max-width: 768px) {
     height: 90vh;
+    padding: 0 7%;
   }
 `
 
@@ -170,7 +169,7 @@ const HeroH = styled.div`
   font-family: Montserrat;
   font-size: 3.25em;
   font-weight: 900;
-  width: 65vw;
+  width: 70vw;
   margin-bottom: 4vh;
   color: #122C5C;
 
@@ -247,17 +246,23 @@ justify-content: center;
 `
 
 const Content = styled.div`
-min-height: 100vh;
 background-color: #f2f2f2;
-padding: 6vh 0;
+padding: 10vh 0;
 display: flex;
 flex-direction: column;
 align-items: center;
 `
 const Div2Proj = styled.div`
-width: 65%;
+width: 70%;
 min-height: 10vh;
 display: flex;
+
+@media (max-width: 768px) {
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 `
 
 

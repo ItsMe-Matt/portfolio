@@ -6,8 +6,7 @@ import { GrFormNextLink } from 'react-icons/gr'
 
 export default function ProjectCard({
     title = "Project 1",
-    type = "Graphic Design",
-    detail = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In vitae turpis massa sed elementum tempus.",
+    headline = "I am a headline",
     img = "/projImg/testTitle2.png",
     route="/",
     bgcolor="#8a4825",
@@ -35,10 +34,10 @@ export default function ProjectCard({
         <Right>
             <TxtCont>
                 <TxtType>
-                    {type}
+                    {title}
                 </TxtType>
                 <TxtHeader uColor={uColor}>
-                    {title}
+                    {headline}
                 </TxtHeader>
 
                 <TxtBtn uColor={uColor}>
@@ -70,7 +69,8 @@ background-color: #fff;
 
 @media (max-width: 768px) {
     flex-direction: column;
-    width: 80%;
+    width: 90%;
+    margin: 1em 0;
   }
 `
 const Left = styled.div`
@@ -85,13 +85,13 @@ margin-right: 1em;
 const Right = styled.div`
 width: 55%;
 float: right;
-margin: 0 2em;
+margin: 0 1em;
 
 display: flex;
 align-items: center;
 
 @media (max-width: 768px) {
-    width: 100%;
+    width: 90%;
   }
 `
 const ImgCont = styled.div`
@@ -119,9 +119,9 @@ color: #606060;
 const TxtHeader = styled.div`
 width: fit-content;
 
-font-size: 1.5em;
+font-size: 1.2em;
 font-family: Montserrat;
-font-weight: 700;
+font-weight: 500;
 padding: 0;
 margin: 0;
 margin-top: 1vh;
@@ -129,14 +129,6 @@ margin-bottom: 2vh;
 
 transition: 1s;  
 //box-shadow: inset 0 -0.7vh ${(props)=>props.uColor};
-`
-const TxtP = styled.p`
-margin: 0;
-font-family: Poppins;
-font-size: 1em;
-font-weight: 300;
-line-height: 1.75;
-color: #606060;
 `
 const TxtBtn = styled.div`
 margin: 2vh 0 0 0;

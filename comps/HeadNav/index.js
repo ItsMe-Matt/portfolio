@@ -53,7 +53,7 @@ display: flex;
 flex-direction: row;
 align-items: flex-end;
 justify-content: space-between;
-width: 65vw;
+width: 70vw;
 
 @media (max-width: 768px) {
     width: 100%;
@@ -67,7 +67,7 @@ color: #122C5C;
 font-size: 1.5em;
 padding: 0;
 margin-right: 0.5vw;
-
+transition: 0.5s;
 &:hover {
     color: royalblue;
 }
@@ -97,6 +97,11 @@ const NavCont = styled.div`
 display: flex;
 flex-direction: row;
 align-items: flex-end;
+
+@media (max-width: 768px) {
+    flex-direction: column;
+    margin-right: 5vw;
+  }
 `
 
 const AbtMe = styled.div`
@@ -114,6 +119,9 @@ transition: 2s;
     font-size: 1.1em;
     padding: 0.4vh 0.4vw;
 }
+@media (max-width: 768px) {
+    padding: 0;
+  }
 `
 const ProjectBtn = styled.div`
 cursor: pointer;
@@ -130,6 +138,9 @@ transition: 2s;
     font-size: 1.1em;
     padding: 0.4vh 0.4vw;
 }
+@media (max-width: 768px) {
+    padding: 0;
+  }
 `
 const ConBtn = styled.div`
 cursor: pointer;
@@ -146,6 +157,9 @@ transition: 2s;
     font-size: 1.1em;
     padding: 0.4vh 0.4vw;
 }
+@media (max-width: 768px) {
+    padding: 0;
+  }
 `
 
 /*

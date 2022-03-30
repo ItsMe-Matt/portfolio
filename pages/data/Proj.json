@@ -27,13 +27,13 @@
         "headline": "Helping, providing for, and nurturing the homeless."
     },
     {
-        "header": "Gundam Box/Poster",
+        "header": "Gundam Box",
         "type" : "Graphic Design",
         "titleImg": "/static/projImg/gundamTitle.png",
-        "description": "This is the front box art of a Master Grade Gundam Seravee plastic model.",
+        "description": "This is a gundam model box design for a gundam that doesn't exist yet.",
         "route": "/Gundam",
         "color": "#dbbaff",
-        "headline": "Check out this cool stuff I made"
+        "headline": "This is a gundam model box design for a gundam that doesn't exist yet."
     }
 
 ]

@@ -23,7 +23,7 @@ export default function CaseHP3({
 
 
 const Container = styled.div`
-width: 65vw;
+width: 70vw;
 
 display: flex;
 padding: 6vw 0 1vw 0;
