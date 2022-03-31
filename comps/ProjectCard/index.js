@@ -5,7 +5,6 @@ import React from 'react'
 import { GrFormNextLink } from 'react-icons/gr'
 
 export default function ProjectCard({
-    title = "Project 1",
     headline = "I am a headline",
     img = "/projImg/testTitle2.png",
     route="/",
@@ -33,28 +32,21 @@ export default function ProjectCard({
         </Left>
         <Right>
             <TxtCont>
-                <TxtType>
-                    {title}
-                </TxtType>
-                <TxtHeader uColor={uColor}>
-                    {headline}
-                </TxtHeader>
 
-                <TxtBtn uColor={uColor}>
-                    View
-                    <GrFormNextLink size="1em"/>
-                </TxtBtn>
+                    <TxtHeader uColor={uColor}>
+                        {headline}
+                    </TxtHeader>
+
+                    <TxtBtn uColor={uColor}>
+                        View
+                        <GrFormNextLink size="1em"/>
+                    </TxtBtn>
+
             </TxtCont>         
         </Right>
     </Container>
     </Link> 
-} 
-
-/*
-<TxtP>
-    {detail}
-</TxtP>
-*/
+}
 
 
 const Container = styled.div`
@@ -67,17 +59,20 @@ border-radius: 1em;
 box-shadow: 0 0 0.5em #adadad;
 background-color: #fff;
 
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
     flex-direction: column;
     width: 90%;
     margin: 1em 0;
   }
+@media only screen and (min-width: 600px) {
+  width: 90%;
+}
 `
 const Left = styled.div`
 width: 45%;
 margin-right: 1em; 
 
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
     width: 100%;
     margin: 2em 0;
   }
@@ -90,7 +85,7 @@ margin: 0 1em;
 display: flex;
 align-items: center;
 
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
     width: 90%;
   }
 `
@@ -100,20 +95,17 @@ border-radius: 0.5rem;
 background-color: ${(props)=>props.bgcolor};
 box-shadow: 0 0.5vh 0.3vh #adadad;
 
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
     width: 100%;
-  }
+}
 `
 const TxtCont = styled.div`
-`
-const TxtType = styled.p`
-font-family: Montserrat;
-font-size: 1em;
-font-weight: 500;
-color: #000000;
-margin: 0;
-margin-top: 2vh;
-color: #606060;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+
+height: 100%;
 
 `
 const TxtHeader = styled.div`
@@ -124,14 +116,12 @@ font-family: Montserrat;
 font-weight: 500;
 padding: 0;
 margin: 0;
-margin-top: 1vh;
-margin-bottom: 2vh;
 
-transition: 1s;  
+//transition: 1s;  
 //box-shadow: inset 0 -0.7vh ${(props)=>props.uColor};
 `
 const TxtBtn = styled.div`
-margin: 2vh 0 0 0;
+margin: 5% 0 0 0;
 padding: 0;
 width: fit-content;
 font-family: Poppins;

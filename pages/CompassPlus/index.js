@@ -249,7 +249,7 @@ export default function CompassPlusUI() {
         </EndImg>
 
         <OtherProj 
-        next='The Giving Hand Project'
+        next='Next Project'
         nextLink='/GivingHand'
         back='Home'
         />
@@ -281,7 +281,7 @@ export default function CompassPlusUI() {
 
 
 const Container = styled.div`
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
   width: 100%;
 }
 `
@@ -299,7 +299,7 @@ background-image: url('/static/bg.png');
   background-size: cover;
   background-position: center;
 
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
   height: max-content;
   padding: 5vh 0;
 }
@@ -326,47 +326,49 @@ box-shadow: 0 2vh 5vh #fff inset;
 const IDCont = styled.div`
 `
 const ImgCont1 = styled.div`
-width: 30%;
-box-shadow: 0 0 1vw #75a6ff;
-margin: 0 5%
-
-@media (max-width: 480px)  {
-  width: 100%;  
-}
-
+width: 100%;
+padding: 0 2%;
 `
 const ImgCont2 = styled.div`
 width: 50%;
 
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
   width: 100%;  
 }
 
 `
 const ImgCont3 = styled.div`
-width: 60vw;
-margin: 3vw 0 0 0;
-
-@media (max-width: 480px)  {
-  width: 100%;  
+@media (max-width: 599px)  {
+  width: 100%;
 }
-@media (min-width: 481px ) and (max-width: 768px) {
-  width: 90%;
+
+@media only screen and (min-width: 600px) {
+  width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+  width: 60%;
 }
 `
 const Caption = styled.div`
-width: 55vw;
+font-size: 1em;
 font-family: Poppins;
-font-size: 1.1em;
 font-weight: 300;
 line-height: 1.5;
 text-align: center;
 margin: 2vw 0 0 0;
-color: #909090;
+color: #909090; 
 
-@media (max-width: 480px)  {
-  width: 90%; 
-  font-size: 1em; 
+@media (max-width: 599px)  {
+  width: 90%
+}
+
+@media only screen and (min-width: 600px) {
+  width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+  width: 60%;
 }
 `
 const Div2 = styled.div`
@@ -375,24 +377,42 @@ flex-direction: row;
 width: 60vw;
 background-color: #fff;
 
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
   width: 100%;
   flex-direction: column;
 }
-@media (min-width: 481px ) and (max-width: 768px) {
-  width: 90%;
+
+@media only screen and (min-width: 600px) {
+  width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+  width: 60%;
 }
 `
 const EndImg = styled.div`
-width: 60%;
+
 padding: 3% 10%;
 display: flex;
 justify-content: space-between;
 margin-top: 1vw;
 background-color: #122c5c;
 
-@media (min-width: 481px ) and (max-width: 768px) {
-  width: 90%;
+@media (max-width: 599px)  {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 5%;
+}
+
+@media only screen and (min-width: 600px) {
+  width: 100%;
+  align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+  width: 70%;
+  padding: 3% 5%;
 }
 `
 const FooterArea = styled.div`

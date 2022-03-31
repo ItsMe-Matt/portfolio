@@ -19,17 +19,20 @@ const Container = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 60vw;
 padding: 6vw 0 1vw 0;
 
-@media (max-width: 480px)  {
-    width: 100%;
-    padding: 5% 5%;
+@media (max-width: 599px)  {
+    width: 90%;
     font-size: 1em;
+    padding: 5% 0;
     margin: 1em 0;
 }
-@media (min-width: 481px ) and (max-width: 768px) {
-    width: 90%;
+@media only screen and (min-width: 600px) {
+    width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+    width: 60%;
 }
 `
 const H1 = styled.div`

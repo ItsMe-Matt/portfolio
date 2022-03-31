@@ -58,18 +58,24 @@ export default function ContactUI({
 }
 
 const Container = styled.div`
-display: flex;
+
 justify-content: space-between;
 align-items: baseline;
 height: 3vh;
 
-width: 70vw;
 
-@media (max-width: 480px) {
+
+@media (max-width: 599px)  {
     display: none;
 }
-@media (min-width: 481px ) and (max-width: 768px) {
+
+@media only screen and (min-width: 600px) {
     display: none;
+}
+
+@media only screen and (min-width: 992px) {
+    width: 70%;
+    display: flex;
 }
 `
 

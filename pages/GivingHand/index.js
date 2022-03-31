@@ -193,7 +193,7 @@ export default function GivingHandUI() {
         <OtherProj 
          next='Home'
 
-         back="CompassPlus Project"
+         back="Previous Project"
          backLink="/CompassPlus"
         />
         
@@ -223,7 +223,7 @@ export default function GivingHandUI() {
 
 
 const Container = styled.div`
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
   width: 100%;
   }
 `
@@ -241,7 +241,7 @@ background-image: url('/static/bg.png');
   background-size: cover;
   background-position: center;
 
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
   height: max-content;
   padding: 5vh 0;
 }
@@ -268,24 +268,26 @@ const IDCont = styled.div`
 const ImgCont2 = styled.div`
 width: 35%;
 
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
   width: 100%;
   }
 `
 const ImgCont3 = styled.div`
-width: 60vw;
 
-@media (max-width: 480px)  {
-  width: 100%;
-  }
-  @media (min-width: 481px ) and (max-width: 768px) {
-    width: 90%;
+@media (max-width: 599px)  {
+  width: 90%;
+}
+
+@media only screen and (min-width: 600px) {
+  width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+  width: 60%;
 }
 `
 
 const Caption = styled.div`
-width: 55vw;
-
 font-size: 1em;
 font-family: Poppins;
 font-weight: 300;
@@ -294,13 +296,19 @@ text-align: center;
 margin: 2vw 0 0 0;
 color: #909090; 
 
-@media (max-width: 480px)  {
-  width: 90%;
-  font-size: 1em;
-  }
+@media (max-width: 599px)  {
+  width: 90%
+}
+
+@media only screen and (min-width: 600px) {
+  width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+  width: 70%;
+}
 `
 const EndImg = styled.div`
-width: 60vw;
 padding: 3% 10%;
 display: flex;
 justify-content: space-between;
@@ -308,19 +316,25 @@ align-items: center;
 margin-top: 1vw;
 background-color: #122c5c;
 
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
   width: 100%;
   flex-direction: column;
-  padding: 10% 5%;
 }
-@media (min-width: 481px ) and (max-width: 768px) {
-  width: 90%;
+
+@media only screen and (min-width: 600px) {
+  width: 100%;
+  align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+  width: 70%;
+  padding: 3% 5%;
 }
 `
 const EndDiv = styled.div`
 width: 50%;
 
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
   width: 100%;
   padding: 10% 0;
   }
@@ -333,6 +347,18 @@ font-family: Montserrat;
 margin-bottom: 1vw;
 align-self: flex-start;
 color: #fff;
+
+@media (max-width: 599px)  {
+  font-size: 1.5em
+}
+
+@media only screen and (min-width: 600px) {
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 992px) {
+  font-size: 2em
+}
 `
 const EndP = styled.div`
 font-size: 1.2em;
@@ -341,6 +367,18 @@ font-weight: 300;
 line-height: 1.5;
 color: #ccc;
 margin-bottom: 5vh;
+
+@media (max-width: 599px)  {
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 992px) {
+  font-size: 1.2em
+}
 `
 const EndBtnCont = styled.div`
 display: flex;
@@ -358,6 +396,20 @@ color: #181818;
 border-radius: 0.75em;
 margin-right: 1vw;
 cursor: pointer;
+
+@media (max-width: 599px)  {
+  font-size: 1em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  font-size: 1em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  font-size: 1.2em
+}
 `
 
 const FooterArea = styled.div`

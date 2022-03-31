@@ -95,53 +95,83 @@ export default function CompassPlusUI() {
 
 
 const Container = styled.div`
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
   width: 100%;
 }
 `
 const Hero = styled.div`
   background-color: #fff;
-  height: 91vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 480px)  {
+  @media (max-width: 599px)  {
     height: max-content;
     margin: 10vh 0;
+  }
+
+  @media only screen and (min-width: 600px) {
+    height: fit-content;
+    padding: 10% 0;
+  }
+  
+  @media only screen and (min-width: 992px) {
+    height: 91vh;
   }
 `
 
 const RowCenter = styled.div`
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 70vw;
 
-  @media (max-width: 480px)  {
+  align-items: center;
+
+
+  @media (max-width: 599px)  {
     flex-direction: column;
     width: 100%;
     padding: 0 5%;
-    
+  }
+  @media only screen and (min-width: 600px) {
+    width: 80%;
+    flex-direction: column;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 70%;
+    justify-content: space-between;
+    flex-direction: row;
   }
 `
 
 const HeadLeft = styled.div`
-width: 35%;
-
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
   width: 100%;
   margin-bottom: 4vh;
 }
 
+@media only screen and (min-width: 600px) {
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 5vh;
+}
+@media only screen and (min-width: 992px) {
+  width: 35%;
+}
+
 `
 const HeadRight = styled.div`
-width: 60%;
-
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
   width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  width: 100%;
+
+}
+@media only screen and (min-width: 992px) {
+  width: 60%;
+
 }
 `
 
@@ -151,8 +181,17 @@ border-radius: 100vw;
 overflow: hidden;
 box-shadow: 0 0 1vw;
 
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
   width: 50%;
+}
+
+@media only screen and (min-width: 600px) {
+  width: 70%;
+
+}
+@media only screen and (min-width: 992px) {
+  width: 100%;
+
 }
 `
 const TxtHeader = styled.div`
@@ -173,7 +212,7 @@ line-height: 1.75;
 color: #606060;
 margin: 0 2vw;
 
-@media (max-width: 480px)  {
+@media (max-width: 599px)  {
   font-size: 1.1em;
 }
 

@@ -106,19 +106,23 @@ box-shadow: 0 1vh 2vh #fff;
 const Container = styled.div`
 display: flex;
 flex-direction: row;
-align-items: flex-end;
 justify-content: space-between;
-width: 70vw;
 
-@media (max-width: 480px)  {
+
+@media (max-width: 599px)  {
     width: 100%;
     align-items: center;
     padding: 0 5%;
 }
 
-@media (min-width: 481px ) and (max-width: 768px) {
+@media only screen and (min-width: 600px) {
     width: 90%;
     align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+    width: 70%;
+    align-items: flex-end;
 }
 `
 
@@ -133,7 +137,7 @@ transition: 0.5s;
 &:hover {
     color: #4169e1;
 }
-@media (max-width: 480px)  {
+@media only screen and (min-width: 600px)  {
     font-size: 1.25em;
   }
 `
@@ -142,9 +146,9 @@ font-family: Poppins;
 font-weight: 300;
 font-size: 1em;
 
-@media (max-width: 480px)  {
-    display: none;
-  }
+@media only screen and (max-width: 600px) {
+display: none;
+}
 `
 const HCont = styled.div`
 display: flex;
@@ -159,11 +163,8 @@ display: flex;
 flex-direction: row;
 align-items: flex-end;
 
-@media (max-width: 480px)  {
-    display: none;
-  }
 
-  @media (min-width: 481px ) and (max-width: 768px) {
+@media (max-width: 768px) {
     display: none;
 }
 `
@@ -219,10 +220,7 @@ transition: 2s;
 const ModalCont = styled.div`
 display: none;
 
-@media (max-width: 480px)  {
-display: block;
-  }
-@media (min-width: 481px ) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     display: block;
 }
 `
@@ -233,6 +231,7 @@ justify-content: space-between;
 align-items: center;
 height: 100%;
 padding: 50% 0;
+
 @media (min-width: 481px ) and (max-width: 768px) {
     padding: 25% 0;
 }
