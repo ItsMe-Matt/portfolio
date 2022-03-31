@@ -48,7 +48,7 @@ export default function CompassPlusUI() {
             <HeadLeft>
                 <ImgCont>
                     <Image 
-                    src="/static/profileImg.jpg"
+                    src="/static/About/profileImg.jpg"
                     width={1065}
                     height={1065}
                     layout="responsive"
@@ -118,7 +118,7 @@ const RowCenter = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 75vw;
+  width: 70vw;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -157,16 +157,16 @@ box-shadow: 0 0 1vw;
 `
 const TxtHeader = styled.div`
 margin: 0;
-font-family: Poppins;
+font-family: Montserrat;
 font-size: 2.5em;
-font-weight: 700;
+font-weight: 900;
 line-height: 1.75;
 margin: 0 2vw;
 
 `
 const TxtCont = styled.div`
 margin: 0;
-font-family: Roboto;
+font-family: Poppins;
 font-size: 1.2em;
 font-weight: 300;
 line-height: 1.75;

@@ -73,7 +73,7 @@ export default function CompassPlusUI() {
     <Content>
       <CaseNav />
         <IDCont id='role' />
-          <CaseHP3
+          <CaseHP1
           header='My Role'
           description='My role in this project was as a UI/UX designer. I worked alongside 2 other designers, 1 developer, and 2 hybrids (designer and developers). I mostly designed components and some screen layouts. I also designed the business cards and the website we would come to use for our app.'
           />
@@ -127,12 +127,12 @@ export default function CompassPlusUI() {
         </Caption>
 
         <IDCont id='prob' />
-          <CaseHP3 
+          <CaseHP1 
           header='Problem Identification'
           description='When riders first start using Translink, they have to know how to use Translink and its routes, get a compass card or ticket and make sure they have enough funds to get them to their destination. Even experienced riders may forget their compass card every now and then. The problem is that to learn how to use Translink, get a ticket or compass card, and fill up the funds of the card could sometimes be in different places. You would have to use different apps and go to different locations. Our app aims to solve that problem. '
           />
 
-          <CaseHP3 
+          <CaseHP1 
           header='Solution'
           description='Our solution is to develop a cross-platform application that allows you to find your route through Translink, buy tickets, and reload them for your trip, with the added feature of checking for live Translink updates. This would allow experienced riders to continue using Translink without losing time in case they are missing their compass card or if they are going to a place they are not familiar with. This would also allow new travelers to easily learn how to navigate through Translink with one convenient application.'
           />
@@ -287,12 +287,17 @@ const Container = styled.div`
 `
 const Hero = styled.div`
 background-color: #fff;
-height: 91vh;
+height: 88vh;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 overflow: hidden;
+
+background-image: url('/static/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
 @media (max-width: 768px) {
   height: max-content;
@@ -307,12 +312,13 @@ justify-content: center;
 `
 const Content = styled.div`
 min-height: 100vh;
-background-color: #f2f2f2;
+background-color: #f7f7f7;
 padding: 6vh 0;
 display: flex;
 flex-direction: column;
 align-items: center;
 box-shadow: 0 2vh 5vh #fff inset;
+
 `
 const IDCont = styled.div`
 `
@@ -333,7 +339,7 @@ width: 50%;
 }
 `
 const ImgCont3 = styled.div`
-width: 70vw;
+width: 60vw;
 margin: 3vw 0 0 0;
 
 @media (max-width: 768px) {
@@ -341,9 +347,9 @@ margin: 3vw 0 0 0;
 }
 `
 const Caption = styled.div`
-width: 70vw;
+width: 55vw;
 font-family: Roboto;
-font-size: 1em;
+font-size: 1.1em;
 font-weight: 300;
 line-height: 1.5;
 text-align: center;
@@ -353,7 +359,7 @@ color: #909090;
 const Div2 = styled.div`
 display: flex;
 flex-direction: row;
-width: 70vw;
+width: 60vw;
 
 @media (max-width: 768px) {
   width: 100%;
@@ -361,7 +367,7 @@ width: 70vw;
 }
 `
 const EndImg = styled.div`
-width: 70%;
+width: 60%;
 padding: 3% 10%;
 display: flex;
 justify-content: space-between;

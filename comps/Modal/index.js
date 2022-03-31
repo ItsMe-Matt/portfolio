@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
+import { GrClose } from 'react-icons/gr'
 
 const Modal = ({ show, onClose, children, title }) => {
     const [isBrowser, setIsBrowser] = useState(false);
@@ -19,7 +20,7 @@ const Modal = ({ show, onClose, children, title }) => {
         <StyledModal>
           <StyledModalHeader>
             <a href="#" onClick={handleCloseClick}>
-              x
+              <GrClose size="1em" color="#000" />
             </a>
           </StyledModalHeader>
           {title && <StyledModalTitle>{title}</StyledModalTitle>}
@@ -40,6 +41,7 @@ const Modal = ({ show, onClose, children, title }) => {
   
   const StyledModalBody = styled.div`
     padding-top: 10px;
+    height: 95%;
   `;
   
   const StyledModalHeader = styled.div`
@@ -50,8 +52,8 @@ const Modal = ({ show, onClose, children, title }) => {
   
   const StyledModal = styled.div`
     background: white;
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 95%;
     border-radius: 0.5em;
     padding: 15px;
   `;

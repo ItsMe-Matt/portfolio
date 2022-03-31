@@ -19,7 +19,7 @@ const Container = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 70vw;
+width: 60vw;
 padding: 6vw 0 1vw 0;
 
 @media (max-width: 768px) {
@@ -28,14 +28,14 @@ padding: 6vw 0 1vw 0;
 }
 `
 const H1 = styled.div`
-font-size: 2em;
+font-size: 1.75em;
 font-weight: 700;
 font-family: Montserrat;
 margin-bottom: 1vw;
 align-self: flex-start;
 `
 const Paragraph = styled.div`
-font-size: 1.2em;
+font-size: 1.15em;
 font-family: Poppins;
 font-weight: 300;
 line-height: 1.5;

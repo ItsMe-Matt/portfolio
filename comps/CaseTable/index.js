@@ -56,10 +56,11 @@ export default function CaseTable({
 }
 
 const Container = styled.div`
-width: 70vw;
+width: 60vw;
 
 display: flex;
 padding: 5vh 0;
+justify-content: space-between;
 
 @media (max-width: 768px) {
     width: 100%;
@@ -68,7 +69,7 @@ padding: 5vh 0;
   }
 `
 const Left = styled.div`
-width: 50%;
+width: 45%;
 
 display: flex;
 flex-direction: column;
@@ -82,7 +83,7 @@ align-items: center;
 
 `
 const Right = styled.div`
-width: 50%;
+width: 45%;
 
 display: flex;
 flex-direction: column;
@@ -95,29 +96,33 @@ align-items: center;
     }
 `
 const H1 = styled.div`
-font-size: 1.8em;
-font-weight: 400;
-font-family: Lato;
+font-size: 1.5em;
+font-weight: 500;
+font-family: Poppins;
 text-align: center;
 
 margin-bottom: 1vw;
 `
 const List = styled.ul`
-width: 80%;
-
-font-family: Roboto;
+font-family: Poppins;
 font-weight: 300;
 line-height: 1.5;
 
+list-style-type: circle;
+list-style-position: inside;
+padding: 0;
+margin: 0;
+
+width: fit-content;
 `
 
 const LItem = styled.li`
-width: 80%;
-
+width: 100%;
 font-size: 1.2em;
 font-family: Roboto;
 font-weight: 300;
 line-height: 1.5;
+margin-bottom: 1em;
 
 @media (max-width: 768px) {
     width: 100%;

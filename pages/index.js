@@ -71,7 +71,7 @@ export default function Test() {
       <Hero>
         <RowCenter>
         <HeroH>
-        Hi, I’m <Link href="/AboutMe"><HeroSpan title="you can click me!">Matt</HeroSpan></Link> and I am a UI/UX designer.
+        Hi, I’m <Link href="/About"><HeroSpan title="you can click me!">Matt</HeroSpan></Link> and I am a UI/UX designer.
         </HeroH>
 
         <HeroP>
@@ -152,6 +152,7 @@ const Hero = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 12.5vw;
+  
   background-image: url('/static/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,7 +194,7 @@ font-family: Poppins;
 font-weight: 300;
 font-size: 1.25em;
 line-height: 1.5;
-color: #858585;
+color: #505050;
 display: flex;
 width: 50vw;
 margin-bottom: 8vh;

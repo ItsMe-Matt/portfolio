@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import Link from 'next/link'
 import Modal from '@/comps/Modal'
 import { useState } from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 export default function HeadNav() {
     const [showModal, setShowModal] = useState(false);
@@ -40,34 +41,47 @@ export default function HeadNav() {
         </NavCont>
 
         <ModalCont>
-        <button onClick={() => setShowModal(true)}>Open Modal</button>
+
+        <GiHamburgerMenu size="1.5em" color='#1e3664' onClick={() => setShowModal(true)} />
         <Modal
           onClose={() => setShowModal(false)}
           show={showModal}
         >
+            <ModalContent>
+                <Link href="/">
+                    <AbtMe>
+                    Home
+                    </AbtMe> 
+                </Link>
 
-            <Link href="/About">
-                <AbtMe>
-                About Me
-                </AbtMe> 
-            </Link>
+                <Link href="/About">
+                    <AbtMe>
+                    About Me
+                    </AbtMe> 
+                </Link>
 
-            <Link href="/#projects">
-                <ProjectBtn
-                onClick={()=>{setShowModal(false)}}
-                >
-                Project
-                </ProjectBtn> 
-            </Link>
-    
-            <Link href="#contact">
-                <ConBtn
-                onClick={()=>{setShowModal(false)}}
-                >
-                Contact Me
-                </ConBtn> 
-            </Link>
+                <Link href="/#projects">
+                    <ProjectBtn
+                    onClick={()=>{setShowModal(false)}}
+                    >
+                    Project
+                    </ProjectBtn> 
+                </Link>
 
+                <Link href="#contact">
+                    <ConBtn
+                    onClick={()=>{setShowModal(false)}}
+                    >
+                    Contact Me
+                    </ConBtn> 
+                </Link>
+
+
+
+
+
+            </ModalContent>
+            
 
         </Modal>
     </ModalCont>
@@ -157,7 +171,8 @@ transition: 2s;
     padding: 0.4vh 0.4vw;
 }
 @media (max-width: 768px) {
-    padding: 0;
+    width: fit-content;
+    font-size: 1.5em;
   }
 `
 const ProjectBtn = styled.div`
@@ -176,7 +191,8 @@ transition: 2s;
     padding: 0.4vh 0.4vw;
 }
 @media (max-width: 768px) {
-    padding: 0;
+    width: fit-content;
+    font-size: 1.5em;
   }
 `
 const ConBtn = styled.div`
@@ -195,7 +211,8 @@ transition: 2s;
     padding: 0.4vh 0.4vw;
 }
 @media (max-width: 768px) {
-    padding: 0;
+    width: fit-content;
+    font-size: 1.5em;
   }
 `
 const ModalCont = styled.div`
@@ -205,76 +222,13 @@ display: none;
 display: block;
   }
 `
-/*
-const AbtMe = styled.div`
-cursor: pointer;
-font-family: Roboto;
-font-size: 1em;
-font-weight: 300;
-padding: 1vh 1vw;
-color: #000;
-
-margin: 0 0.5vw;
-&:hover {
-    transition: 1s;
-    box-shadow: inset 0 -0.2vh #000;
-    font-size: 1.1em;
-}
-
-@media (max-width: 768px) {
-    display: none;
-  }
+const ModalContent = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+height: 100%;
+padding: 50% 0;
 `
-
-const ProjectBtn = styled.div`
-    cursor: pointer;
-    font-family: Roboto;
-    font-size: 1em;
-    font-weight: 300;
-    padding: 1vh 1vw;
-    color: #000;
-
-    margin: 0 0.5vw;
-
-    &:hover {
-        transition: 1s;
-        box-shadow: inset 0 -0.2vh #000;
-        font-size: 1.1em;
-    }
-
-    @media (max-width: 768px) {
-        display: none;
-      }
+const ModalBtn = styled.div`
 `
-
-const ConBtn = styled.div`
-    cursor: pointer;
-    font-family: Roboto;
-    font-size: 1.2em;
-    font-weight: 300;
-    padding: 1vh 1vw;
-    border-radius: 3rem;
-    background-color: #2868de;
-    color: #fff;
-
-    margin: 0 0.5rem;
-    
-    &:hover {
-        transition: 1.5s;
-        box-shadow: inset 10vw 0 0 0 #00d45c;
-        color: #fff;
-        font-size: 1.25em;
-
-
-
-    }
-    @media (max-width: 768px) {
-        padding: 2.5vw 4vw;
-        margin-right: 5vw;
-        font-weight: 500;
-        font-size: 1em;
-
-      }
-`
-
-*/

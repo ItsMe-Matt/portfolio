@@ -77,7 +77,7 @@ export default function GivingHandUI() {
         <CaseNav />
         <Cat>
           <IDCont id='role'>
-            <CaseHP3
+            <CaseHP1
               header='My Role'
               description='My role in the Giving Hand was an especially challenging one as I had to take on all the roles at some point. In this project, my roles included project manager, developer, and designer. Most of my team was very passive compared to me so it encouraged me to take the initiative to get the project off the ground and running. My team consisted of two other designers and another developer. At the beginning, I really had to take the initiative to push the team forward because everyone on the team was very passive. As the initiator, I set goals, deadlines, and frequently checked on teammates to make sure we were making progress and made sure that everyone who needed support was acknowledged and received it.'
             />
@@ -229,17 +229,22 @@ const Container = styled.div`
 `
 const Hero = styled.div`
 background-color: #fff;
-height: 91vh;
+height: 88vh;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 overflow: hidden;
 
+background-image: url('/static/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 @media (max-width: 768px) {
   height: max-content;
   padding: 5vh 0;
-  }
+}
 `
 const RowCenter = styled.div`
   display: flex;
@@ -249,7 +254,7 @@ const RowCenter = styled.div`
 `
 const Content = styled.div`
   min-height: 100vh;
-  background-color: #f7faff;
+  background-color: #f7f7f7;
   padding: 6vh 0;
   display: flex;
   flex-direction: column;
@@ -274,7 +279,7 @@ width: 35%;
   }
 `
 const ImgCont3 = styled.div`
-width: 70vw;
+width: 60vw;
 
 @media (max-width: 768px) {
   width: 100%;
@@ -282,7 +287,7 @@ width: 70vw;
 `
 
 const Caption = styled.div`
-width: 70vw;
+width: 55vw;
 
 font-size: 1em;
 font-family: Roboto;
@@ -293,7 +298,7 @@ margin: 2vw 0 0 0;
 color: #909090; 
 `
 const EndImg = styled.div`
-width: 70vw;
+width: 60vw;
 padding: 3% 10%;
 display: flex;
 justify-content: space-between;

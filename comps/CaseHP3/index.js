@@ -23,7 +23,7 @@ export default function CaseHP3({
 
 
 const Container = styled.div`
-width: 70vw;
+width: 60vw;
 
 display: flex;
 padding: 6vw 0 1vw 0;
@@ -60,7 +60,7 @@ align-items: center;
 `
 
 const H1 = styled.div`
-font-size: 2em;
+font-size: 1.75em;
 font-weight: 700;
 font-family: Montserrat;
 
@@ -71,7 +71,7 @@ text-align: left;
 const Paragraph = styled.div`
 width: 100%;
 
-font-size: 1.2em;
+font-size: 1.15em;
 font-family: Poppins;
 font-weight: 300;
 line-height: 1.5;
