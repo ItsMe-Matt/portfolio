@@ -29,7 +29,7 @@ export default function HeadNav() {
 
             <Link href="/#projects">
                 <ProjectBtn>
-                Project
+                Projects
                 </ProjectBtn> 
             </Link>
     
