@@ -110,10 +110,15 @@ align-items: flex-end;
 justify-content: space-between;
 width: 70vw;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
     align-items: center;
     padding: 0 5%;
+}
+
+@media (min-width: 481px ) and (max-width: 768px) {
+    width: 90%;
+    align-items: center;
 }
 `
 
@@ -126,9 +131,9 @@ padding: 0;
 margin-right: 0.5em;
 transition: 0.5s;
 &:hover {
-    color: royalblue;
+    color: #4169e1;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     font-size: 1.25em;
   }
 `
@@ -137,7 +142,7 @@ font-family: Poppins;
 font-weight: 300;
 font-size: 1em;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     display: none;
   }
 `
@@ -154,9 +159,13 @@ display: flex;
 flex-direction: row;
 align-items: flex-end;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     display: none;
   }
+
+  @media (min-width: 481px ) and (max-width: 768px) {
+    display: none;
+}
 `
 
 const AbtMe = styled.div`
@@ -174,10 +183,6 @@ transition: 2s;
     font-size: 1.1em;
     padding: 0.4vh 0.4vw;
 }
-@media (max-width: 768px) {
-    width: fit-content;
-    font-size: 1.5em;
-  }
 `
 const ProjectBtn = styled.div`
 cursor: pointer;
@@ -194,10 +199,6 @@ transition: 2s;
     font-size: 1.1em;
     padding: 0.4vh 0.4vw;
 }
-@media (max-width: 768px) {
-    width: fit-content;
-    font-size: 1.5em;
-  }
 `
 const ConBtn = styled.div`
 cursor: pointer;
@@ -214,17 +215,16 @@ transition: 2s;
     font-size: 1.1em;
     padding: 0.4vh 0.4vw;
 }
-@media (max-width: 768px) {
-    width: fit-content;
-    font-size: 1.5em;
-  }
 `
 const ModalCont = styled.div`
 display: none;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
 display: block;
   }
+@media (min-width: 481px ) and (max-width: 768px) {
+    display: block;
+}
 `
 const ModalContent = styled.div`
 display: flex;
@@ -233,6 +233,9 @@ justify-content: space-between;
 align-items: center;
 height: 100%;
 padding: 50% 0;
+@media (min-width: 481px ) and (max-width: 768px) {
+    padding: 25% 0;
+}
 `
 const ModalNavBtn = styled.div`
 cursor: pointer;

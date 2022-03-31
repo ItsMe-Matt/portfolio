@@ -65,9 +65,12 @@ height: 3vh;
 
 width: 70vw;
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     display: none;
-      }
+}
+@media (min-width: 481px ) and (max-width: 768px) {
+    display: none;
+}
 `
 
 const IconCont = styled.div`

@@ -87,7 +87,7 @@ export default function MediaUI() {
 
 
 const Container = styled.div`
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
 width: 100%;
 }
 `
@@ -101,7 +101,7 @@ const Hero = styled.div`
   overflow: hidden;
   padding: 0 12.5%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 480px)  {
     height: max-content;
     padding: 5vh 0;
     }

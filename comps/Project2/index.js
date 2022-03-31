@@ -60,7 +60,7 @@ margin: 0.5rem;
 cursor: pointer;
 padding: 1em;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     flex-direction: column-reverse;
     width: 80%;
 }
@@ -72,7 +72,7 @@ margin: 0;
 display: flex;
 align-items: center;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
   }
 `
@@ -80,7 +80,7 @@ const Right = styled.div`
 width: 45%;
 margin-left: 2em;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
     margin: 2em 0;
   }
@@ -91,7 +91,7 @@ border-radius: 0.5rem;
 background-color: ${(props)=>props.bgcolor};
 box-shadow: 0 0.5vh 0.3vh #adadad;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
     margin: 2em 0;
   }

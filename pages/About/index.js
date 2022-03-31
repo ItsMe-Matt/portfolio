@@ -95,7 +95,7 @@ export default function CompassPlusUI() {
 
 
 const Container = styled.div`
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
 }
 `
@@ -107,7 +107,7 @@ const Hero = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 480px)  {
     height: max-content;
     margin: 10vh 0;
   }
@@ -120,7 +120,7 @@ const RowCenter = styled.div`
   justify-content: space-between;
   width: 70vw;
 
-  @media (max-width: 768px) {
+  @media (max-width: 480px)  {
     flex-direction: column;
     width: 100%;
     padding: 0 5%;
@@ -131,7 +131,7 @@ const RowCenter = styled.div`
 const HeadLeft = styled.div`
 width: 35%;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
   margin-bottom: 4vh;
 }
@@ -140,7 +140,7 @@ width: 35%;
 const HeadRight = styled.div`
 width: 60%;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
 }
 `
@@ -151,7 +151,7 @@ border-radius: 100vw;
 overflow: hidden;
 box-shadow: 0 0 1vw;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 50%;
 }
 `
@@ -173,7 +173,7 @@ line-height: 1.75;
 color: #606060;
 margin: 0 2vw;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   font-size: 1.1em;
 }
 

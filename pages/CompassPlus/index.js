@@ -281,7 +281,7 @@ export default function CompassPlusUI() {
 
 
 const Container = styled.div`
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
 }
 `
@@ -299,9 +299,12 @@ background-image: url('/static/bg.png');
   background-size: cover;
   background-position: center;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   height: max-content;
   padding: 5vh 0;
+}
+@media (min-width: 481px ) and (max-width: 768px) {
+  width: 100%;
 }
 `
 const RowCenter = styled.div`
@@ -327,23 +330,28 @@ width: 30%;
 box-shadow: 0 0 1vw #75a6ff;
 margin: 0 5%
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;  
 }
+
 `
 const ImgCont2 = styled.div`
 width: 50%;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;  
 }
+
 `
 const ImgCont3 = styled.div`
 width: 60vw;
 margin: 3vw 0 0 0;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;  
+}
+@media (min-width: 481px ) and (max-width: 768px) {
+  width: 90%;
 }
 `
 const Caption = styled.div`
@@ -356,7 +364,7 @@ text-align: center;
 margin: 2vw 0 0 0;
 color: #909090;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 90%; 
   font-size: 1em; 
 }
@@ -365,10 +373,14 @@ const Div2 = styled.div`
 display: flex;
 flex-direction: row;
 width: 60vw;
+background-color: #fff;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
   flex-direction: column;
+}
+@media (min-width: 481px ) and (max-width: 768px) {
+  width: 90%;
 }
 `
 const EndImg = styled.div`
@@ -378,6 +390,10 @@ display: flex;
 justify-content: space-between;
 margin-top: 1vw;
 background-color: #122c5c;
+
+@media (min-width: 481px ) and (max-width: 768px) {
+  width: 90%;
+}
 `
 const FooterArea = styled.div`
 `

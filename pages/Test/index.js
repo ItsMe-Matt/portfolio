@@ -147,7 +147,7 @@ export default function Test() {
 const Container = styled.div`
 width: 100%;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
 }
 
@@ -159,7 +159,7 @@ const Hero = styled.div`
   justify-content: center;
   padding: 0 12.5vw;
 
-  @media (max-width: 768px) {
+  @media (max-width: 480px)  {
     height: 90vh;
     padding: 0 7%;
   }
@@ -173,7 +173,7 @@ const HeroH = styled.div`
   margin-bottom: 4vh;
   color: #122C5C;
 
-  @media (max-width: 768px) {
+  @media (max-width: 480px)  {
     display: none;
   }
 `
@@ -221,7 +221,7 @@ display: flex;
 width: 50vw;
 margin-bottom: 8vh;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
   font-size: 2.25vh;
 }
@@ -233,7 +233,7 @@ font-family: Montserrat;
 font-size: 2.3vh;
 font-weight: 500;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
 font-size: 1.25em;
 }
 
@@ -257,7 +257,7 @@ width: 70%;
 min-height: 10vh;
 display: flex;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   flex-direction: column;
   width: 100%;
   justify-content: center;

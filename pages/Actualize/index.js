@@ -171,7 +171,7 @@ align-items: center;
 const ImgCont1 = styled.div`
 width: 70vw;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
   }
 `

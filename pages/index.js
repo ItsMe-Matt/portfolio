@@ -141,7 +141,7 @@ export default function Test() {
 const Container = styled.div`
 width: 100%;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
 }
 
@@ -158,10 +158,14 @@ const Hero = styled.div`
   background-size: cover;
   background-position: center;
 
-  @media (max-width: 768px) {
+  @media (max-width: 480px)  {
     height: 90vh;
     padding: 0 7%;
   }
+  @media (min-width: 481px ) and (max-width: 768px) {
+    padding: 0 5%;
+    width: 100%;
+}
 `
 
 const HeroH = styled.div`
@@ -172,10 +176,14 @@ const HeroH = styled.div`
   margin-bottom: 4vh;
   color: #122C5C;
 
-  @media (max-width: 768px) {
+  @media (max-width: 480px)  {
     font-size: 2em;
     width: 100%;
   }
+  @media (min-width: 481px ) and (max-width: 768px) {
+    width: 90%;
+}
+  
 `
 
 const HeroSpan = styled.span`
@@ -199,10 +207,11 @@ display: flex;
 width: 50vw;
 margin-bottom: 8vh;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
   font-size: 1em;
 }
+
 `
 const ProjectBtn = styled.div`
 display: flex;
@@ -211,7 +220,7 @@ font-family: Montserrat;
 font-size: 2.3vh;
 font-weight: 500;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
 font-size: 1.25em;
 }
 
@@ -235,11 +244,14 @@ width: 70%;
 min-height: 10vh;
 display: flex;
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 481px ) and (max-width: 768px) {
+  width: 90%;
 }
 `
 

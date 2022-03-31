@@ -75,24 +75,24 @@ export default function GivingHandUI() {
 
       <Content>
         <CaseNav />
-        <Cat>
-          <IDCont id='role'>
+        
+          <IDCont id='role' />
             <CaseHP1
               header='My Role'
               description='My role in the Giving Hand was an especially challenging one as I had to take on all the roles at some point. In this project, my roles included project manager, developer, and designer. Most of my team was very passive compared to me so it encouraged me to take the initiative to get the project off the ground and running. My team consisted of two other designers and another developer. At the beginning, I really had to take the initiative to push the team forward because everyone on the team was very passive. As the initiator, I set goals, deadlines, and frequently checked on teammates to make sure we were making progress and made sure that everyone who needed support was acknowledged and received it.'
             />
-          </IDCont>
 
-          <IDCont id='research'>
+
+          <IDCont id='research' />
             <CaseHP1
               header='User Research'
               description='Through our user survey, we discovered that a lot of the people we interviewed had actually donated to homeless people at one point or another. From our survey, we learned that the top reason that stops people from donating is that they don’t know where or what the money is going to. They don’t know if the organization they are donating to is trustable or if the money even reaches the people they are hoping to help.'
             />
-          </IDCont>
+
 
          
 
-        <IDCont id='prob'>
+        <IDCont id='prob' />
           <CaseHP2 
             LHead='Problem Identification'
             LDescription='A lot of people in Vancouver want to help and donate to the homeless but most people do not know if the organization is trustable or if the money even reaches the people they are hoping to help with their donation.'
@@ -100,7 +100,7 @@ export default function GivingHandUI() {
             RHead='Goal/Solution'
             RDescription='Our solution is creating an app that aids users when researching and finding a location to donate to. By answering a couple questions, our app gives the user a couple organizations to donate to.'
             />
-        </IDCont>
+
 
         <IDCont id='design' />
         <CaseHP1
@@ -196,7 +196,7 @@ export default function GivingHandUI() {
          back="CompassPlus Project"
          backLink="/CompassPlus"
         />
-        </Cat>
+        
       </Content>
       <FooterArea id='contact'>
         <ContactUI 
@@ -223,7 +223,7 @@ export default function GivingHandUI() {
 
 
 const Container = styled.div`
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
   }
 `
@@ -241,7 +241,7 @@ background-image: url('/static/bg.png');
   background-size: cover;
   background-position: center;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   height: max-content;
   padding: 5vh 0;
 }
@@ -264,26 +264,23 @@ const Content = styled.div`
 `
 const IDCont = styled.div`
 `
-const Cat = styled.div`
-margin: 3vh 0;
-display: flex;
-flex-direction: column;
-align-items: center;
-`
 
 const ImgCont2 = styled.div`
 width: 35%;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
   }
 `
 const ImgCont3 = styled.div`
 width: 60vw;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
   }
+  @media (min-width: 481px ) and (max-width: 768px) {
+    width: 90%;
+}
 `
 
 const Caption = styled.div`
@@ -297,7 +294,7 @@ text-align: center;
 margin: 2vw 0 0 0;
 color: #909090; 
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 90%;
   font-size: 1em;
   }
@@ -311,16 +308,19 @@ align-items: center;
 margin-top: 1vw;
 background-color: #122c5c;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
   flex-direction: column;
   padding: 10% 5%;
+}
+@media (min-width: 481px ) and (max-width: 768px) {
+  width: 90%;
 }
 `
 const EndDiv = styled.div`
 width: 50%;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
   width: 100%;
   padding: 10% 0;
   }

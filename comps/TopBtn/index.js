@@ -34,7 +34,7 @@ z-index: 1;
 top: 90vh;
 right: 15vw;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
     top: 90%;
     right: 5%;
@@ -49,7 +49,7 @@ background-color: royalblue;
 border-radius: 10rem;
 color: #fff;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
 display: none;
     }
 `
@@ -59,7 +59,7 @@ const Btn2 = styled.div`
 
 display: none;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     display: flex;
     align-items: center;
     justify-content: center;

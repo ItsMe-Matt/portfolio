@@ -39,12 +39,15 @@ display: flex;
 padding: 6vw 0 1vw 0;
 justify-content: space-between;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     flex-direction: column;
     width: 100%;
     padding: 5% 5%;
     font-size: 1em;
-    }
+}
+@media (min-width: 481px ) and (max-width: 768px) {
+    width: 90%;
+}
 `
 const Left = styled.div`
 width: 45%;
@@ -53,7 +56,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
     align-items: flex-start;
     padding: 5% 0;
@@ -66,7 +69,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     align-items: flex-start;
     width: 100%;
     padding: 5% 0;
@@ -89,7 +92,7 @@ font-weight: 300;
 line-height: 1.5;
 color: #555;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
     }
 `

@@ -28,7 +28,7 @@ width: 70vw;
 display: flex;
 padding: 6vw 0 1vw 0;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
     padding: 5% 10%;
     flex-direction: column;
@@ -43,7 +43,7 @@ align-items: flex-start;
 margin-right: 5%;
 
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
     }
 
@@ -55,7 +55,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
     }
 `

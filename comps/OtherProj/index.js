@@ -34,9 +34,12 @@ width: 70vw;
 display: flex;
 justify-content: space-between;
 margin-top: 1vh;
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
-    }
+}
+@media (min-width: 481px ) and (max-width: 768px) {
+    width: 90%;
+}
 `
 const NavBtn = styled.div`
 padding: 1vw;
@@ -46,11 +49,11 @@ align-items: center;
 justify-content: center;
 
 font-size: 1.3em;
-font-family: Lato;
+font-family: Montserrat;
 font-weight: 700;
 color: #122c5c;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
 font-size: 1.2em;
-    }
+}
 `

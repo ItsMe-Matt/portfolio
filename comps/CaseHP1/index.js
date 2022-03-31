@@ -22,11 +22,14 @@ align-items: center;
 width: 60vw;
 padding: 6vw 0 1vw 0;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
     padding: 5% 5%;
     font-size: 1em;
     margin: 1em 0;
+}
+@media (min-width: 481px ) and (max-width: 768px) {
+    width: 90%;
 }
 `
 const H1 = styled.div`
@@ -36,7 +39,7 @@ font-family: Montserrat;
 margin-bottom: 1vw;
 align-self: flex-start;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
 margin-bottom: 0.75em;
 }
 `
