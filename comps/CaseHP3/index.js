@@ -30,7 +30,8 @@ padding: 6vw 0 1vw 0;
 
 @media (max-width: 768px) {
     width: 100%;
-    padding: 5% 10%;
+    padding: 5% 5%;
+    font-size: 1em;
     flex-direction: column;
     }
 `

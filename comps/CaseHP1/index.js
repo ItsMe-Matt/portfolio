@@ -24,7 +24,9 @@ padding: 6vw 0 1vw 0;
 
 @media (max-width: 768px) {
     width: 100%;
-    padding: 5% 10%;
+    padding: 5% 5%;
+    font-size: 1em;
+    margin: 1em 0;
 }
 `
 const H1 = styled.div`
@@ -33,6 +35,10 @@ font-weight: 700;
 font-family: Montserrat;
 margin-bottom: 1vw;
 align-self: flex-start;
+
+@media (max-width: 768px) {
+margin-bottom: 0.75em;
+}
 `
 const Paragraph = styled.div`
 font-size: 1.15em;

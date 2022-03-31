@@ -123,7 +123,7 @@ const RowCenter = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
-    padding: 0 10%;
+    padding: 0 5%;
     
   }
 `
@@ -172,6 +172,10 @@ font-weight: 300;
 line-height: 1.75;
 color: #606060;
 margin: 0 2vw;
+
+@media (max-width: 768px) {
+  font-size: 1.1em;
+}
 
 `
 const FooterArea = styled.div`

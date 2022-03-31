@@ -348,13 +348,18 @@ margin: 3vw 0 0 0;
 `
 const Caption = styled.div`
 width: 55vw;
-font-family: Roboto;
+font-family: Poppins;
 font-size: 1.1em;
 font-weight: 300;
 line-height: 1.5;
 text-align: center;
 margin: 2vw 0 0 0;
-color: #909090; 
+color: #909090;
+
+@media (max-width: 768px) {
+  width: 90%; 
+  font-size: 1em; 
+}
 `
 const Div2 = styled.div`
 display: flex;

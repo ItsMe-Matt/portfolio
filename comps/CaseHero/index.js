@@ -63,7 +63,7 @@ justify-content: space-between;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    padding: 0 10%;
+    padding: 0 5%;
 }
 `
 

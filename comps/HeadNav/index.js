@@ -49,31 +49,35 @@ export default function HeadNav() {
         >
             <ModalContent>
                 <Link href="/">
-                    <AbtMe>
+                    <ModalNavBtn
+                    onClick={()=>{setShowModal(false)}}
+                    >
                     Home
-                    </AbtMe> 
+                    </ModalNavBtn> 
                 </Link>
 
                 <Link href="/About">
-                    <AbtMe>
+                    <ModalNavBtn
+                    onClick={()=>{setShowModal(false)}}
+                    >
                     About Me
-                    </AbtMe> 
+                    </ModalNavBtn> 
                 </Link>
 
                 <Link href="/#projects">
-                    <ProjectBtn
+                    <ModalNavBtn
                     onClick={()=>{setShowModal(false)}}
                     >
                     Projects
-                    </ProjectBtn> 
+                    </ModalNavBtn> 
                 </Link>
 
                 <Link href="#contact">
-                    <ConBtn
+                    <ModalNavBtn
                     onClick={()=>{setShowModal(false)}}
                     >
                     Contact Me
-                    </ConBtn> 
+                    </ModalNavBtn> 
                 </Link>
 
 
@@ -230,5 +234,13 @@ align-items: center;
 height: 100%;
 padding: 50% 0;
 `
-const ModalBtn = styled.div`
+const ModalNavBtn = styled.div`
+cursor: pointer;
+font-family: Poppins;
+font-weight: 500;
+margin: 0.5vh 0.5vw;
+padding: 0.5vh 0.5vw;
+border-radius: 0.5em;
+width: fit-content;
+font-size: 1.5em;
 `

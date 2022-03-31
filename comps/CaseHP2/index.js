@@ -42,7 +42,8 @@ justify-content: space-between;
 @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
-    padding: 5% 10%;
+    padding: 5% 5%;
+    font-size: 1em;
     }
 `
 const Left = styled.div`

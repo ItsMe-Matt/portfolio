@@ -63,9 +63,10 @@ padding: 5vh 0;
 justify-content: space-between;
 
 @media (max-width: 768px) {
-    width: 100%;
     flex-direction: column;
-    padding: 0 10%;
+    width: 100%;
+    padding: 5% 5%;
+    font-size: 1em;
   }
 `
 const Left = styled.div`

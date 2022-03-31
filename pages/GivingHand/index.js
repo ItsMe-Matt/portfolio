@@ -290,12 +290,17 @@ const Caption = styled.div`
 width: 55vw;
 
 font-size: 1em;
-font-family: Roboto;
+font-family: Poppins;
 font-weight: 300;
 line-height: 1.5;
 text-align: center;
 margin: 2vw 0 0 0;
 color: #909090; 
+
+@media (max-width: 768px) {
+  width: 90%;
+  font-size: 1em;
+  }
 `
 const EndImg = styled.div`
 width: 60vw;
@@ -306,10 +311,19 @@ align-items: center;
 margin-top: 1vw;
 background-color: #122c5c;
 
+@media (max-width: 768px) {
+  width: 100%;
+  flex-direction: column;
+  padding: 10% 5%;
+}
 `
 const EndDiv = styled.div`
 width: 50%;
 
+@media (max-width: 768px) {
+  width: 100%;
+  padding: 10% 0;
+  }
 `
 const EndHead = styled.div`
 font-size: 2em;
