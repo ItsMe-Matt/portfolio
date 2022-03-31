@@ -6,8 +6,6 @@ import Head from 'next/head'
 
 import ContactUI from '@/comps/ContactUI';
 import HeadNav from '@/comps/HeadNav'
-import Project from "@/comps/Project";
-import Project2 from "@/comps/Project2";
 import ProjectCard from '@/comps/ProjectCard';
 
 import Proj from "@/pages/data/Proj.json"
@@ -22,6 +20,7 @@ export default function Test() {
   var [S1Color, setS1Color] = useState("#ffffff")
   var [S2Color, setS2Color] = useState("#ffffff")
   var [S3Color, setS3Color] = useState("#ffffff")
+
 
   //for contact comp
   function S1On(){
@@ -75,10 +74,6 @@ export default function Test() {
         Hi, I’m <Link href="/AboutMe"><HeroSpan title="you can click me!">Matt</HeroSpan></Link> and I am a UI/UX designer.
         </HeroH>
 
-        <HeroH2>
-        Hi, I’m <Link href="/AboutMe"><HeroSpan2 title="you can click me!">Matt</HeroSpan2></Link> <br />I am a UI/UX designer.
-        </HeroH2>
-
         <HeroP>
         I design beautiful cross platform applications and solutions with comfortable and familiar experiences. I also have a background in graphic design and frontend development.
         </HeroP>
@@ -89,7 +84,7 @@ export default function Test() {
           </ProjectBtn>
         </Link>
 
-
+        
         </RowCenter>
       </Hero>
       <Content id="projects">
@@ -106,16 +101,15 @@ export default function Test() {
             uColor={ULColor}
           />
           <ProjectCard 
-            title={Proj[3].header}
-            img={Proj[3].titleImg}
-            headline={Proj[3].headline}
-            route={Proj[3].route}
-            bgcolor={Proj[3].color}
-            hOn = {()=>hlOn2(Proj[3].color)}
+            title={Proj[2].header}
+            img={Proj[2].titleImg}
+            headline={Proj[2].headline}
+            route={Proj[2].route}
+            bgcolor={Proj[2].color}
+            hOn = {()=>hlOn2(Proj[2].color)}
             hOff = {hlOff2}
             uColor={ULColor2}
           />
-
         </Div2Proj>
 
       </Content>
@@ -161,6 +155,7 @@ const Hero = styled.div`
   background-image: url('/static/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   @media (max-width: 768px) {
     height: 90vh;
@@ -177,23 +172,11 @@ const HeroH = styled.div`
   color: #122C5C;
 
   @media (max-width: 768px) {
-    display: none;
+    font-size: 2em;
+    width: 100%;
   }
 `
 
-const HeroH2 = styled.div`
-  font-family: Montserrat;
-  font-size: 5vh;
-  font-weight: 400;
-  text-align: Left;
-  width: 100%;
-  margin-bottom: 4vh;
-  color: #122C5C;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-`
 const HeroSpan = styled.span`
 color: #4169e1;
 box-shadow: inset 0 -0.15em #ffddcf;
@@ -202,15 +185,6 @@ cursor: pointer;
 &:hover {
   transition: 1s;
   box-shadow: inset 0 -0.8em #ffddcf;
-}
-`
-const HeroSpan2 = styled.span`
-color: #4169e1;
-cursor: pointer;
-
-&:hover {
-  transition: 1s;
-  box-shadow: inset 0 -0.7em #ffddcf;
 }
 `
 
@@ -226,7 +200,7 @@ margin-bottom: 8vh;
 
 @media (max-width: 768px) {
   width: 100%;
-  font-size: 2.25vh;
+  font-size: 1em;
 }
 `
 const ProjectBtn = styled.div`

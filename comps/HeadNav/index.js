@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 import Link from 'next/link'
+import Modal from '@/comps/Modal'
+import { useState } from 'react';
 
 export default function HeadNav() {
+    const [showModal, setShowModal] = useState(false);
+
     return <HBar>
     <Container>  
         <Link href="/">
@@ -34,6 +38,39 @@ export default function HeadNav() {
                 </ConBtn> 
             </Link>
         </NavCont>
+
+        <ModalCont>
+        <button onClick={() => setShowModal(true)}>Open Modal</button>
+        <Modal
+          onClose={() => setShowModal(false)}
+          show={showModal}
+        >
+
+            <Link href="/About">
+                <AbtMe>
+                About Me
+                </AbtMe> 
+            </Link>
+
+            <Link href="/#projects">
+                <ProjectBtn
+                onClick={()=>{setShowModal(false)}}
+                >
+                Project
+                </ProjectBtn> 
+            </Link>
+    
+            <Link href="#contact">
+                <ConBtn
+                onClick={()=>{setShowModal(false)}}
+                >
+                Contact Me
+                </ConBtn> 
+            </Link>
+
+
+        </Modal>
+    </ModalCont>
     </Container>
     </HBar>
 }
@@ -57,6 +94,8 @@ width: 70vw;
 
 @media (max-width: 768px) {
     width: 100%;
+    align-items: center;
+    padding: 0 5%;
 }
 `
 
@@ -66,13 +105,12 @@ font-weight: 500;
 color: #122C5C;
 font-size: 1.5em;
 padding: 0;
-margin-right: 0.5vw;
+margin-right: 0.5em;
 transition: 0.5s;
 &:hover {
     color: royalblue;
 }
 @media (max-width: 768px) {
-    margin-left: 5vw;
     font-size: 1.25em;
   }
 `
@@ -99,8 +137,7 @@ flex-direction: row;
 align-items: flex-end;
 
 @media (max-width: 768px) {
-    flex-direction: column;
-    margin-right: 5vw;
+    display: none;
   }
 `
 
@@ -161,7 +198,13 @@ transition: 2s;
     padding: 0;
   }
 `
+const ModalCont = styled.div`
+display: none;
 
+@media (max-width: 768px) {
+display: block;
+  }
+`
 /*
 const AbtMe = styled.div`
 cursor: pointer;

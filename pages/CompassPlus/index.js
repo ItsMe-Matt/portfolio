@@ -308,8 +308,7 @@ justify-content: center;
 const Content = styled.div`
 min-height: 100vh;
 background-color: #f2f2f2;
-padding: 3vh 0;
-margin: 3vh 0;
+padding: 6vh 0;
 display: flex;
 flex-direction: column;
 align-items: center;
