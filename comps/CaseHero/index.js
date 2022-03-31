@@ -1,14 +1,12 @@
 import styled from "styled-components"
-import ImageSrc from "../ImgSrc"
 import Image from "next/image"
 
-export default function ProjTable({
+export default function CaseHero({
     role="UI/UX Design",
     year="2021",
     name="The Giving Hand",
     summary="CompassPlus is an app designed to replace your physical Compass card with a digital NFC card you can use on your phone.",
     img="/projImg/cPTitle.png",
-    imgType="1",
     HL = "This is a one sentenced head liner for the application"
 }) {
     return <Container>
@@ -56,7 +54,7 @@ export default function ProjTable({
 
 const Container = styled.div`
 display: flex;
-width: 75vw;
+width: 65vw;
 flex-direction: row;
 height: content-fit;
 justify-content: space-between;
@@ -99,14 +97,14 @@ const ProjCont = styled.div`
 margin-bottom: 2.5vh;
 `
 const ProjHL = styled.div`
-font-family: Poppins;
+font-family: Montserrat;
 font-size: 1.25em;
 font-weight: 400;
 
 margin-top: 2vh;
 `
 const ProjName = styled.div`
-font-family: Poppins;
+font-family: Montserrat;
 font-size: 2.5em;
 font-weight: 500;
 
@@ -117,12 +115,13 @@ color: #334972;
     }
 `
 const ProjRole = styled.div`
-font-family: Roboto;
-font-size: 1.5em;
-font-weight: 100;
+font-family: Poppins;
+font-size: 1.25em;
+font-weight: 300;
+color: #999;
 `
 const ProjYear = styled.div`
-font-family: Roboto;
+font-family: Poppins;
 font-size: 1.5em;
 font-weight: 300;
 
@@ -138,7 +137,7 @@ align-items: baseline;
 const Summary = styled.div`
 width: 100%;
 
-font-family: Roboto;
+font-family: Poppins;
 font-size: 1.2em;
 font-weight: 300;
 line-height: 1.5;

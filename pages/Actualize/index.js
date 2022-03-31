@@ -2,21 +2,20 @@ import { useState } from 'react';
 import styled from 'styled-components'
 import Image from 'next/image';
 
-import ContactUI from '../../comps/ContactUI';
-import HeadNav from '../../comps/HeadNav';
-import CaseNav from '../../comps/CaseNav';
-import TextBox from '../../comps/TextBox';
-import TextBox2 from '../../comps/TextBox2';
-import TextBox3 from '../../comps/TextBox3';
-import OtherProj from '../../comps/OtherProj';
-import TopBtn from '../../comps/TopBtn'
+import ContactUI from '@/comps/ContactUI';
+import HeadNav from '@/comps/HeadNav';
+import CaseNav from '@/comps/CaseNav';
+import OtherProj from '@/comps/OtherProj';
+import TopBtn from '@/comps/TopBtn'
+import CaseHP1 from '@/comps/CaseHP1';
 
-import Video from '../../comps/Video';
+import Video from '@/comps/Video';
 
 
-import ProjTable from '../../comps/ProjTable';
+import CaseTable from '@/comps/CaseTable';
 
-import Proj from '../data/Proj.json'
+import Proj from '@/pages/data/Proj.json'
+import CaseHero from '@/comps/CaseHero';
 
 
 export default function CompassPlusUI() {
@@ -60,7 +59,7 @@ export default function CompassPlusUI() {
     <HeadNav />
       <Hero>
         <RowCenter>
-          <ProjTable
+          <CaseHero
           role={P0.type}
           year="2020"
           name={P0.header}
@@ -77,14 +76,14 @@ export default function CompassPlusUI() {
         
         <Cat>
           <IDCont id='problemId'>
-            <TextBox
+            <CaseHP1
               header='Problem Identification'
               description='In these changing times, the job market is in a state of fluctuation. Many individuals are experiencing major changes in their careers and will need support to re-establish themselves.'
             />
           </IDCont>
          
           
-          <TextBox
+          <CaseHP1
             header='Objectives'
             description='Our app aims to help these individuals by connecting them with a professional career and financial advisors that can empathize and understand them, and use their expertise to help construct personalized plans for the future.'
           />
@@ -98,7 +97,7 @@ export default function CompassPlusUI() {
           </ImgCont1>
           <Video embedId='ar5WlWITb7s'/>
 
-          <TextBox 
+          <CaseHP1 
             header='Conclusion'
             description='This was the first app that I actually designed. With the help of my mentors at Game of Apps, I learned how to create a mobile application that felt familiar and comfortable without having to change the behavior and expectations of the user. To me, this is what design is about, doing what you need to get done while feeling comfortable, free, and familiar while doing it.
             '

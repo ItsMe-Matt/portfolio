@@ -86,20 +86,18 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-
-padding: 5vw 12.5vw;
-z-index: 100;
-
+padding: 5vw 5%;
+z-index: 3;
 position: relative;
 
 @media (max-width: 768px) {
     width: 100%;
-    height: max-content;
+    height: 90vh;
   }
 `
 const H1 = styled.div`
-font-family: Poppins;
-font-weight: 700;
+font-family: Montserrat;
+font-weight: 900;
 font-size: 2.5em;
 margin: 0;
 color: #fff;
@@ -126,50 +124,81 @@ margin-top: 2em;
 
 display: flex;
 flex-direction: row;
+width: 70%;
 
 @media (max-width: 768px) {
 flex-direction: column;
 justify-content: center;
-  }
+width: 100%;
+padding: 0 0.5em;
+}
+`
+const Row = styled.div`
+display: flex;
+justify-content: center;
+width: 50%;
+
+@media (max-width: 768px) {
+    width: 100%;
+    margin: 0 0.125em 0.125em 0;
+}
 `
 const IconBtn = styled.a`
 display: flex;
 flex-direction: column;
 align-items: center;
 
-padding: 1em 3vw;
+width: 50%;
+padding: 1em 0;
 margin: 0.25em;
 border-radius: 1em;
 border: solid 0.2em ${(props)=>props.S1C};
 background-color: ${(props)=>props.S1D};
 
 color: #ffffff;
+
+@media (max-width: 768px) {
+    width: 50%;
+    margin: 0 0.125em 0.125em 0;
+}
 `
 const IconBtn2 = styled.a`
 display: flex;
 flex-direction: column;
 align-items: center;
 
-padding: 1em 3vw;
+width: 50%;
+padding: 1em 0;
 margin: 0.25em;
 border-radius: 1em;
 border: solid 0.2em ${(props)=>props.S2C};
 background-color: ${(props)=>props.S2D};
 
 color: #ffffff;
+
+@media (max-width: 768px) {
+    width: 50%;
+    margin: 0 0 0.125em 0.125em ;
+}
 `
 const IconBtn3 = styled.a`
 display: flex;
 flex-direction: column;
 align-items: center;
 
-padding: 1em 3vw;
+width: 50%;
+padding: 1em 0;
 margin: 0.25em;
 border-radius: 1em;
 border: solid 0.2em ${(props)=>props.S3C};
 background-color: ${(props)=>props.S3D};
 
 color: #ffffff;
+
+@media (max-width: 768px) {
+    width: 100%;
+    margin: 0.125em 0 0 0;
+}
 `
 const IconTxt = styled.div`
 margin-top: 1em;
@@ -194,7 +223,3 @@ font-weight: 400;
 color: ${(props)=>props.S3C};
 `
 
-const Row = styled.div`
-display: flex;
-justify-content: center;
-`

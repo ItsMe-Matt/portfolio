@@ -4,14 +4,8 @@ import Image from 'next/image';
 
 import ContactUI from '../../comps/ContactUI';
 import HeadNav from '../../comps/HeadNav';
-import TopBtn from '../../comps/TopBtn';
-import ProjTable from '../../comps/ProjTable';
 
-import Proj from '../data/Proj.json'
-
-
-
-export default function MediaUI() {
+export default function CompassPlusUI() {
   var [S1Display, setS1Display] = useState("none")
   var [S2Display, setS2Display] = useState("none")
   var [S3Display, setS3Display] = useState("none")
@@ -46,32 +40,36 @@ export default function MediaUI() {
   }
 
 
-  var P0 = Proj[0]
-
-
-
   return (<div>
     <Container>
     <HeadNav />
       <Hero>
         <RowCenter>
-          <ProjTable
-          role={P0.type}
-          year="2021"
-          name={P0.header}
-          summary={P0.description}
-          img="/static/CompassPlus/head.png"
-          imgW='1080'
-          imgH='1980'
-          HL={P0.headline}
-          />
-        </RowCenter>
-        <TopBtn />
-      </Hero>
+            <HeadLeft>
+                <ImgCont>
+                    <Image 
+                    src="/static/About/profileImg.jpg"
+                    width={1065}
+                    height={1065}
+                    layout="responsive"
+                    priority={true}
+                    />
+                </ImgCont>
+            </HeadLeft>
 
-      <Content>
-       
-      </Content>
+            <HeadRight>
+                <TxtHeader>
+                Hey all, <br />
+                </TxtHeader>
+                <TxtCont>
+                I am Matthew Zhao, a D3 graduate from BCIT. I grew up in the Greater Vancouver Area and grew my passion for UI/UX design in high school through the Game of Apps program. After graduation, I went to BCIT to continue to sharpen and build up my skills. 
+                <br /> <br />
+                Outside of school and work, I enjoy building plastic models and eating out with friends. I enjoy the occasional hike and day of exploring the city.
+
+                </TxtCont>
+            </HeadRight>
+        </RowCenter>
+      </Hero>
       <FooterArea id='contact'>
         <ContactUI 
           onS1Off={()=>S1Off()}
@@ -98,7 +96,7 @@ export default function MediaUI() {
 
 const Container = styled.div`
 @media (max-width: 768px) {
-width: 100%;
+  width: 100%;
 }
 `
 const Hero = styled.div`
@@ -108,97 +106,73 @@ const Hero = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 
   @media (max-width: 768px) {
     height: max-content;
-    padding: 5vh 0;
-    }
+    margin: 10vh 0;
+  }
 `
+
 const RowCenter = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-`
-const Content = styled.div`
-  min-height: 100vh;
-  background-color: #f2f2f2;
-  padding: 3vh 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  width: 70vw;
 
-  box-shadow: 0 2vh 5vh #fff inset;
-`
-const IDCont = styled.div`
-`
-const Cat = styled.div`
-margin: 3vh 0;
-display: flex;
-flex-direction: column;
-align-items: center;
-`
-const ImgCont1 = styled.div`
-width: 30%;
-box-shadow: 0 0 1vw #75a6ff;
-margin: 0 5%
-
-@media (max-width: 768px) {
-  width: 100%;  
-}
-`
-const ImgCont2 = styled.div`
-width: 50%;
-
-@media (max-width: 768px) {
-  width: 100%;  
-}
-`
-const ImgCont3 = styled.div`
-width: 70vw;
-margin: 3vw 0 0 0;
-
-@media (max-width: 768px) {
-  width: 100%;  
-}
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10%;
+    
+  }
 `
 
-const Caption = styled.div`
-width: 70vw;
-
-font-size: 1em;
-font-family: Roboto;
-font-weight: 300;
-line-height: 1.5;
-text-align: center;
-margin: 2vw 0 0 0;
-color: #909090; 
-`
-const Div2 = styled.div`
-display: flex;
-flex-direction: row;
-width: 70vw;
+const HeadLeft = styled.div`
+width: 35%;
 
 @media (max-width: 768px) {
   width: 100%;
-  flex-direction: column;
+  margin-bottom: 4vh;
+}
 
+`
+const HeadRight = styled.div`
+width: 60%;
+
+@media (max-width: 768px) {
+  width: 100%;
 }
 `
 
-const EndImg = styled.div`
+const ImgCont = styled.div`
 width: 100%;
-padding: 3% 15%;
-display: flex;
-justify-content: space-between;
-margin-top: 1vw;
-background-color: #122c5c;
+border-radius: 100vw;
+overflow: hidden;
+box-shadow: 0 0 1vw;
+
+@media (max-width: 768px) {
+  width: 50%;
+}
+`
+const TxtHeader = styled.div`
+margin: 0;
+font-family: Montserrat;
+font-size: 2.5em;
+font-weight: 900;
+line-height: 1.75;
+margin: 0 2vw;
+
+`
+const TxtCont = styled.div`
+margin: 0;
+font-family: Poppins;
+font-size: 1.2em;
+font-weight: 300;
+line-height: 1.75;
+color: #606060;
+margin: 0 2vw;
+
 `
 const FooterArea = styled.div`
-
 `
-
-/*
-<Video embedId='ar5WlWITb7s'/>
-*/

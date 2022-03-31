@@ -63,7 +63,7 @@ justify-content: space-between;
 align-items: baseline;
 height: 3vh;
 
-width: 75vw;
+width: 70vw;
 
 @media (max-width: 768px) {
     display: none;
@@ -77,6 +77,7 @@ padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
 font-size: 1em;
+font-family: Montserrat;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -90,6 +91,7 @@ padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
 font-size: 1em;
+font-family: Montserrat;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -102,6 +104,7 @@ padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
 font-size: 1em;
+font-family: Montserrat;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -114,6 +117,7 @@ padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
 font-size: 1em;
+font-family: Montserrat;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -126,6 +130,7 @@ padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
 font-size: 1em;
+font-family: Montserrat;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -138,6 +143,7 @@ padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
 font-size: 1em;
+font-family: Montserrat;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;

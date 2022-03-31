@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export default function TextBox2({
+export default function CaseHP2({
     LHead="Project Research",
     LDescription="  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 
@@ -33,10 +33,11 @@ export default function TextBox2({
 }
 
 const Container = styled.div`
-width: 75vw;
+width: 60vw;
 
 display: flex;
 padding: 6vw 0 1vw 0;
+justify-content: space-between;
 
 @media (max-width: 768px) {
     flex-direction: column;
@@ -45,7 +46,7 @@ padding: 6vw 0 1vw 0;
     }
 `
 const Left = styled.div`
-width: 50%;
+width: 45%;
 
 display: flex;
 flex-direction: column;
@@ -58,7 +59,7 @@ align-items: center;
     }
 `
 const Right = styled.div`
-width: 50%;
+width: 45%;
 
 display: flex;
 flex-direction: column;
@@ -71,20 +72,21 @@ align-items: center;
     }
 `
 const H1 = styled.div`
-font-size: 2em;
+font-size: 1.75em;
 font-weight: 700;
-font-family: Lato;
+font-family: Montserrat;
 text-align: center;
 
 margin-bottom: 1vw;
 `
 const Paragraph = styled.div`
-width: 80%;
+width: 100%;
 
-font-size: 1.2em;
-font-family: Roboto;
+font-size: 1.15em;
+font-family: Poppins;
 font-weight: 300;
 line-height: 1.5;
+color: #555;
 
 @media (max-width: 768px) {
     width: 100%;

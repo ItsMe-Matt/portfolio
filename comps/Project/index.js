@@ -47,9 +47,6 @@ export default function Project({
                 </TxtBtn>
             </TxtCont>         
         </Right>
-
-            
-
     </Container>
     </Link> 
 } 
@@ -57,9 +54,11 @@ export default function Project({
 
 const Container = styled.div`
 display: flex;
-width: 67%;
-margin: 0.5rem;
+width: 55%;
+margin: 0.5em;
 cursor: pointer;
+padding: 1em;
+border-radius: 1em;
 
 @media (max-width: 768px) {
     flex-direction: column;
@@ -68,7 +67,7 @@ cursor: pointer;
 `
 const Left = styled.div`
 width: 45%;
-margin-right: 3vw; 
+margin-right: 2em; 
 
 @media (max-width: 768px) {
     width: 100%;
@@ -78,7 +77,7 @@ margin-right: 3vw;
 const Right = styled.div`
 width: 55%;
 float: right;
-margin-left: 3vw;
+margin: 0 2em;
 
 display: flex;
 align-items: center;
@@ -100,7 +99,7 @@ box-shadow: 0 0.5vh 0.3vh #adadad;
 const TxtCont = styled.div`
 `
 const TxtType = styled.p`
-font-family: Poppins;
+font-family: Montserrat;
 font-size: 1em;
 font-weight: 500;
 color: #000000;
@@ -114,7 +113,7 @@ width: fit-content;
 
 
 font-size: 1.5em;
-font-family: Poppins;
+font-family: Montserrat;
 font-weight: 700;
 padding: 0;
 margin: 0;
@@ -128,7 +127,7 @@ box-shadow: inset 0 -0.7vh ${(props)=>props.uColor};
 `
 const TxtP = styled.p`
 margin: 0;
-font-family: Roboto;
+font-family: Poppins;
 font-size: 1.15em;
 font-weight: 300;
 line-height: 1.75;

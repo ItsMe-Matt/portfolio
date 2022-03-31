@@ -27,13 +27,13 @@
         "headline": "Helping, providing for, and nurturing the homeless."
     },
     {
-        "header": "Media Gallery",
-        "type" : "Graphic Design + Photography",
-        "titleImg": "/static/projImg/GHTitle.png",
-        "description": "This is a gallery of some of my graphic design work, along with some photography pieces",
-        "route": "/Media",
+        "header": "Gundam Box",
+        "type" : "Graphic Design",
+        "titleImg": "/static/projImg/gundamTitle.png",
+        "description": "This is a gundam model box design for a gundam that doesn't exist yet.",
+        "route": "/Gundam",
         "color": "#dbbaff",
-        "headline": "Check out this cool stuff I made"
+        "headline": "This is a gundam model box design for a gundam that doesn't exist yet."
     }
 
 ]
