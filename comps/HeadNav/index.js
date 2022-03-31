@@ -64,7 +64,7 @@ export default function HeadNav() {
                     <ProjectBtn
                     onClick={()=>{setShowModal(false)}}
                     >
-                    Project
+                    Projects
                     </ProjectBtn> 
                 </Link>
 
