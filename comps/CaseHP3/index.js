@@ -61,8 +61,8 @@ align-items: center;
 
 const H1 = styled.div`
 font-size: 2em;
-font-weight: 600;
-font-family: Lato;
+font-weight: 700;
+font-family: Montserrat;
 
 margin-bottom: 1vw;
 text-align: left;
@@ -72,8 +72,9 @@ const Paragraph = styled.div`
 width: 100%;
 
 font-size: 1.2em;
-font-family: Roboto;
+font-family: Poppins;
 font-weight: 300;
 line-height: 1.5;
+color: #555;
 
 `

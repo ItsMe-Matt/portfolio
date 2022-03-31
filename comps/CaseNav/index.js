@@ -77,6 +77,7 @@ padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
 font-size: 1em;
+font-family: Montserrat;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;

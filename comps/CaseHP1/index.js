@@ -30,13 +30,14 @@ padding: 6vw 0 1vw 0;
 const H1 = styled.div`
 font-size: 2em;
 font-weight: 700;
-font-family: Lato;
+font-family: Montserrat;
 margin-bottom: 1vw;
 align-self: flex-start;
 `
 const Paragraph = styled.div`
 font-size: 1.2em;
-font-family: Roboto;
+font-family: Poppins;
 font-weight: 300;
 line-height: 1.5;
+color: #555;
 `

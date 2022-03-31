@@ -156,7 +156,7 @@ export default function GivingHandUI() {
 
           <EndDiv>
             <EndHead>
-              Giving Hand
+             The Giving Hand
             </EndHead>
 
             <EndP>
@@ -267,14 +267,14 @@ align-items: center;
 `
 
 const ImgCont2 = styled.div`
-width: 30%;
+width: 35%;
 
 @media (max-width: 768px) {
   width: 100%;
   }
 `
 const ImgCont3 = styled.div`
-width: 65vw;
+width: 70vw;
 
 @media (max-width: 768px) {
   width: 100%;
@@ -293,8 +293,8 @@ margin: 2vw 0 0 0;
 color: #909090; 
 `
 const EndImg = styled.div`
-width: 65vw;
-padding: 3% 15%;
+width: 70vw;
+padding: 3% 10%;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -309,7 +309,7 @@ width: 50%;
 const EndHead = styled.div`
 font-size: 2em;
 font-weight: 700;
-font-family: Lato;
+font-family: Montserrat;
 
 margin-bottom: 1vw;
 align-self: flex-start;
@@ -317,7 +317,7 @@ color: #fff;
 `
 const EndP = styled.div`
 font-size: 1.2em;
-font-family: Roboto;
+font-family: Poppins;
 font-weight: 300;
 line-height: 1.5;
 color: #ccc;
@@ -332,12 +332,13 @@ background-color: #fff;
 width: fit-content;
 padding: 0.5em 1em;
 font-size: 1.2em;
-font-family: Roboto;
+font-family: Poppins;
 font-weight: 500;
 line-height: 1.5;
 color: #181818;
-border-radius: 10rem;
+border-radius: 0.75em;
 margin-right: 1vw;
+cursor: pointer;
 `
 
 const FooterArea = styled.div`

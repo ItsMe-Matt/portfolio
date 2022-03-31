@@ -97,7 +97,7 @@ const ProjCont = styled.div`
 margin-bottom: 2.5vh;
 `
 const ProjHL = styled.div`
-font-family: Poppins;
+font-family: Montserrat;
 font-size: 1.25em;
 font-weight: 400;
 
@@ -137,7 +137,7 @@ align-items: baseline;
 const Summary = styled.div`
 width: 100%;
 
-font-family: Roboto;
+font-family: Poppins;
 font-size: 1.2em;
 font-weight: 300;
 line-height: 1.5;
