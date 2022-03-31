@@ -22,7 +22,7 @@ align-items: center;
 width: 70vw;
 padding: 6vw 0 1vw 0;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
     padding: 5% 10%;
 }

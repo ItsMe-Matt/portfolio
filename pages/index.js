@@ -74,8 +74,12 @@ export default function Test() {
         Hi, I’m <Link href="/About"><HeroSpan title="you can click me!">Matt</HeroSpan></Link> and I am a UI/UX designer.
         </HeroH>
 
+        <HeroH2>
+        Hi, I’m <Link href="/About"><HeroSpan title="you can click me!">Matt</HeroSpan></Link>. <br /> I am a UI/UX designer.
+        </HeroH2>
+
         <HeroP>
-        I design beautiful cross platform applications and solutions with comfortable and familiar experiences. I also have a background in graphic design and frontend development.
+        I design cross platform applications and solutions with comfortable and familiar experiences. I also have a background in graphic design and frontend development.
         </HeroP>
         <Link href="/#projects">
           <ProjectBtn>
@@ -140,42 +144,57 @@ export default function Test() {
 
 const Container = styled.div`
 width: 100%;
-
-@media (max-width: 768px) {
-  width: 100%;
-}
-
 `
 const Hero = styled.div`
   height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 12.5vw;
-  
+
   background-image: url('/static/bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  @media (max-width: 768px) {
-    height: 90vh;
-    padding: 0 7%;
-  }
+  width: 100%;
 `
 
 const HeroH = styled.div`
   font-family: Montserrat;
   font-size: 3.25em;
   font-weight: 900;
-  width: 70vw;
   margin-bottom: 4vh;
   color: #122C5C;
 
-  @media (max-width: 768px) {
-    font-size: 2em;
-    width: 100%;
-  }
+@media only screen and (max-width: 992px) {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  width: 70vw;
+}
+`
+
+const HeroH2 = styled.div`
+  font-family: Montserrat;
+  font-size: 3.25em;
+  font-weight: 900;
+  margin-bottom: 4vh;
+  color: #122C5C;
+
+@media (max-width: 599px)  {
+  width: 90vw;
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 600px) {
+  width: 90vw;
+
+}
+
+@media only screen and (min-width: 992px) {
+  display: none;
+}
 `
 
 const HeroSpan = styled.span`
@@ -194,15 +213,17 @@ font-family: Poppins;
 font-weight: 300;
 font-size: 1.25em;
 line-height: 1.5;
+
 color: #505050;
 display: flex;
-width: 50vw;
 margin-bottom: 8vh;
+width: 70%;
 
-@media (max-width: 768px) {
-  width: 100%;
+@media (max-width: 599px)  {
+  width: 80%;
   font-size: 1em;
 }
+
 `
 const ProjectBtn = styled.div`
 display: flex;
@@ -211,8 +232,12 @@ font-family: Montserrat;
 font-size: 2.3vh;
 font-weight: 500;
 
-@media (max-width: 768px) {
-font-size: 1.25em;
+@media (max-width: 599px)  {
+font-size: 1.25em
+}
+
+@media only screen and (min-width: 600px) {
+font-size: 1.3em;
 }
 
 `
@@ -221,6 +246,14 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 justify-content: center;
+
+@media (max-width: 991px)  {
+  width: 90%;
+}
+
+@media only screen and (min-width: 992px) {
+  width: 70%;
+}
 `
 
 const Content = styled.div`
@@ -231,13 +264,27 @@ flex-direction: column;
 align-items: center;
 `
 const Div2Proj = styled.div`
-width: 70%;
 min-height: 10vh;
 display: flex;
 
-@media (max-width: 768px) {
+@media (max-width: 599px)  {
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+  width: 70%;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }

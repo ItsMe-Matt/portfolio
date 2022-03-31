@@ -39,11 +39,20 @@ display: flex;
 padding: 6vw 0 1vw 0;
 justify-content: space-between;
 
-@media (max-width: 768px) {
+@media (max-width: 599px)  {
+    width: 90%;
+    font-size: 1em;
+    padding: 5% 0;
+    margin: 1em 0;
     flex-direction: column;
-    width: 100%;
-    padding: 5% 10%;
-    }
+}
+@media only screen and (min-width: 600px) {
+    width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+    width: 60%;
+}
 `
 const Left = styled.div`
 width: 45%;
@@ -52,11 +61,10 @@ display: flex;
 flex-direction: column;
 align-items: center;
 
-@media (max-width: 768px) {
-    width: 100%;
+@media (max-width: 599px)  {
+    width: 90%;
     align-items: flex-start;
-    padding: 5% 0;
-    }
+}
 `
 const Right = styled.div`
 width: 45%;
@@ -65,19 +73,28 @@ display: flex;
 flex-direction: column;
 align-items: center;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     align-items: flex-start;
     width: 100%;
     padding: 5% 0;
     }
 `
 const H1 = styled.div`
+display: flex;
+height: 2em;
+align-items: flex-end;
+
 font-size: 1.75em;
 font-weight: 700;
 font-family: Montserrat;
 text-align: center;
 
 margin-bottom: 1vw;
+
+@media (max-width: 599px)  {
+    width: 100%;
+    text-align: left;
+}
 `
 const Paragraph = styled.div`
 width: 100%;
@@ -88,7 +105,7 @@ font-weight: 300;
 line-height: 1.5;
 color: #555;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
     }
 `

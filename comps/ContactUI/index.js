@@ -90,10 +90,11 @@ padding: 5vw 5%;
 z-index: 3;
 position: relative;
 
-@media (max-width: 768px) {
+@media (max-width: 599px)  {
     width: 100%;
     height: 90vh;
   }
+  
 `
 const H1 = styled.div`
 font-family: Montserrat;
@@ -103,7 +104,7 @@ margin: 0;
 color: #fff;
 margin-bottom: 1em;
 
-@media (max-width: 768px) {
+@media (max-width: 599px)  {
     text-align: center;
   }
 `
@@ -115,22 +116,28 @@ margin: 0;
 color: #fff;
 margin-right: 1vw;
 
-@media (max-width: 768px) {
+@media (max-width: 599px)  {
     text-align: center;
   }
 `
 const IconCont = styled.div`
-margin-top: 2em;
-
 display: flex;
 flex-direction: row;
-width: 70%;
 
-@media (max-width: 768px) {
-flex-direction: column;
-justify-content: center;
-width: 100%;
-padding: 0 0.5em;
+margin-top: 2em;
+
+@media (max-width: 599px)  {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+@media only screen and (min-width: 600px) {
+    width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+    width: 60%;
 }
 `
 const Row = styled.div`
@@ -138,7 +145,7 @@ display: flex;
 justify-content: center;
 width: 50%;
 
-@media (max-width: 768px) {
+@media (max-width: 599px)  {
     width: 100%;
     margin: 0 0.125em 0.125em 0;
 }
@@ -157,7 +164,7 @@ background-color: ${(props)=>props.S1D};
 
 color: #ffffff;
 
-@media (max-width: 768px) {
+@media (max-width: 599px)  {
     width: 50%;
     margin: 0 0.125em 0.125em 0;
 }
@@ -176,7 +183,7 @@ background-color: ${(props)=>props.S2D};
 
 color: #ffffff;
 
-@media (max-width: 768px) {
+@media (max-width: 599px)  {
     width: 50%;
     margin: 0 0 0.125em 0.125em ;
 }
@@ -195,7 +202,7 @@ background-color: ${(props)=>props.S3D};
 
 color: #ffffff;
 
-@media (max-width: 768px) {
+@media (max-width: 599px)  {
     width: 100%;
     margin: 0.125em 0 0 0;
 }

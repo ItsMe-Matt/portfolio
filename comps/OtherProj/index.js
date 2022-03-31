@@ -30,27 +30,35 @@ export default function OtherProj({
 }
 
 const Container = styled.div`
-width: 70vw;
 display: flex;
 justify-content: space-between;
 margin-top: 1vh;
-@media (max-width: 768px) {
-    width: 100%;
-    }
+
+@media (max-width: 599px)  {
+    width: 90%;
+}
+
+@media only screen and (min-width: 600px) {
+    width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+    width: 70%;
+}
 `
 const NavBtn = styled.div`
-padding: 1vw;
+padding: 1vw 0;
 
 display: flex;
 align-items: center;
 justify-content: center;
 
-font-size: 1.3em;
-font-family: Lato;
-font-weight: 700;
+font-size: 1.25em;
+font-family: Montserrat;
+font-weight: 500;
 color: #122c5c;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
 font-size: 1.2em;
-    }
+}
 `

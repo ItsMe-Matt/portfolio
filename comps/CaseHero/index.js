@@ -59,11 +59,17 @@ flex-direction: row;
 height: content-fit;
 justify-content: space-between;
 
-@media (max-width: 768px) {
-    width: 100%;
+@media (max-width: 599px)  {
+    width: 90%;
     flex-direction: column;
     align-items: center;
-    padding: 0 10%;
+}
+@media only screen and (min-width: 600px) {
+    width: 90%;
+
+}
+@media only screen and (min-width: 992px) {
+    width: 65%;
 }
 `
 
@@ -74,7 +80,7 @@ justify-content: center;
 
 margin-right: 0.5vw;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
       }
 `
@@ -87,7 +93,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     align-items: flex-start;
     width: 100%;
       }
@@ -105,14 +111,20 @@ margin-top: 2vh;
 `
 const ProjName = styled.div`
 font-family: Montserrat;
-font-size: 2.5em;
 font-weight: 500;
 
 color: #334972;
 
-@media (max-width: 768px) {
-    font-size: 2em;
-    }
+@media (max-width: 599px)  {
+font-size: 2em;
+}
+@media only screen and (min-width: 600px) {
+    font-size: 2em
+}
+
+@media only screen and (min-width: 992px) {
+    font-size: 2.5em;
+}
 `
 const ProjRole = styled.div`
 font-family: Poppins;

@@ -49,31 +49,35 @@ export default function HeadNav() {
         >
             <ModalContent>
                 <Link href="/">
-                    <AbtMe>
+                    <ModalNavBtn
+                    onClick={()=>{setShowModal(false)}}
+                    >
                     Home
-                    </AbtMe> 
+                    </ModalNavBtn> 
                 </Link>
 
                 <Link href="/About">
-                    <AbtMe>
+                    <ModalNavBtn
+                    onClick={()=>{setShowModal(false)}}
+                    >
                     About Me
-                    </AbtMe> 
+                    </ModalNavBtn> 
                 </Link>
 
                 <Link href="/#projects">
-                    <ProjectBtn
+                    <ModalNavBtn
                     onClick={()=>{setShowModal(false)}}
                     >
                     Projects
-                    </ProjectBtn> 
+                    </ModalNavBtn> 
                 </Link>
 
                 <Link href="#contact">
-                    <ConBtn
+                    <ModalNavBtn
                     onClick={()=>{setShowModal(false)}}
                     >
                     Contact Me
-                    </ConBtn> 
+                    </ModalNavBtn> 
                 </Link>
 
 
@@ -102,14 +106,23 @@ box-shadow: 0 1vh 2vh #fff;
 const Container = styled.div`
 display: flex;
 flex-direction: row;
-align-items: flex-end;
 justify-content: space-between;
-width: 70vw;
 
-@media (max-width: 768px) {
+
+@media (max-width: 599px)  {
     width: 100%;
     align-items: center;
     padding: 0 5%;
+}
+
+@media only screen and (min-width: 600px) {
+    width: 90%;
+    align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+    width: 70%;
+    align-items: flex-end;
 }
 `
 
@@ -122,9 +135,9 @@ padding: 0;
 margin-right: 0.5em;
 transition: 0.5s;
 &:hover {
-    color: royalblue;
+    color: #4169e1;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 600px)  {
     font-size: 1.25em;
   }
 `
@@ -133,9 +146,9 @@ font-family: Poppins;
 font-weight: 300;
 font-size: 1em;
 
-@media (max-width: 768px) {
-    display: none;
-  }
+@media only screen and (max-width: 600px) {
+display: none;
+}
 `
 const HCont = styled.div`
 display: flex;
@@ -150,9 +163,10 @@ display: flex;
 flex-direction: row;
 align-items: flex-end;
 
+
 @media (max-width: 768px) {
     display: none;
-  }
+}
 `
 
 const AbtMe = styled.div`
@@ -170,10 +184,6 @@ transition: 2s;
     font-size: 1.1em;
     padding: 0.4vh 0.4vw;
 }
-@media (max-width: 768px) {
-    width: fit-content;
-    font-size: 1.5em;
-  }
 `
 const ProjectBtn = styled.div`
 cursor: pointer;
@@ -190,10 +200,6 @@ transition: 2s;
     font-size: 1.1em;
     padding: 0.4vh 0.4vw;
 }
-@media (max-width: 768px) {
-    width: fit-content;
-    font-size: 1.5em;
-  }
 `
 const ConBtn = styled.div`
 cursor: pointer;
@@ -210,17 +216,13 @@ transition: 2s;
     font-size: 1.1em;
     padding: 0.4vh 0.4vw;
 }
-@media (max-width: 768px) {
-    width: fit-content;
-    font-size: 1.5em;
-  }
 `
 const ModalCont = styled.div`
 display: none;
 
-@media (max-width: 768px) {
-display: block;
-  }
+@media only screen and (max-width: 768px) {
+    display: block;
+}
 `
 const ModalContent = styled.div`
 display: flex;
@@ -229,6 +231,18 @@ justify-content: space-between;
 align-items: center;
 height: 100%;
 padding: 50% 0;
+
+@media (min-width: 481px ) and (max-width: 768px) {
+    padding: 25% 0;
+}
 `
-const ModalBtn = styled.div`
+const ModalNavBtn = styled.div`
+cursor: pointer;
+font-family: Poppins;
+font-weight: 500;
+margin: 0.5vh 0.5vw;
+padding: 0.5vh 0.5vw;
+border-radius: 0.5em;
+width: fit-content;
+font-size: 1.5em;
 `

@@ -56,17 +56,24 @@ export default function CaseTable({
 }
 
 const Container = styled.div`
-width: 60vw;
-
 display: flex;
-padding: 5vh 0;
+padding: 6vw 0 1vw 0;
 justify-content: space-between;
 
-@media (max-width: 768px) {
-    width: 100%;
+@media (max-width: 599px)  {
+    width: 90%;
+    font-size: 1em;
+    padding: 5% 0;
+    margin: 1em 0;
     flex-direction: column;
-    padding: 0 10%;
-  }
+}
+@media only screen and (min-width: 600px) {
+    width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+    width: 60%;
+}
 `
 const Left = styled.div`
 width: 45%;
@@ -75,7 +82,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
     align-items: flex-start;
     padding: 5% 0;
@@ -89,7 +96,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     align-items: flex-start;
     width: 100%;
     padding: 5% 0;
@@ -124,7 +131,7 @@ font-weight: 300;
 line-height: 1.5;
 margin-bottom: 1em;
 
-@media (max-width: 768px) {
+@media (max-width: 480px)  {
     width: 100%;
     }
 

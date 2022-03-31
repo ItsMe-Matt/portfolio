@@ -75,24 +75,24 @@ export default function GivingHandUI() {
 
       <Content>
         <CaseNav />
-        <Cat>
-          <IDCont id='role'>
+        
+          <IDCont id='role' />
             <CaseHP1
               header='My Role'
               description='My role in the Giving Hand was an especially challenging one as I had to take on all the roles at some point. In this project, my roles included project manager, developer, and designer. Most of my team was very passive compared to me so it encouraged me to take the initiative to get the project off the ground and running. My team consisted of two other designers and another developer. At the beginning, I really had to take the initiative to push the team forward because everyone on the team was very passive. As the initiator, I set goals, deadlines, and frequently checked on teammates to make sure we were making progress and made sure that everyone who needed support was acknowledged and received it.'
             />
-          </IDCont>
 
-          <IDCont id='research'>
+
+          <IDCont id='research' />
             <CaseHP1
               header='User Research'
               description='Through our user survey, we discovered that a lot of the people we interviewed had actually donated to homeless people at one point or another. From our survey, we learned that the top reason that stops people from donating is that they don’t know where or what the money is going to. They don’t know if the organization they are donating to is trustable or if the money even reaches the people they are hoping to help.'
             />
-          </IDCont>
+
 
          
 
-        <IDCont id='prob'>
+        <IDCont id='prob' />
           <CaseHP2 
             LHead='Problem Identification'
             LDescription='A lot of people in Vancouver want to help and donate to the homeless but most people do not know if the organization is trustable or if the money even reaches the people they are hoping to help with their donation.'
@@ -100,7 +100,7 @@ export default function GivingHandUI() {
             RHead='Goal/Solution'
             RDescription='Our solution is creating an app that aids users when researching and finding a location to donate to. By answering a couple questions, our app gives the user a couple organizations to donate to.'
             />
-        </IDCont>
+
 
         <IDCont id='design' />
         <CaseHP1
@@ -193,10 +193,10 @@ export default function GivingHandUI() {
         <OtherProj 
          next='Home'
 
-         back="CompassPlus Project"
+         back="Previous Project"
          backLink="/CompassPlus"
         />
-        </Cat>
+        
       </Content>
       <FooterArea id='contact'>
         <ContactUI 
@@ -223,7 +223,7 @@ export default function GivingHandUI() {
 
 
 const Container = styled.div`
-@media (max-width: 768px) {
+@media (max-width: 599px)  {
   width: 100%;
   }
 `
@@ -241,7 +241,7 @@ background-image: url('/static/bg.png');
   background-size: cover;
   background-position: center;
 
-@media (max-width: 768px) {
+@media (max-width: 599px)  {
   height: max-content;
   padding: 5vh 0;
 }
@@ -264,41 +264,51 @@ const Content = styled.div`
 `
 const IDCont = styled.div`
 `
-const Cat = styled.div`
-margin: 3vh 0;
-display: flex;
-flex-direction: column;
-align-items: center;
-`
 
 const ImgCont2 = styled.div`
 width: 35%;
 
-@media (max-width: 768px) {
+@media (max-width: 599px)  {
   width: 100%;
   }
 `
 const ImgCont3 = styled.div`
-width: 60vw;
 
-@media (max-width: 768px) {
-  width: 100%;
-  }
+@media (max-width: 599px)  {
+  width: 90%;
+}
+
+@media only screen and (min-width: 600px) {
+  width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+  width: 60%;
+}
 `
 
 const Caption = styled.div`
-width: 55vw;
-
 font-size: 1em;
-font-family: Roboto;
+font-family: Poppins;
 font-weight: 300;
 line-height: 1.5;
 text-align: center;
 margin: 2vw 0 0 0;
 color: #909090; 
+
+@media (max-width: 599px)  {
+  width: 90%
+}
+
+@media only screen and (min-width: 600px) {
+  width: 80%;
+}
+
+@media only screen and (min-width: 992px) {
+  width: 70%;
+}
 `
 const EndImg = styled.div`
-width: 60vw;
 padding: 3% 10%;
 display: flex;
 justify-content: space-between;
@@ -306,10 +316,28 @@ align-items: center;
 margin-top: 1vw;
 background-color: #122c5c;
 
+@media (max-width: 599px)  {
+  width: 100%;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 600px) {
+  width: 100%;
+  align-items: center;
+}
+
+@media only screen and (min-width: 992px) {
+  width: 70%;
+  padding: 3% 5%;
+}
 `
 const EndDiv = styled.div`
 width: 50%;
 
+@media (max-width: 599px)  {
+  width: 100%;
+  padding: 10% 0;
+  }
 `
 const EndHead = styled.div`
 font-size: 2em;
@@ -319,6 +347,18 @@ font-family: Montserrat;
 margin-bottom: 1vw;
 align-self: flex-start;
 color: #fff;
+
+@media (max-width: 599px)  {
+  font-size: 1.5em
+}
+
+@media only screen and (min-width: 600px) {
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 992px) {
+  font-size: 2em
+}
 `
 const EndP = styled.div`
 font-size: 1.2em;
@@ -327,6 +367,18 @@ font-weight: 300;
 line-height: 1.5;
 color: #ccc;
 margin-bottom: 5vh;
+
+@media (max-width: 599px)  {
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  font-size: 1em;
+}
+
+@media only screen and (min-width: 992px) {
+  font-size: 1.2em
+}
 `
 const EndBtnCont = styled.div`
 display: flex;
@@ -344,6 +396,20 @@ color: #181818;
 border-radius: 0.75em;
 margin-right: 1vw;
 cursor: pointer;
+
+@media (max-width: 599px)  {
+  font-size: 1em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  font-size: 1em;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  font-size: 1.2em
+}
 `
 
 const FooterArea = styled.div`
