@@ -64,7 +64,7 @@ export default function GivingHandUI() {
           year="2021"
           name={P0.header}
           summary={P0.description}
-          img="/static/GivingHand/head.png"
+          img="/static/GivingHand/GivingHand_Title.png"
           imgType="1"
           HL={P0.headline}
           />
@@ -110,7 +110,7 @@ export default function GivingHandUI() {
 
         <ImgCont3>
           <Image
-          src="/static/GivingHand/mediumFidelity.png"
+          src="/static/GivingHand/GivingHand_MediumFidelity.png"
           width={3546}
           height={1485}
           layout='responsive'
@@ -127,7 +127,7 @@ export default function GivingHandUI() {
 
         <ImgCont3>
           <Image
-          src="/static/GivingHand/popup.png"
+          src="/static/GivingHand/GivingHand_Popup.png"
           width={1761}
           height={670}
           layout='responsive'

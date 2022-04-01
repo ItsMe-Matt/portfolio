@@ -61,9 +61,7 @@ export default function CompassPlusUI() {
         year="2021"
         name={P0.header}
         summary={P0.description}
-        img="/static/CompassPlus/head.png"
-        imgW='1080'
-        imgH='1980'
+        img="/static/CompassPlus/CompassPlus_Hero.png"
         HL={P0.headline}
         />
       </RowCenter>
@@ -165,7 +163,7 @@ export default function CompassPlusUI() {
 
           <ImgCont3>
             <Image 
-            src="/static/CompassPlus/components.png"
+            src="/static/CompassPlus/CompassCard_Components.png"
             width={4718}
             height={2268}
             layout="responsive"

@@ -14,7 +14,7 @@ export default function CaseHero({
             <ImgCont>
                 <Image
                 src={img}
-                height={1980}
+                height={1440}
                 width={1080}
                 layout='responsive'
                 />
@@ -54,7 +54,7 @@ export default function CaseHero({
 
 const Container = styled.div`
 display: flex;
-width: 65vw;
+
 flex-direction: row;
 height: content-fit;
 justify-content: space-between;
@@ -69,7 +69,7 @@ justify-content: space-between;
 
 }
 @media only screen and (min-width: 992px) {
-    width: 65%;
+    width: 100%;
 }
 `
 
@@ -157,5 +157,7 @@ color: #909090;
 `
 
 const ImgCont = styled.div`
-width: 45vh
+width: 100%;
+border-radius: 1em;
+overflow: hidden;
 `
