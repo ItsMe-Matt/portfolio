@@ -101,7 +101,7 @@ export default function CompassPlusUI() {
         <Div2>
           <ImgCont2>
             <Image
-            src="/static/CompassPlus/UserSurveyResults1.jpg"
+            src="/static/CompassPlus/CompassPlus_SurveyResults.jpg"
             width={1920}
             height={1080}
             layout="responsive"
@@ -112,7 +112,7 @@ export default function CompassPlusUI() {
 
           <ImgCont2>
             <Image
-            src="/static/CompassPlus/UserSurveyResults2.jpg"
+            src="/static/CompassPlus/CompassPlus_SurveyResults2.jpg"
             width={1920}
             height={1080}
             layout="responsive"
@@ -145,7 +145,7 @@ export default function CompassPlusUI() {
 
           <ImgCont3>
             <Image 
-            src="/static/CompassPlus/cardPage.png"
+            src="/static/CompassPlus/CompassPlus_CardPage.png"
             width={4835}
             height={1764}
             layout="responsive"
@@ -197,7 +197,7 @@ export default function CompassPlusUI() {
 
           <ImgCont2>
             <Image
-            src="/static/CompassPlus/businessCardBg.png"
+            src="/static/CompassPlus/CompassPlus_BusinessCards.jpg"
             width={4530}
             height={3397}
             layout="responsive"
