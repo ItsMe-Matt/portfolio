@@ -64,7 +64,7 @@ export default function Test() {
 
   return <Container>
     <Head>
-      <title> Matt&apos;s Portfolio </title>
+      <title> Matthew Zhao | UI/UX Designer </title>
       <meta name='description' content="Welcome to Matt&apos;s Portfolio. This will showcase Matt&apos;s awesome skills and experience with ui/ux design, graphic design, and frontend development." />
     </Head>
     <HeadNav />

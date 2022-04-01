@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components'
 import Image from 'next/image';
+import Head from 'next/head'
 
 import ContactUI from '@/comps/ContactUI';
 import CaseHP1 from '@/comps/CaseHP1'
@@ -52,6 +53,11 @@ export default function CompassPlusUI() {
 
 
   return (<div>
+
+    <Head>
+      <title> CompassPlus </title>
+      <meta name='description' content="CompassPlus was an app designed to become Translink's official mobile app." />
+    </Head>
     <Container>
     <HeadNav />
     <Hero>
