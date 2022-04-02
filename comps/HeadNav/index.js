@@ -15,7 +15,7 @@ export default function HeadNav() {
             Matthew Zhao 
         </HTxt>
         <HP>
-            UI/UX Designer
+            UI/UX Designer + Graphic Designer
         </HP>
         </HCont>
         </Link>
@@ -144,7 +144,7 @@ transition: 0.5s;
 const HP = styled.p`
 font-family: Poppins;
 font-weight: 300;
-font-size: 1em;
+font-size: 0.9em;
 
 @media only screen and (max-width: 600px) {
 display: none;

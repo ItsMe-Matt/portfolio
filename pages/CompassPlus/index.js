@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components'
 import Image from 'next/image';
+import Head from 'next/head'
 
 import ContactUI from '@/comps/ContactUI';
 import CaseHP1 from '@/comps/CaseHP1'
@@ -52,19 +53,24 @@ export default function CompassPlusUI() {
 
 
   return (<div>
+
+    <Head>
+      <title> CompassPlus </title>
+      <meta name='description' content="CompassPlus was an app designed to become Translink's official mobile app." />
+    </Head>
     <Container>
     <HeadNav />
     <Hero>
       <RowCenter>
         <CaseHero
         role={P0.type}
-        year="2021"
         name={P0.header}
         summary={P0.description}
-        img="/static/CompassPlus/head.png"
-        imgW='1080'
-        imgH='1980'
+        img="/static/CompassPlus/CompassPlus_Hero.png"
         HL={P0.headline}
+        timeframe="September 2021 - December 2021"
+        purpose="Class Project"
+        tools='Figma, Illustrator, inDesign'
         />
       </RowCenter>
       <TopBtn />
@@ -101,7 +107,7 @@ export default function CompassPlusUI() {
         <Div2>
           <ImgCont2>
             <Image
-            src="/static/CompassPlus/UserSurveyResults1.jpg"
+            src="/static/CompassPlus/CompassPlus_SurveyResults.jpg"
             width={1920}
             height={1080}
             layout="responsive"
@@ -112,7 +118,7 @@ export default function CompassPlusUI() {
 
           <ImgCont2>
             <Image
-            src="/static/CompassPlus/UserSurveyResults2.jpg"
+            src="/static/CompassPlus/CompassPlus_SurveyResults2.jpg"
             width={1920}
             height={1080}
             layout="responsive"
@@ -145,7 +151,7 @@ export default function CompassPlusUI() {
 
           <ImgCont3>
             <Image 
-            src="/static/CompassPlus/cardPage.png"
+            src="/static/CompassPlus/CompassPlus_CardPage.png"
             width={4835}
             height={1764}
             layout="responsive"
@@ -165,7 +171,7 @@ export default function CompassPlusUI() {
 
           <ImgCont3>
             <Image 
-            src="/static/CompassPlus/components.png"
+            src="/static/CompassPlus/CompassCard_Components.png"
             width={4718}
             height={2268}
             layout="responsive"
@@ -197,7 +203,7 @@ export default function CompassPlusUI() {
 
           <ImgCont2>
             <Image
-            src="/static/CompassPlus/businessCardBg.png"
+            src="/static/CompassPlus/CompassPlus_BusinessCards.jpg"
             width={4530}
             height={3397}
             layout="responsive"

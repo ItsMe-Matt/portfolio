@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components'
 import Image from 'next/image';
 import Link from 'next/link'
+import Head from 'next/head'
 
 import ContactUI from '../../comps/ContactUI';
 import CaseHP1 from '@/comps/CaseHP1'
@@ -55,18 +56,27 @@ export default function GivingHandUI() {
 
 
   return (<div>
+    <Head>
+      <title> The Giving Hand </title>
+      <meta name='description' content="Actualize is a product designed to work in conjunction with WorkBC. It is an application that will connect those who are in need with financial advisors and career advisors to help those who are trying to get on their feet again." />
+    </Head>
     <Container>
     <HeadNav />
       <Hero>
         <RowCenter>
           <CaseHero
-          role={P0.type}
+          
           year="2021"
           name={P0.header}
           summary={P0.description}
-          img="/static/GivingHand/head.png"
+          img="/static/GivingHand/GivingHand_Title.png"
           imgType="1"
           HL={P0.headline}
+
+          role="UI Designer and Frontend Developer"
+          timeframe='February 2021 - May 2021'
+          purpose='Class Project'
+          tools='Figma, Illustrator, Visual Studio Code, React, NextJS'
           />
         </RowCenter>
 
@@ -110,7 +120,7 @@ export default function GivingHandUI() {
 
         <ImgCont3>
           <Image
-          src="/static/GivingHand/mediumFidelity.png"
+          src="/static/GivingHand/GivingHand_MediumFidelity.png"
           width={3546}
           height={1485}
           layout='responsive'
@@ -127,7 +137,7 @@ export default function GivingHandUI() {
 
         <ImgCont3>
           <Image
-          src="/static/GivingHand/popup.png"
+          src="/static/GivingHand/GivingHand_Popup.png"
           width={1761}
           height={670}
           layout='responsive'

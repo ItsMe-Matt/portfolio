@@ -133,11 +133,11 @@ margin-top: 2em;
 }
 
 @media only screen and (min-width: 600px) {
-    width: 80%;
+    width: 70%;
 }
 
 @media only screen and (min-width: 992px) {
-    width: 60%;
+    width: 50%;
 }
 `
 const Row = styled.div`
@@ -159,7 +159,7 @@ width: 50%;
 padding: 1em 0;
 margin: 0.25em;
 border-radius: 1em;
-border: solid 0.2em ${(props)=>props.S1C};
+border: solid 0.2em #fff;
 background-color: ${(props)=>props.S1D};
 
 color: #ffffff;
@@ -178,7 +178,7 @@ width: 50%;
 padding: 1em 0;
 margin: 0.25em;
 border-radius: 1em;
-border: solid 0.2em ${(props)=>props.S2C};
+border: solid 0.2em #fff;
 background-color: ${(props)=>props.S2D};
 
 color: #ffffff;
@@ -197,7 +197,7 @@ width: 50%;
 padding: 1em 0;
 margin: 0.25em;
 border-radius: 1em;
-border: solid 0.2em ${(props)=>props.S3C};
+border: solid 0.2em #fff;
 background-color: ${(props)=>props.S3D};
 
 color: #ffffff;

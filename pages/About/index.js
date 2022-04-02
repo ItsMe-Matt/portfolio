@@ -48,7 +48,7 @@ export default function CompassPlusUI() {
             <HeadLeft>
                 <ImgCont>
                     <Image 
-                    src="/static/About/profileImg.jpg"
+                    src="/static/About/MatthewZhao_Profile.jpg"
                     width={1065}
                     height={1065}
                     layout="responsive"

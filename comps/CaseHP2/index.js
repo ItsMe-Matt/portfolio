@@ -92,7 +92,7 @@ text-align: center;
 margin-bottom: 1vw;
 
 @media (max-width: 599px)  {
-    width: 100%;
+    margin-bottom: 0.75em;
     text-align: left;
 }
 `
