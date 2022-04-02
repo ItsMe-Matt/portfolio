@@ -2,12 +2,14 @@ import styled from "styled-components"
 import Image from "next/image"
 
 export default function CaseHero({
-    role="UI/UX Design",
-    year="2021",
-    name="The Giving Hand",
     summary="CompassPlus is an app designed to replace your physical Compass card with a digital NFC card you can use on your phone.",
     img="/projImg/cPTitle.png",
-    HL = "This is a one sentenced head liner for the application"
+    HL = "This is a one sentenced head liner for the application",
+
+    role="UI/UX Design",
+    timeframe="Wednesday",
+    purpose="Hero for fun",
+    tools = "my bear hands"
 }) {
     return <Container>
         <Left>
@@ -22,30 +24,34 @@ export default function CaseHero({
         </Left>
             
         <Right>
-            <ProjCont>
-                <ProjRole>
-                    {role}
-                </ProjRole>
-
-                <ProjNandY>
-                    <ProjName>
-                        {name}
-                    </ProjName>
-
-                    <ProjYear>
-                        {year}
-                    </ProjYear>
-                </ProjNandY>
-
-                <ProjHL>
-                    {HL}
-                </ProjHL>
-               
-            </ProjCont>
+            <ProjHL>
+                {HL}
+            </ProjHL>
 
             <Summary>
-                {summary}
+            {summary}
             </Summary>
+
+            <RoleCont>
+            <Bold>Role:</Bold> {role}
+            </RoleCont>
+
+            
+            <RoleCont>
+            <Bold>Timeframe:</Bold> {timeframe}
+            </RoleCont>
+
+            <RoleCont>
+            <Bold>Purpose:</Bold> {purpose}
+            </RoleCont>
+
+            <RoleCont>
+            <Bold>Tools:</Bold> {tools}
+            </RoleCont>
+
+
+
+
             
         </Right>
     </Container>
@@ -69,7 +75,7 @@ justify-content: space-between;
 
 }
 @media only screen and (min-width: 992px) {
-    width: 100%;
+    width: 75%;
 }
 `
 
@@ -99,19 +105,10 @@ justify-content: center;
       }
 `
 
-const ProjCont = styled.div`
-margin-bottom: 2.5vh;
-`
 const ProjHL = styled.div`
 font-family: Montserrat;
-font-size: 1.25em;
-font-weight: 400;
-
-margin-top: 2vh;
-`
-const ProjName = styled.div`
-font-family: Montserrat;
-font-weight: 500;
+font-weight: 700;
+margin-bottom: 1vh;
 
 color: #334972;
 
@@ -126,25 +123,8 @@ font-size: 2em;
     font-size: 2.5em;
 }
 `
-const ProjRole = styled.div`
-font-family: Poppins;
-font-size: 1.25em;
-font-weight: 300;
-color: #999;
-`
-const ProjYear = styled.div`
-font-family: Poppins;
-font-size: 1.5em;
-font-weight: 300;
 
 
-margin-left: 1vh;
-`
-
-const ProjNandY = styled.div`
-display: flex;
-align-items: baseline;
-`
 
 const Summary = styled.div`
 width: 100%;
@@ -153,11 +133,24 @@ font-family: Poppins;
 font-size: 1.2em;
 font-weight: 300;
 line-height: 1.5;
-color: #909090;
+color: #000;
+
+margin-bottom: 3vh;
 `
 
 const ImgCont = styled.div`
-width: 100%;
+width: 80%;
 border-radius: 1em;
 overflow: hidden;
+`
+
+const RoleCont = styled.div`
+margin-top: 1vh;
+font-family: Poppins;
+color: #000;
+
+font-size: 1em;
+`
+const Bold = styled.span`
+font-weight: 700;
 `

@@ -16,7 +16,7 @@ export default function ContactUI({
 
         <Link href="#research">
             <IconCont2>
-                User Research
+                Our Users
             </IconCont2>
         </Link>
 
@@ -34,7 +34,7 @@ export default function ContactUI({
 
         <Link href="#design">
             <IconCont4>
-                Design Phase
+                Process
             </IconCont4>    
         </Link>
 
@@ -43,14 +43,14 @@ export default function ContactUI({
             <GrNext size="1vw"/>
         <Link href="#dev">
             <IconCont5>
-                Development Phase
+                Final Designs
             </IconCont5>
         </Link>
 
             <GrNext size="1vw"/>
         <Link href="#end">
             <IconCont6>
-                End Product
+                Learnings
             </IconCont6>
         </Link>
 
@@ -60,7 +60,7 @@ export default function ContactUI({
 const Container = styled.div`
 
 justify-content: space-between;
-align-items: baseline;
+align-items: center;
 height: 3vh;
 
 
@@ -85,8 +85,9 @@ background-color: #4169e1;
 padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
-font-size: 1em;
+font-size: 0.8em;
 font-family: Montserrat;
+text-align: center;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -99,8 +100,9 @@ background-color: #4169e1;
 padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
-font-size: 1em;
+font-size: 0.8em;
 font-family: Montserrat;
+text-align: center;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -112,8 +114,9 @@ background-color: #4169e1;
 padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
-font-size: 1em;
+font-size: 0.8em;
 font-family: Montserrat;
+text-align: center;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -125,8 +128,9 @@ background-color: #4169e1;
 padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
-font-size: 1em;
+font-size: 0.8em;
 font-family: Montserrat;
+text-align: center;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -138,8 +142,9 @@ background-color: #4169e1;
 padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
-font-size: 1em;
+font-size: 0.8em;
 font-family: Montserrat;
+text-align: center;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;
@@ -151,8 +156,9 @@ background-color: #4169e1;
 padding: 0.7vw 1.5vw;
 color: #fff;
 border-radius: 3vw;
-font-size: 1em;
+font-size: 0.8em;
 font-family: Montserrat;
+text-align: center;
 &:hover {
     transition: 0.2s;
     background-color: #0b2985;

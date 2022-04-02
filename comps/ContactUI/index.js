@@ -159,7 +159,7 @@ width: 50%;
 padding: 1em 0;
 margin: 0.25em;
 border-radius: 1em;
-border: solid 0.2em ${(props)=>props.S1C};
+border: solid 0.2em #fff;
 background-color: ${(props)=>props.S1D};
 
 color: #ffffff;
@@ -178,7 +178,7 @@ width: 50%;
 padding: 1em 0;
 margin: 0.25em;
 border-radius: 1em;
-border: solid 0.2em ${(props)=>props.S2C};
+border: solid 0.2em #fff;
 background-color: ${(props)=>props.S2D};
 
 color: #ffffff;
@@ -197,7 +197,7 @@ width: 50%;
 padding: 1em 0;
 margin: 0.25em;
 border-radius: 1em;
-border: solid 0.2em ${(props)=>props.S3C};
+border: solid 0.2em #fff;
 background-color: ${(props)=>props.S3D};
 
 color: #ffffff;

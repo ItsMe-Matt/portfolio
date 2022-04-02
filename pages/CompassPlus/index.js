@@ -64,11 +64,13 @@ export default function CompassPlusUI() {
       <RowCenter>
         <CaseHero
         role={P0.type}
-        year="2021"
         name={P0.header}
         summary={P0.description}
         img="/static/CompassPlus/CompassPlus_Hero.png"
         HL={P0.headline}
+        timeframe="September 2021 - December 2021"
+        purpose="Class Project"
+        tools='Figma, Illustrator, inDesign'
         />
       </RowCenter>
       <TopBtn />
