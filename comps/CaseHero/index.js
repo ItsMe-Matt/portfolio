@@ -83,6 +83,7 @@ const Left = styled.div`
 width: 45%;
 display: flex;
 justify-content: center;
+align-items: center;
 
 margin-right: 0.5vw;
 
