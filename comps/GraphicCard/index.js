@@ -36,7 +36,8 @@ const Container = styled.div`
 display: flex;
 flex-direction: column;
 
-width: 100%;
+align-items: center;
+
 margin: 0.5em;
 cursor: pointer;
 padding: 0.75em;
@@ -53,7 +54,7 @@ background-color: #fff;
 }
 
 @media only screen and (min-width: 992px) {
-
+    width: 100%;
 }
 `
 const ImgCont = styled.div`
