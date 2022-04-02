@@ -36,7 +36,7 @@ const Container = styled.div`
 display: flex;
 flex-direction: column;
 
-width: 49%;
+width: 100%;
 margin: 0.5em;
 cursor: pointer;
 padding: 0.75em;
@@ -49,7 +49,7 @@ background-color: #fff;
 }
 
 @media only screen and (min-width: 600px) {
-
+    width: 49%;
 }
 
 @media only screen and (min-width: 992px) {
