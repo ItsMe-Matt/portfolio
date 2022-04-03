@@ -38,9 +38,8 @@ flex-direction: column;
 
 align-items: center;
 
-margin: 0.5em;
-cursor: pointer;
-padding: 0.75em;
+margin: 8px;
+padding 0 0 8px 0;
 border-radius: 1em;
 box-shadow: 0 0 0.5em #adadad;
 background-color: #fff;
@@ -58,10 +57,10 @@ background-color: #fff;
 }
 `
 const ImgCont = styled.div`
-margin: 1%;
 width: 100%;
-border-radius: 1em;
+
 overflow: hidden;
+border-radius: 16px 16px 0 0;
 `
 const InfoCont = styled.div`
 

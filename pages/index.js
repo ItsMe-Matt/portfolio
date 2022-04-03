@@ -74,7 +74,7 @@ export default function Test() {
       <Hero>
         <RowCenter>
         <HeroH>
-        Hi, I’m <Link href="/About"><HeroSpan title="you can click me!">Matt</HeroSpan></Link> and I am a UI/UX designer and graphic designer.
+        Hi, I’m <Link href="/About"><HeroSpan title="you can click me!">Matt</HeroSpan></Link>.<br />I am a UI/UX designer and graphic designer.
         </HeroH>
 
         <HeroH2>
@@ -298,7 +298,7 @@ align-items: center;
 const ContentTitle = styled.div`
 font-family: Montserrat;
 font-weight: 500;
-font-size: 2em;
+font-size: 1.5em;
 margin: 5vh 0 3vh 0;
 
 @media (max-width: 599px)  {
