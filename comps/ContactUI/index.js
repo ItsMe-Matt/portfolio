@@ -133,11 +133,11 @@ margin-top: 2em;
 }
 
 @media only screen and (min-width: 600px) {
-    width: 80%;
+    width: 90%;
 }
 
 @media only screen and (min-width: 992px) {
-    width: 60%;
+    width: 90%;
 }
 `
 const Row = styled.div`
